@@ -1,0 +1,261 @@
+{
+  "date": "2026-11-20T16:59:57.192Z",
+  "plan": "/home/claude/reseauhmv-maquette/plan-images.json",
+  "attendus": 14,
+  "recus": 14,
+  "planches": [
+    "planche.jpg"
+  ],
+  "inconnus": [],
+  "manquants": [],
+  "a_regenerer": [],
+  "images": [
+    {
+      "nom": "grok/ouverture-vallee",
+      "attendu": "ouverture-vallee.png",
+      "fichier": "ouverture-vallee.png",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1600,
+      "hauteur": 1074,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/ouverture-vallee",
+      "mobile": true,
+      "attendu": "ouverture-vallee-mobile.png",
+      "fichier": "ouverture-vallee-mobile.png",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1176,
+      "hauteur": 1752,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/rubrique-table",
+      "attendu": "rubrique-table.png",
+      "fichier": "rubrique-table.png",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1176,
+      "hauteur": 1752,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/rubrique-commerce",
+      "attendu": "rubrique-commerce.png",
+      "fichier": "rubrique-commerce.png",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1176,
+      "hauteur": 1752,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/rubrique-artisan",
+      "attendu": "rubrique-artisan.png",
+      "fichier": "rubrique-artisan.png",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1176,
+      "hauteur": 1752,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/rubrique-hebergement",
+      "attendu": "rubrique-hebergement.png",
+      "fichier": "rubrique-hebergement.png",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1176,
+      "hauteur": 1752,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/rubrique-activite",
+      "attendu": "rubrique-activite.png",
+      "fichier": "rubrique-activite.png",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1176,
+      "hauteur": 1752,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/rubrique-bienetre",
+      "attendu": "rubrique-bienetre.png",
+      "fichier": "rubrique-bienetre.png",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1176,
+      "hauteur": 1752,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/appel-soir",
+      "attendu": "appel-soir.png",
+      "fichier": "appel-soir.png",
+      "priorite": "Conseillée",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1600,
+      "hauteur": 1074,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/appel-soir",
+      "mobile": true,
+      "attendu": "appel-soir-mobile.png",
+      "fichier": "appel-soir-mobile.png",
+      "priorite": "Conseillée",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1176,
+      "hauteur": 1752,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/carnet-toits",
+      "attendu": "carnet-toits.png",
+      "fichier": "carnet-toits.png",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1600,
+      "hauteur": 1074,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/referencer-atelier",
+      "attendu": "referencer-atelier.png",
+      "fichier": "referencer-atelier.png",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1176,
+      "hauteur": 1752,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/contact-carnet",
+      "attendu": "contact-carnet.png",
+      "fichier": "contact-carnet.png",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [],
+      "largeur": 1600,
+      "hauteur": 1074,
+      "boites": []
+    },
+    {
+      "nom": "grok/page-404",
+      "attendu": "page-404.png",
+      "fichier": "page-404.png",
+      "priorite": "Conseillée",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1600,
+      "hauteur": 1074,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    }
+  ]
+}

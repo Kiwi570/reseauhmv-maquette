@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Réseau HMV · trois directions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600&family=Bebas+Neue&family=Big+Shoulders+Display:wght@700;800;900&family=DM+Serif+Display:ital@0;1&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --encre:#1d2a33; --papier:#f4f2ec; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#e9e6de; color:var(--encre); font:16px/1.55 Barlow, system-ui, sans-serif; }
+  header.tete { padding:48px 5vw 28px; max-width:1500px; margin:auto; }
+  header.tete small { letter-spacing:.14em; text-transform:uppercase; font-weight:600; font-size:13px; color:#5b6670; }
+  header.tete h1 { font:400 clamp(44px,6vw,84px)/.95 "Bebas Neue", sans-serif; margin:.25em 0 .2em; }
+  header.tete p { max-width:820px; margin:0; color:#3c4952; }
+  .grille { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:22px; padding:12px 5vw 64px; max-width:1500px; margin:auto; }
+  @media (max-width:1100px){ .grille{ grid-template-columns:1fr; } }
+  .dir { background:#fff; border-radius:18px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 1px 0 rgba(0,0,0,.05), 0 18px 40px -28px rgba(0,0,0,.35); }
+  .dir .corps { padding:22px 24px 26px; display:flex; flex-direction:column; gap:16px; }
+  .lettre { font:600 13px/1 "Barlow Semi Condensed"; letter-spacing:.14em; text-transform:uppercase; color:#6b747b; }
+  .reco { display:inline-block; margin-left:8px; padding:4px 9px; border-radius:99px; background:#e9b04a; color:#1f3442; font-size:12px; letter-spacing:.08em; }
+  h2 { margin:4px 0 0; font-size:30px; line-height:1.05; }
+  .ambiance { margin:0; color:#3c4952; }
+  .nuancier { display:grid; grid-template-columns:repeat(5,1fr); gap:6px; }
+  .nuancier div { border-radius:10px; height:64px; position:relative; border:1px solid rgba(0,0,0,.06); }
+  .nuancier span { position:absolute; left:6px; bottom:5px; font:600 11px/1.1 "Barlow Semi Condensed"; letter-spacing:.02em; }
+  .typo { border-top:1px solid #ece8de; padding-top:14px; }
+  .typo .t { font-size:42px; line-height:.95; }
+  .typo .x { margin-top:8px; font-size:16px; color:#3c4952; }
+  .typo .n { font:500 12px/1.3 "Barlow Semi Condensed"; letter-spacing:.06em; text-transform:uppercase; color:#6b747b; margin-top:8px; }
+  dl { margin:0; display:grid; gap:10px; }
+  dt { font:600 12px/1.2 "Barlow Semi Condensed"; letter-spacing:.12em; text-transform:uppercase; color:#6b747b; }
+  dd { margin:2px 0 0; font-size:15px; color:#2a3740; }
+  ol { margin:4px 0 0; padding-left:20px; font-size:15px; }
+  ol li { margin:2px 0; }
+
+  /* Mini ouvertures */
+  .ouv { position:relative; height:300px; overflow:hidden; }
+  .ouv-a { background:#f7f4ec; }
+  .ouv-a .photo { position:absolute; inset:16px 52px 16px 16px; border-radius:14px; background:
+      linear-gradient(180deg, rgba(31,52,66,.10), rgba(31,52,66,.55)),
+      linear-gradient(160deg, #9fb3a6 0%, #6f8a7a 38%, #4f6b5f 60%, #c9b99a 61%, #b8a982 70%, #8f8366 100%); }
+  .ouv-a .onglets { position:absolute; right:10px; top:26px; display:flex; flex-direction:column; gap:5px; }
+  .ouv-a .onglets i { display:block; width:38px; height:22px; border-radius:0 7px 7px 0; }
+  .ouv-a .txt { position:absolute; left:36px; top:44px; right:80px; color:#fff; }
+  .ouv-a .txt small { font:500 13px Barlow; opacity:.9; }
+  .ouv-a .txt b { display:block; font:400 52px/.9 "Bebas Neue"; color:#e9b04a; }
+  .ouv-a .cherche { position:absolute; left:36px; right:80px; bottom:40px; height:46px; background:#fff; border-radius:12px; display:flex; align-items:center; padding:0 6px 0 14px; gap:10px; font-size:13px; color:#6b747b; }
+  .ouv-a .cherche em { margin-left:auto; font-style:normal; background:#1f3442; color:#fff; border-radius:9px; padding:9px 12px; font-weight:600; }
+
+  .ouv-b { background:#f4f6f5; }
+  .ouv-b .ciel { position:absolute; inset:0; background:linear-gradient(180deg,#cfe0e7 0%,#f4f6f5 70%); }
+  .ouv-b svg { position:absolute; left:0; right:0; bottom:0; width:100%; height:62%; }
+  .ouv-b .txt { position:absolute; left:26px; top:26px; right:26px; }
+  .ouv-b .txt b { display:block; font:900 50px/.88 "Big Shoulders Display"; color:#1c2a33; text-transform:uppercase; }
+  .ouv-b .txt b em { font-style:normal; color:#d97a3a; }
+  .ouv-b .rail { position:absolute; left:26px; right:26px; bottom:18px; display:flex; gap:8px; }
+  .ouv-b .rail span { flex:1; height:58px; border-radius:8px; background:#2d5f75; opacity:.85; font:600 11px "Figtree"; color:#fff; padding:6px; }
+
+  .ouv-c { background:#15222c; }
+  .ouv-c .village { position:absolute; left:0; right:0; bottom:0; height:60%; }
+  .ouv-c .txt { position:absolute; left:26px; top:28px; right:26px; color:#f5f1e8; }
+  .ouv-c .txt b { display:block; font:400 46px/.98 "DM Serif Display"; }
+  .ouv-c .txt b i { color:#f2b04a; }
+  .ouv-c .compte { position:absolute; right:22px; top:30px; font:600 12px Barlow; color:#f2b04a; letter-spacing:.1em; text-transform:uppercase; }
+  .ouv-c .cherche { position:absolute; left:26px; right:26px; bottom:22px; height:44px; background:#f5f1e8; border-radius:99px; display:flex; align-items:center; padding:0 6px 0 16px; font-size:13px; color:#6b6458; }
+  .ouv-c .cherche em { margin-left:auto; font-style:normal; background:#f2b04a; color:#15222c; border-radius:99px; padding:8px 14px; font-weight:600; }
+  footer { max-width:1500px; margin:auto; padding:0 5vw 48px; color:#5b6670; font-size:14px; }
+</style>
+</head>
+<body>
+<header class="tete">
+  <small>Réseau HMV · maquette · 20 novembre 2026</small>
+  <h1>Trois directions pour le Carnet</h1>
+  <p>Le site actuel est un carnet d'adresses : recherche par métier et par village, 12 rubriques, une carte et un formulaire gratuit pour les pros. Les trois pistes gardent cet outil au premier plan et ne changent que l'ambiance, la mise en page et le geste d'ouverture. Les petites ouvertures ci-dessous sont des schémas : la maquette utilisera les vraies photos des villages et les images Grok.</p>
+</header>
+
+<main class="grille">
+
+  <!-- A -->
+  <article class="dir">
+    <div class="ouv ouv-a" aria-hidden="true">
+      <div class="photo"></div>
+      <div class="onglets"><i style="background:#e9b04a"></i><i style="background:#315b70"></i><i style="background:#b8a982"></i><i style="background:#d9e4e8"></i><i style="background:#1f3442"></i><i style="background:#e9b04a;opacity:.6"></i><i style="background:#315b70;opacity:.6"></i></div>
+      <div class="txt"><small>Le carnet de la</small><b>Haute Maurienne Vanoise</b></div>
+      <div class="cherche">Pâtisserie, électricien, Modane… <em>Rechercher</em></div>
+    </div>
+    <div class="corps">
+      <div class="lettre">Direction A <span class="reco">Recommandée</span></div>
+      <h2>Le répertoire</h2>
+      <p class="ambiance">Le vrai carnet d'adresses de la vallée : papier crème, encre bleu nuit, onglets de couleur sur la tranche. Chaleureux, net et utile, dans la continuité de l'identité actuelle (le pictogramme du carnet, les capitales Bebas).</p>
+      <div class="nuancier">
+        <div style="background:#f7f4ec"><span>Crème<br>#F7F4EC</span></div>
+        <div style="background:#ede6d6"><span>Lin<br>#EDE6D6</span></div>
+        <div style="background:#1f3442;color:#fff"><span>Bleu nuit<br>#1F3442</span></div>
+        <div style="background:#315b70;color:#fff"><span>Pétrole<br>#315B70</span></div>
+        <div style="background:#e9b04a"><span>Moutarde<br>#E9B04A</span></div>
+      </div>
+      <div class="typo">
+        <div class="t" style="font-family:'Bebas Neue'">Une bonne <span style="color:#d39a2c">table</span>, un artisan</div>
+        <div class="x" style="font-family:Barlow">Barlow pour le texte : « Toute une vallée à portée de main, de Modane à Bonneval-sur-Arc. »</div>
+        <div class="n">Titres Bebas Neue · texte Barlow 17 px</div>
+      </div>
+      <dl>
+        <dt>Plan de l'accueil (plan « carnet »)</dt>
+        <dd><ol>
+          <li>Ouverture : le titre, la recherche métier + village, « 298 adresses locales »</li>
+          <li>« Aujourd'hui, vous cherchez… » : 4 grandes fiches du jour</li>
+          <li>Les 12 rubriques en onglets de répertoire</li>
+          <li>Les villages, de Saint-André à Bonneval-sur-Arc, en grandes photos</li>
+          <li>La carte de la vallée, points qui s'allument par rubrique</li>
+          <li>Gratuit, modéré, classement neutre : la charte en trois promesses</li>
+          <li>« Votre activité dans le carnet » : la fiche qui s'écrit en direct</li>
+          <li>Questions fréquentes, appel final</li>
+        </ol></dd>
+        <dt>L'idée qui relie</dt>
+        <dd>Les onglets du répertoire : une rangée discrète sur la tranche droite (ordinateur), qui marque la rubrique et sert de raccourci. Rien d'autre n'est décliné.</dd>
+        <dt>Animations</dt>
+        <dd>Intro : la couverture bleue du pictogramme s'ouvre comme une page et découvre l'ouverture ; fiches bristol qui se distribuent ; onglets qui sortent de la tranche ; photos des villages en volet ; compteur ; cœur des favoris qui vole jusqu'au compteur ; fiche du pro qui s'écrit pendant qu'il tape.</dd>
+        <dt>Niveau visé</dt>
+        <dd>Nolanis (beige, cartes nettes) et Cool Canyoning (capitales, outils utiles).</dd>
+      </dl>
+    </div>
+  </article>
+
+  <!-- B -->
+  <article class="dir">
+    <div class="ouv ouv-b" aria-hidden="true">
+      <div class="ciel"></div>
+      <svg viewBox="0 0 400 180" preserveAspectRatio="none"><path d="M0 120 L40 80 L70 100 L110 40 L150 95 L190 60 L230 110 L270 30 L310 90 L350 55 L400 100 L400 180 L0 180Z" fill="#9fb6c0"/><path d="M0 140 L50 110 L95 130 L140 90 L190 125 L240 95 L290 130 L340 105 L400 130 L400 180 L0 180Z" fill="#2d5f75"/></svg>
+      <div class="txt"><b>De Saint-André<br>à <em>Bonneval</em></b></div>
+      <div class="rail"><span>Modane</span><span>Aussois</span><span>Val Cenis</span><span>Bessans</span></div>
+    </div>
+    <div class="corps">
+      <div class="lettre">Direction B</div>
+      <h2>La vallée en panorama</h2>
+      <p class="ambiance">Lumineuse et alpine, neige et ciel : on remonte la vallée village par village, chaque village avec ses adresses. Les photos des villages en très grand, des capitales condensées franches.</p>
+      <div class="nuancier">
+        <div style="background:#f4f6f5"><span>Neige<br>#F4F6F5</span></div>
+        <div style="background:#dce8ec"><span>Glacier<br>#DCE8EC</span></div>
+        <div style="background:#1c2a33;color:#fff"><span>Ardoise<br>#1C2A33</span></div>
+        <div style="background:#2d5f75;color:#fff"><span>Vanoise<br>#2D5F75</span></div>
+        <div style="background:#d97a3a"><span>Mélèze<br>#D97A3A</span></div>
+      </div>
+      <div class="typo">
+        <div class="t" style="font-family:'Big Shoulders Display';font-weight:900;text-transform:uppercase">Un artisan à <span style="color:#d97a3a">Bessans</span></div>
+        <div class="x" style="font-family:Figtree">Figtree pour le texte : « Toute une vallée à portée de main, de Modane à Bonneval-sur-Arc. »</div>
+        <div class="n">Titres Big Shoulders Display · texte Figtree 17 px</div>
+      </div>
+      <dl>
+        <dt>Plan de l'accueil (plan « parcours horizontal »)</dt>
+        <dd><ol>
+          <li>Ouverture plein cadre sur un village, titre et recherche</li>
+          <li>Le panorama épinglé : six secteurs, photo en grand, nombre d'adresses, rubriques fortes</li>
+          <li>Les 12 rubriques en grille d'icônes</li>
+          <li>Les fiches du jour</li>
+          <li>La charte en trois promesses</li>
+          <li>Référencer son activité, questions, appel final</li>
+        </ol></dd>
+        <dt>L'idée qui relie</dt>
+        <dd>La ligne de crête qui défile lentement derrière les villages. Pas de tracé de route (déjà vu sur la dernière maquette).</dd>
+        <dt>Animations</dt>
+        <dd>Intro : les sommets se découpent un à un puis le titre se pose ; défilement horizontal des villages ; crête en parallaxe ; photos qui se découvrent ; compteurs.</dd>
+        <dt>Niveau visé</dt>
+        <dd>Tiki Cassis (photos du pays en grand) et Fit-Tri (capitales condensées, un seul système).</dd>
+      </dl>
+    </div>
+  </article>
+
+  <!-- C -->
+  <article class="dir">
+    <div class="ouv ouv-c" aria-hidden="true">
+      <svg class="village" viewBox="0 0 400 180" preserveAspectRatio="none">
+        <path d="M0 70 L60 30 L120 75 L190 20 L260 70 L330 35 L400 80 L400 180 L0 180Z" fill="#1d2f3b"/>
+        <path d="M30 180 V120 L60 100 L90 120 V180Z M110 180 V110 L150 85 L190 110 V180Z M220 180 V125 L250 105 L280 125 V180Z M300 180 V115 L335 95 L370 115 V180Z" fill="#0f1a22"/>
+        <g fill="#f2b04a"><rect x="48" y="132" width="8" height="10"/><rect x="66" y="150" width="8" height="10"/><rect x="128" y="125" width="8" height="10"/><rect x="160" y="140" width="8" height="10" opacity=".5"/><rect x="240" y="138" width="8" height="10"/><rect x="318" y="128" width="8" height="10"/><rect x="342" y="148" width="8" height="10" opacity=".6"/></g>
+      </svg>
+      <div class="compte">298 adresses</div>
+      <div class="txt"><b>Chaque lumière,<br><i>une adresse</i></b></div>
+      <div class="cherche">Un métier, un village… <em>Chercher</em></div>
+    </div>
+    <div class="corps">
+      <div class="lettre">Direction C</div>
+      <h2>Les fenêtres qui s'allument</h2>
+      <p class="ambiance">La vallée au crépuscule, quand les villages s'allument : chaque fenêtre est une adresse. Une ouverture sombre et émouvante, puis tout le carnet en clair, sur un papier de lin.</p>
+      <div class="nuancier">
+        <div style="background:#f5f1e8"><span>Lin<br>#F5F1E8</span></div>
+        <div style="background:#e8e1d2"><span>Pierre<br>#E8E1D2</span></div>
+        <div style="background:#15222c;color:#fff"><span>Nuit<br>#15222C</span></div>
+        <div style="background:#2f4a3a;color:#fff"><span>Sapin<br>#2F4A3A</span></div>
+        <div style="background:#f2b04a"><span>Ambre<br>#F2B04A</span></div>
+      </div>
+      <div class="typo">
+        <div class="t" style="font-family:'DM Serif Display'">Une bonne table, <i style="color:#c98a1c">ce soir</i></div>
+        <div class="x" style="font-family:Barlow">Barlow pour le texte : « Toute une vallée à portée de main, de Modane à Bonneval-sur-Arc. »</div>
+        <div class="n">Titres DM Serif Display · texte Barlow 17 px</div>
+      </div>
+      <dl>
+        <dt>Plan de l'accueil (plan « outil d'abord »)</dt>
+        <dd><ol>
+          <li>Ouverture sombre : le village au crépuscule (illustration), la recherche</li>
+          <li>Passage en clair : rubriques et résultats directement sur l'accueil</li>
+          <li>Les fiches du jour</li>
+          <li>Les villages en photos</li>
+          <li>La charte, référencer son activité</li>
+          <li>Appel final de nuit, pied</li>
+        </ol></dd>
+        <dt>L'idée qui relie</dt>
+        <dd>La lumière chaude des fenêtres : elle ne revient qu'à l'ouverture et à l'appel final.</dd>
+        <dt>Animations</dt>
+        <dd>Intro : les fenêtres s'allument une à une pendant que le compteur monte à 298 ; halo doux sous le pointeur ; bascule nuit vers jour au défilement ; fiches qui se posent.</dd>
+        <dt>Niveau visé</dt>
+        <dd>Ice Attitude (un beau moment à l'ouverture) et Château Haut-Piquat (clair et sombre alternés).</dd>
+      </dl>
+    </div>
+  </article>
+
+</main>
+<footer>Dans les trois cas : contenu réel uniquement (relevé du site), fiches reprises du Carnet dès qu'il répond de nouveau, photos des villages Wikimedia Commons avec leurs crédits, images Grok marquées « Illustration générée ».</footer>
+</body>
+</html>

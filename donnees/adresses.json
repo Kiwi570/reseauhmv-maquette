@@ -1,0 +1,22 @@
+[
+  { "id": "antalya", "reel": true, "nom": "L'Antalya", "rubrique": "restaurants", "activite": "Restaurant", "village": "Modane" },
+  { "id": "traiteur-des-cimes", "reel": true, "nom": "Traiteur des Cimes", "rubrique": "restaurants", "activite": "Traiteur", "village": "Lanslebourg-Mont-Cenis" },
+  { "id": "samse-modane", "reel": true, "nom": "Samse Modane", "rubrique": "commerces", "activite": "Commerce", "village": "Modane" },
+  { "id": "sherpa-bessans", "reel": true, "nom": "Sherpa Supermarché Bessans", "rubrique": "commerces", "activite": "Alimentation", "village": "Bessans" },
+  { "id": "ex-boulangerie", "activite": "Boulangerie-pâtisserie", "rubrique": "commerces", "village": "Lanslebourg-Mont-Cenis" },
+  { "id": "ex-cafe", "activite": "Bar et café", "rubrique": "bars-cafes", "village": "Aussois" },
+  { "id": "ex-gite", "activite": "Gîte", "rubrique": "hebergements", "village": "Bessans" },
+  { "id": "ex-chambres", "activite": "Chambre d'hôtes", "rubrique": "hebergements", "village": "Bramans" },
+  { "id": "ex-electricien", "activite": "Électricité", "rubrique": "artisans", "village": "Modane" },
+  { "id": "ex-menuiserie", "activite": "Menuiserie", "rubrique": "artisans", "village": "Avrieux" },
+  { "id": "ex-deneigement", "activite": "Entretien et déneigement", "rubrique": "artisans", "village": "Termignon" },
+  { "id": "ex-guide", "activite": "Guide et accompagnement", "rubrique": "activites", "village": "Bonneval-sur-Arc" },
+  { "id": "ex-location", "activite": "Location de matériel", "rubrique": "commerces", "village": "La Norma" },
+  { "id": "ex-massage", "activite": "Massage", "rubrique": "bien-etre", "village": "Villarodin-Bourget" },
+  { "id": "ex-immobilier", "activite": "Agence immobilière", "rubrique": "immobilier", "village": "Modane" },
+  { "id": "ex-producteur", "activite": "Producteur local", "rubrique": "producteurs", "village": "Sollières-Sardières" },
+  { "id": "ex-association", "activite": "Association", "rubrique": "associations", "village": "Saint-André" },
+  { "id": "ex-coach", "activite": "Coaching sportif", "rubrique": "sport", "village": "Valfréjus" },
+  { "id": "ex-conciergerie", "activite": "Conciergerie", "rubrique": "services", "village": "Lanslevillard" },
+  { "id": "ex-navette", "activite": "Taxi et navette", "rubrique": "services", "village": "Fourneaux" }
+]

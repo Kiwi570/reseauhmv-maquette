@@ -1,0 +1,13 @@
+{
+ "id": "20261120-172959-standard",
+ "date": "2026-11-20T17:48:19.743Z",
+ "niveau": "standard",
+ "pages": "toutes",
+ "etapes": "toutes",
+ "version": "1",
+ "echecs": 10,
+ "aRegarder": 45,
+ "nonLances": 1,
+ "manquants": 0,
+ "statut": "échecs"
+}

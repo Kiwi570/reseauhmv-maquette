@@ -1,0 +1,921 @@
+{
+  "dossier": "/home/claude/reseauhmv-maquette/recu/grok",
+  "date": "2026-11-20T17:00:36.477Z",
+  "detection": "mesures sharp seulement",
+  "planches": [
+    "planche.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [],
+  "images": [
+    {
+      "fichier": "appel-soir-mobile.png",
+      "nom": "appel-soir-mobile",
+      "drapeau": null,
+      "largeur": 1176,
+      "hauteur": 1752,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 4229293,
+      "transparence": false,
+      "sujet": {
+        "x": 9.1,
+        "y": 53.1,
+        "l": 77.3,
+        "h": 40.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        74
+      ],
+      "cadrage_css": "50% 74%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.92,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.42,
+          "ton": "sombre",
+          "recouvre_sujet": 0.31
+        },
+        {
+          "cote": "droite",
+          "score": 0.41,
+          "ton": "sombre",
+          "recouvre_sujet": 0.27
+        },
+        {
+          "cote": "bas",
+          "score": 0.07,
+          "ton": "sombre",
+          "recouvre_sujet": 0.63
+        }
+      ],
+      "qualite": {
+        "nettete": 28.5,
+        "bruit": 0.82,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1176 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "c080b0407cf4928e",
+      "drapeaux": [
+        "petite",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "appel-soir.png",
+      "nom": "appel-soir",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 2641565,
+      "transparence": false,
+      "sujet": {
+        "x": 18.8,
+        "y": 50,
+        "l": 78.1,
+        "h": 45.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        61,
+        73
+      ],
+      "cadrage_css": "61% 73%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.96,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.66,
+          "ton": "sombre",
+          "recouvre_sujet": 0.24
+        },
+        {
+          "cote": "droite",
+          "score": 0.43,
+          "ton": "sombre",
+          "recouvre_sujet": 0.42
+        },
+        {
+          "cote": "bas",
+          "score": 0.13,
+          "ton": "sombre",
+          "recouvre_sujet": 0.68
+        }
+      ],
+      "qualite": {
+        "nettete": 35,
+        "bruit": 0.74,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "000000072cf4d632",
+      "drapeaux": [
+        "calme haut/gauche"
+      ]
+    },
+    {
+      "fichier": "carnet-toits.png",
+      "nom": "carnet-toits",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 4628716,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        56
+      ],
+      "cadrage_css": "46% 56%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 57.3,
+        "bruit": 1.43,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "c48592b2f7e64932",
+      "drapeaux": []
+    },
+    {
+      "fichier": "contact-carnet.png",
+      "nom": "contact-carnet",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 3650632,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        48
+      ],
+      "cadrage_css": "48% 48%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.05,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 33.2,
+        "bruit": 0.71,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "755d716b71b1b197",
+      "drapeaux": []
+    },
+    {
+      "fichier": "ouverture-vallee-mobile.png",
+      "nom": "ouverture-vallee-mobile",
+      "drapeau": null,
+      "largeur": 1176,
+      "hauteur": 1752,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 3606969,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 34.4,
+        "l": 95.5,
+        "h": 62.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        53
+      ],
+      "cadrage_css": "45% 53%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.83,
+          "ton": "sombre",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "gauche",
+          "score": 0.21,
+          "ton": "sombre",
+          "recouvre_sujet": 0.63
+        },
+        {
+          "cote": "droite",
+          "score": 0.21,
+          "ton": "sombre",
+          "recouvre_sujet": 0.55
+        },
+        {
+          "cote": "bas",
+          "score": 0.01,
+          "ton": "sombre",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 45.7,
+        "bruit": 0.99,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1176 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "000004d1f8e1e4dc",
+      "drapeaux": [
+        "petite",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "ouverture-vallee.png",
+      "nom": "ouverture-vallee",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 3019751,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 27.3,
+        "l": 100,
+        "h": 68.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        63
+      ],
+      "cadrage_css": "48% 63%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.77,
+          "ton": "moyen",
+          "recouvre_sujet": 0.22
+        },
+        {
+          "cote": "gauche",
+          "score": 0.18,
+          "ton": "moyen",
+          "recouvre_sujet": 0.68
+        },
+        {
+          "cote": "droite",
+          "score": 0.04,
+          "ton": "moyen",
+          "recouvre_sujet": 0.68
+        },
+        {
+          "cote": "bas",
+          "score": 0.01,
+          "ton": "sombre",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 45,
+        "bruit": 0.98,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "00000001c8c89ce1",
+      "drapeaux": [
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "page-404.png",
+      "nom": "page-404",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 3626108,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 13.6,
+        "l": 100,
+        "h": 81.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        56
+      ],
+      "cadrage_css": "47% 56%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.64,
+          "ton": "clair",
+          "recouvre_sujet": 0.61
+        },
+        {
+          "cote": "gauche",
+          "score": 0.15,
+          "ton": "clair",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 47.9,
+        "bruit": 1.1,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "000000a4e4dcd6f3",
+      "drapeaux": []
+    },
+    {
+      "fichier": "referencer-atelier.png",
+      "nom": "referencer-atelier",
+      "drapeau": null,
+      "largeur": 1340,
+      "hauteur": 1996,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 4389088,
+      "transparence": false,
+      "sujet": {
+        "x": 9.1,
+        "y": 46.9,
+        "l": 86.4,
+        "h": 50,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        62,
+        78
+      ],
+      "cadrage_css": "62% 78%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.93,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.49,
+          "ton": "sombre",
+          "recouvre_sujet": 0.39
+        },
+        {
+          "cote": "droite",
+          "score": 0.31,
+          "ton": "sombre",
+          "recouvre_sujet": 0.44
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.79
+        }
+      ],
+      "qualite": {
+        "nettete": 22.2,
+        "bruit": 0.49,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "e0f0c0c979b5e766",
+      "drapeaux": [
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "rubrique-activite.png",
+      "nom": "rubrique-activite",
+      "drapeau": null,
+      "largeur": 1176,
+      "hauteur": 1752,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 4123863,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 31.3,
+        "l": 95.5,
+        "h": 56.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        57
+      ],
+      "cadrage_css": "49% 57%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.78,
+          "ton": "sombre",
+          "recouvre_sujet": 0.1
+        },
+        {
+          "cote": "gauche",
+          "score": 0.22,
+          "ton": "moyen",
+          "recouvre_sujet": 0.56
+        },
+        {
+          "cote": "droite",
+          "score": 0.21,
+          "ton": "sombre",
+          "recouvre_sujet": 0.5
+        },
+        {
+          "cote": "bas",
+          "score": 0.06,
+          "ton": "moyen",
+          "recouvre_sujet": 0.62
+        }
+      ],
+      "qualite": {
+        "nettete": 42.5,
+        "bruit": 1.04,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1176 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "000600e10048aded",
+      "drapeaux": [
+        "petite",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "rubrique-artisan.png",
+      "nom": "rubrique-artisan",
+      "drapeau": null,
+      "largeur": 1176,
+      "hauteur": 1752,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 4795909,
+      "transparence": false,
+      "sujet": {
+        "x": 13.6,
+        "y": 0,
+        "l": 81.8,
+        "h": 75,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        64,
+        43
+      ],
+      "cadrage_css": "64% 43%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.32,
+          "ton": "sombre",
+          "recouvre_sujet": 0.23
+        },
+        {
+          "cote": "gauche",
+          "score": 0.15,
+          "ton": "sombre",
+          "recouvre_sujet": 0.5
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.66
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.82
+        }
+      ],
+      "qualite": {
+        "nettete": 42.9,
+        "bruit": 0.94,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1176 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "975d5698f2e0e079",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "rubrique-bienetre.png",
+      "nom": "rubrique-bienetre",
+      "drapeau": null,
+      "largeur": 1176,
+      "hauteur": 1752,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 4271603,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 90.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        41
+      ],
+      "cadrage_css": "47% 41%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.22,
+          "ton": "sombre",
+          "recouvre_sujet": 0.7
+        },
+        {
+          "cote": "gauche",
+          "score": 0.1,
+          "ton": "sombre",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "droite",
+          "score": 0.06,
+          "ton": "moyen",
+          "recouvre_sujet": 0.8
+        },
+        {
+          "cote": "haut",
+          "score": 0.06,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 30.4,
+        "bruit": 0.78,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1176 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "9f9f97d6f8937cfe",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "rubrique-commerce.png",
+      "nom": "rubrique-commerce",
+      "drapeau": null,
+      "largeur": 1176,
+      "hauteur": 1752,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 4012528,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 95.5,
+        "h": 81.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        28,
+        49
+      ],
+      "cadrage_css": "28% 49%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.15,
+          "ton": "sombre",
+          "recouvre_sujet": 0.53
+        },
+        {
+          "cote": "haut",
+          "score": 0.12,
+          "ton": "sombre",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "droite",
+          "score": 0.07,
+          "ton": "sombre",
+          "recouvre_sujet": 0.72
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.81
+        }
+      ],
+      "qualite": {
+        "nettete": 33.4,
+        "bruit": 0.61,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1176 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "19190c0cc12d3cc0",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "rubrique-hebergement.png",
+      "nom": "rubrique-hebergement",
+      "drapeau": null,
+      "largeur": 1176,
+      "hauteur": 1752,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 4943703,
+      "transparence": false,
+      "sujet": {
+        "x": 9.1,
+        "y": 18.8,
+        "l": 86.4,
+        "h": 62.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        50
+      ],
+      "cadrage_css": "48% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.31,
+          "ton": "sombre",
+          "recouvre_sujet": 0.4
+        },
+        {
+          "cote": "bas",
+          "score": 0.15,
+          "ton": "sombre",
+          "recouvre_sujet": 0.4
+        },
+        {
+          "cote": "droite",
+          "score": 0.09,
+          "ton": "sombre",
+          "recouvre_sujet": 0.55
+        },
+        {
+          "cote": "gauche",
+          "score": 0.08,
+          "ton": "sombre",
+          "recouvre_sujet": 0.48
+        }
+      ],
+      "qualite": {
+        "nettete": 30.4,
+        "bruit": 0.91,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1176 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "e08e8e8cf8f4e3e4",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "rubrique-table.png",
+      "nom": "rubrique-table",
+      "drapeau": null,
+      "largeur": 1176,
+      "hauteur": 1752,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 4434604,
+      "transparence": false,
+      "sujet": {
+        "x": 4.5,
+        "y": 0,
+        "l": 90.9,
+        "h": 87.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        64,
+        33
+      ],
+      "cadrage_css": "64% 33%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.17,
+          "ton": "sombre",
+          "recouvre_sujet": 0.78
+        },
+        {
+          "cote": "bas",
+          "score": 0.05,
+          "ton": "sombre",
+          "recouvre_sujet": 0.58
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.77
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 39.6,
+        "bruit": 0.76,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1176 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "64646460e467f3e0",
+      "drapeaux": [
+        "petite"
+      ]
+    }
+  ]
+}

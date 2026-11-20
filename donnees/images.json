@@ -1,0 +1,1321 @@
+{
+  "grok/ouverture-vallee": {
+    "nom": "grok/ouverture-vallee",
+    "source": "recu/grok/ouverture-vallee.png",
+    "role": "ouverture",
+    "alt": "Vallée de haute montagne au début de l'hiver, un village de pierre au pied des pentes enneigées",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "c7edce39f7380cac",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 53%"
+    },
+    "cadrage": "66% 55%",
+    "sujet": {
+      "x": 0,
+      "y": 13.2,
+      "l": 100,
+      "h": 81.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.77,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.04,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.01,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 174,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/ouverture-vallee-640.webp",
+      "grok/ouverture-vallee-1280.webp",
+      "grok/ouverture-vallee-1920.webp",
+      "grok/ouverture-vallee-mobile-640.webp",
+      "grok/ouverture-vallee-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/ouverture-vallee-640.webp": 41986,
+      "grok/ouverture-vallee-1280.webp": 120836,
+      "grok/ouverture-vallee-1920.webp": 189800,
+      "grok/ouverture-vallee-mobile-640.webp": 99592,
+      "grok/ouverture-vallee-mobile-1080.webp": 182866
+    },
+    "media": "c.media({ nom: 'grok/ouverture-vallee', alt: \"Vallée de haute montagne au début de l'hiver, un village de pierre au pied des pentes enneigées\", cadrage: '66% 55%', cadrageMobile: '50% 53%', sizes: '100vw', priorite: true })"
+  },
+  "grok/rubrique-table": {
+    "nom": "grok/rubrique-table",
+    "source": "recu/grok/rubrique-table.png",
+    "role": "carte-service",
+    "alt": "Table de bois dressée dans un chalet, pain, fromage de montagne et charcuterie, neige derrière la fenêtre",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "5687a92331d41e85",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 4.5,
+      "y": 0,
+      "l": 90.9,
+      "h": 88.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.17,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.05,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 229,
+      "width": 1176,
+      "height": 1470,
+      "source": [
+        1176,
+        1752
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1176 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/rubrique-table-480.webp",
+      "grok/rubrique-table-640.webp",
+      "grok/rubrique-table-784.webp"
+    ],
+    "poids": {
+      "grok/rubrique-table-480.webp": 44116,
+      "grok/rubrique-table-640.webp": 66724,
+      "grok/rubrique-table-784.webp": 88314
+    },
+    "media": "c.media({ nom: 'grok/rubrique-table', alt: \"Table de bois dressée dans un chalet, pain, fromage de montagne et charcuterie, neige derrière la fenêtre\", sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/rubrique-commerce": {
+    "nom": "grok/rubrique-commerce",
+    "source": "recu/grok/rubrique-commerce.png",
+    "role": "carte-service",
+    "alt": "Comptoir d'une petite épicerie de village, paniers et étagères en bois",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "ac4ee558d10ba44f",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 68%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 96.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.15,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.12,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.07,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 54,
+      "width": 1176,
+      "height": 1470,
+      "source": [
+        1176,
+        1752
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1176 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/rubrique-commerce-480.webp",
+      "grok/rubrique-commerce-640.webp",
+      "grok/rubrique-commerce-784.webp"
+    ],
+    "poids": {
+      "grok/rubrique-commerce-480.webp": 33800,
+      "grok/rubrique-commerce-640.webp": 50686,
+      "grok/rubrique-commerce-784.webp": 65360
+    },
+    "media": "c.media({ nom: 'grok/rubrique-commerce', alt: \"Comptoir d'une petite épicerie de village, paniers et étagères en bois\", cadrage: '50% 68%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/rubrique-artisan": {
+    "nom": "grok/rubrique-artisan",
+    "source": "recu/grok/rubrique-artisan.png",
+    "role": "carte-service",
+    "alt": "Établi de menuisier dans un atelier de montagne, planches de mélèze et outils",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "23682b5e3f2d85ba",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "55% 66%",
+    "sujet": {
+      "x": 13.6,
+      "y": 0,
+      "l": 81.8,
+      "h": 89.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.32,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.15,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1176,
+      "height": 1470,
+      "source": [
+        1176,
+        1752
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1176 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/rubrique-artisan-480.webp",
+      "grok/rubrique-artisan-640.webp",
+      "grok/rubrique-artisan-784.webp"
+    ],
+    "poids": {
+      "grok/rubrique-artisan-480.webp": 52414,
+      "grok/rubrique-artisan-640.webp": 81478,
+      "grok/rubrique-artisan-784.webp": 106824
+    },
+    "media": "c.media({ nom: 'grok/rubrique-artisan', alt: \"Établi de menuisier dans un atelier de montagne, planches de mélèze et outils\", cadrage: '55% 66%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/rubrique-hebergement": {
+    "nom": "grok/rubrique-hebergement",
+    "source": "recu/grok/rubrique-hebergement.png",
+    "role": "carte-service",
+    "alt": "Chambre de chalet, couverture de laine et fenêtre ouverte sur les sommets enneigés",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "4ab78ca0a37d7ee0",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 52%",
+    "sujet": {
+      "x": 9.1,
+      "y": 3.2,
+      "l": 86.4,
+      "h": 74.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.31,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.15,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.09,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.08,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 282,
+      "width": 1176,
+      "height": 1470,
+      "source": [
+        1176,
+        1752
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1176 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/rubrique-hebergement-480.webp",
+      "grok/rubrique-hebergement-640.webp",
+      "grok/rubrique-hebergement-784.webp"
+    ],
+    "poids": {
+      "grok/rubrique-hebergement-480.webp": 51570,
+      "grok/rubrique-hebergement-640.webp": 82556,
+      "grok/rubrique-hebergement-784.webp": 109878
+    },
+    "media": "c.media({ nom: 'grok/rubrique-hebergement', alt: \"Chambre de chalet, couverture de laine et fenêtre ouverte sur les sommets enneigés\", cadrage: '50% 52%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/rubrique-activite": {
+    "nom": "grok/rubrique-activite",
+    "source": "recu/grok/rubrique-activite.png",
+    "role": "carte-service",
+    "alt": "Traces de raquettes sur un plateau enneigé bordé de mélèzes, deux marcheurs de dos au loin",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "364e6513d8a87b88",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 21.7,
+      "l": 95.5,
+      "h": 67.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.78,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.21,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.06,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 229,
+      "width": 1176,
+      "height": 1470,
+      "source": [
+        1176,
+        1752
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1176 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/rubrique-activite-480.webp",
+      "grok/rubrique-activite-640.webp",
+      "grok/rubrique-activite-784.webp"
+    ],
+    "poids": {
+      "grok/rubrique-activite-480.webp": 51240,
+      "grok/rubrique-activite-640.webp": 83506,
+      "grok/rubrique-activite-784.webp": 112286
+    },
+    "media": "c.media({ nom: 'grok/rubrique-activite', alt: \"Traces de raquettes sur un plateau enneigé bordé de mélèzes, deux marcheurs de dos au loin\", sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/rubrique-bienetre": {
+    "nom": "grok/rubrique-bienetre",
+    "source": "recu/grok/rubrique-bienetre.png",
+    "role": "carte-service",
+    "alt": "Tapis de yoga et plaid de laine près d'une grande fenêtre ouverte sur la montagne",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "0879b3c03b5efbb4",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 92.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.22,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.1,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.06,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 229,
+      "width": 1176,
+      "height": 1470,
+      "source": [
+        1176,
+        1752
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1176 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/rubrique-bienetre-480.webp",
+      "grok/rubrique-bienetre-640.webp",
+      "grok/rubrique-bienetre-784.webp"
+    ],
+    "poids": {
+      "grok/rubrique-bienetre-480.webp": 38536,
+      "grok/rubrique-bienetre-640.webp": 60996,
+      "grok/rubrique-bienetre-784.webp": 81320
+    },
+    "media": "c.media({ nom: 'grok/rubrique-bienetre', alt: \"Tapis de yoga et plaid de laine près d'une grande fenêtre ouverte sur la montagne\", sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/appel-soir": {
+    "nom": "grok/appel-soir",
+    "source": "recu/grok/appel-soir.png",
+    "role": "section-fond",
+    "alt": "Village de montagne à l'heure bleue, fenêtres éclairées dans la neige",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "d34d681f353e4bd5",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 74%"
+    },
+    "cadrage": "55% 65%",
+    "sujet": {
+      "x": 18.8,
+      "y": 45.7,
+      "l": 78.1,
+      "h": 54.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.96,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.66,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.43,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.13,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "haut",
+    "recadrage": {
+      "left": 0,
+      "top": 126,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/appel-soir-640.webp",
+      "grok/appel-soir-1280.webp",
+      "grok/appel-soir-1920.webp",
+      "grok/appel-soir-mobile-640.webp",
+      "grok/appel-soir-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/appel-soir-640.webp": 26392,
+      "grok/appel-soir-1280.webp": 74062,
+      "grok/appel-soir-1920.webp": 120318,
+      "grok/appel-soir-mobile-640.webp": 82050,
+      "grok/appel-soir-mobile-1080.webp": 166066
+    },
+    "media": "c.media({ nom: 'grok/appel-soir', alt: \"Village de montagne à l'heure bleue, fenêtres éclairées dans la neige\", cadrage: '55% 65%', cadrageMobile: '50% 74%', sizes: '100vw' })"
+  },
+  "grok/carnet-toits": {
+    "nom": "grok/carnet-toits",
+    "source": "recu/grok/carnet-toits.png",
+    "role": "ouverture",
+    "alt": "Toits de lauze enneigés d'un village de montagne vus d'en haut",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "6510d09cdb23cc67",
+    "ratio": "21:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 194,
+      "width": 1600,
+      "height": 686,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/carnet-toits-640.webp",
+      "grok/carnet-toits-1280.webp",
+      "grok/carnet-toits-1920.webp"
+    ],
+    "poids": {
+      "grok/carnet-toits-640.webp": 57000,
+      "grok/carnet-toits-1280.webp": 162392,
+      "grok/carnet-toits-1920.webp": 255604
+    },
+    "media": "c.media({ nom: 'grok/carnet-toits', alt: \"Toits de lauze enneigés d'un village de montagne vus d'en haut\", sizes: '100vw', priorite: true })"
+  },
+  "grok/referencer-atelier": {
+    "nom": "grok/referencer-atelier",
+    "source": "recu/grok/referencer-atelier.png",
+    "role": "ouverture",
+    "alt": "Porte ouverte d'un petit atelier de bois au crépuscule, lumière chaude sur la neige",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "faedb95173924593",
+    "ratio": "4:5",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": null,
+    "cadrage": "55% 50%",
+    "sujet": {
+      "x": 9.1,
+      "y": 36.8,
+      "l": 86.4,
+      "h": 59.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.93,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.49,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.31,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 320,
+      "width": 1340,
+      "height": 1675,
+      "source": [
+        1340,
+        1996
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,43 fois (source de 1340 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/referencer-atelier-640.webp",
+      "grok/referencer-atelier-1280.webp",
+      "grok/referencer-atelier-1920.webp"
+    ],
+    "poids": {
+      "grok/referencer-atelier-640.webp": 52658,
+      "grok/referencer-atelier-1280.webp": 126528,
+      "grok/referencer-atelier-1920.webp": 205908
+    },
+    "media": "c.media({ nom: 'grok/referencer-atelier', alt: \"Porte ouverte d'un petit atelier de bois au crépuscule, lumière chaude sur la neige\", cadrage: '55% 50%', sizes: '100vw', priorite: true })"
+  },
+  "grok/contact-carnet": {
+    "nom": "grok/contact-carnet",
+    "source": "recu/grok/contact-carnet.png",
+    "role": "ouverture",
+    "alt": "Carnet à spirale ouvert et crayon sur une table en mélèze, montagne enneigée par la fenêtre",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "62fa2d5b58b62a5d",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": null,
+    "cadrage": "45% 62%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.05,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 1067,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/contact-carnet-640.webp",
+      "grok/contact-carnet-1280.webp",
+      "grok/contact-carnet-1920.webp"
+    ],
+    "poids": {
+      "grok/contact-carnet-640.webp": 33142,
+      "grok/contact-carnet-1280.webp": 95174,
+      "grok/contact-carnet-1920.webp": 151338
+    },
+    "media": "c.media({ nom: 'grok/contact-carnet', alt: \"Carnet à spirale ouvert et crayon sur une table en mélèze, montagne enneigée par la fenêtre\", cadrage: '45% 62%', sizes: '100vw', priorite: true })"
+  },
+  "grok/page-404": {
+    "nom": "grok/page-404",
+    "source": "recu/grok/page-404.png",
+    "role": "404",
+    "alt": "Poteau indicateur aux bras vierges dans la neige, au croisement de deux sentiers de montagne",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "6ebcf715b8c59c71",
+    "ratio": "16:9",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "60% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0.6,
+      "l": 100,
+      "h": 97.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.64,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.15,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 141,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/page-404-800.webp",
+      "grok/page-404-1600.webp"
+    ],
+    "poids": {
+      "grok/page-404-800.webp": 66464,
+      "grok/page-404-1600.webp": 180092
+    },
+    "media": "c.media({ nom: 'grok/page-404', alt: \"Poteau indicateur aux bras vierges dans la neige, au croisement de deux sentiers de montagne\", cadrage: '60% 50%', sizes: '100vw', ratio: '16 / 9' })"
+  },
+  "village-bonneval-sur-arc": {
+    "nom": "village-bonneval-sur-arc",
+    "source": "recu/villages/bonneval-sur-arc.jpg",
+    "role": "galerie",
+    "alt": "Bonneval-sur-Arc en été : le village aux toits de lauze au pied des montagnes",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "a31cc6fa77f86a6d",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 62%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.16,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.14,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.01,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 9,
+      "top": 0,
+      "width": 3168,
+      "height": 2376,
+      "source": [
+        3186,
+        2376
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "village-bonneval-sur-arc-480.webp",
+      "village-bonneval-sur-arc-640.webp",
+      "village-bonneval-sur-arc-960.webp"
+    ],
+    "poids": {
+      "village-bonneval-sur-arc-480.webp": 41528,
+      "village-bonneval-sur-arc-640.webp": 75106,
+      "village-bonneval-sur-arc-960.webp": 174576
+    },
+    "media": "c.media({ nom: 'village-bonneval-sur-arc', alt: \"Bonneval-sur-Arc en été : le village aux toits de lauze au pied des montagnes\", cadrage: '50% 62%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "village-bessans": {
+    "nom": "village-bessans",
+    "source": "recu/villages/bessans.jpg",
+    "role": "galerie",
+    "alt": "Bessans vu de la chapelle Saint-Antoine, en été",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "e8b6c14d264f4634",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "55% 60%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.3,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 3264,
+      "height": 2448,
+      "source": [
+        3264,
+        2448
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "village-bessans-480.webp",
+      "village-bessans-640.webp",
+      "village-bessans-960.webp"
+    ],
+    "poids": {
+      "village-bessans-480.webp": 41896,
+      "village-bessans-640.webp": 72386,
+      "village-bessans-960.webp": 160518
+    },
+    "media": "c.media({ nom: 'village-bessans', alt: \"Bessans vu de la chapelle Saint-Antoine, en été\", cadrage: '55% 60%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "village-modane": {
+    "nom": "village-modane",
+    "source": "recu/villages/modane.jpg",
+    "role": "galerie",
+    "alt": "Modane vue des hauteurs en automne, sommets enneigés au fond",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "ae3b55a7c8520170",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 58%",
+    "sujet": {
+      "x": 0,
+      "y": 8.3,
+      "l": 100,
+      "h": 91.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.39,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 3840,
+      "height": 2880,
+      "source": [
+        3840,
+        2880
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "village-modane-480.webp",
+      "village-modane-640.webp",
+      "village-modane-960.webp"
+    ],
+    "poids": {
+      "village-modane-480.webp": 34522,
+      "village-modane-640.webp": 56146,
+      "village-modane-960.webp": 112948
+    },
+    "media": "c.media({ nom: 'village-modane', alt: \"Modane vue des hauteurs en automne, sommets enneigés au fond\", cadrage: '50% 58%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "village-aussois": {
+    "nom": "village-aussois",
+    "source": "recu/villages/aussois.jpg",
+    "role": "galerie",
+    "alt": "Aussois et son plateau vus d'en haut",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "dfcdbfa90ee3735e",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 32,
+      "top": 0,
+      "width": 2817,
+      "height": 2113,
+      "source": [
+        2880,
+        2113
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "village-aussois-480.webp",
+      "village-aussois-640.webp",
+      "village-aussois-960.webp"
+    ],
+    "poids": {
+      "village-aussois-480.webp": 51356,
+      "village-aussois-640.webp": 83968,
+      "village-aussois-960.webp": 165868
+    },
+    "media": "c.media({ nom: 'village-aussois', alt: \"Aussois et son plateau vus d'en haut\", sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "village-la-norma": {
+    "nom": "village-la-norma",
+    "source": "recu/villages/la-norma.jpg",
+    "role": "galerie",
+    "alt": "Le village de la station de La Norma sous la neige",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "5716ed29af5ac079",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "54% 55%",
+    "sujet": {
+      "x": 1.8,
+      "y": 29.2,
+      "l": 98.2,
+      "h": 62.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.82,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.04,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 27,
+      "top": 0,
+      "width": 1987,
+      "height": 1490,
+      "source": [
+        2014,
+        1490
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "village-la-norma-480.webp",
+      "village-la-norma-640.webp",
+      "village-la-norma-960.webp"
+    ],
+    "poids": {
+      "village-la-norma-480.webp": 23492,
+      "village-la-norma-640.webp": 39312,
+      "village-la-norma-960.webp": 78106
+    },
+    "media": "c.media({ nom: 'village-la-norma', alt: \"Le village de la station de La Norma sous la neige\", cadrage: '54% 55%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "village-termignon": {
+    "nom": "village-termignon",
+    "source": "recu/villages/val-cenis-termignon.jpg",
+    "role": "galerie",
+    "alt": "Une rue du village de Termignon, à Val Cenis",
+    "grok": false,
+    "mention": null,
+    "beaute": 2,
+    "empreinte": "1300994f392ab3f8",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "46% 52%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 75
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.4,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.26,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.09,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1987,
+      "height": 1490,
+      "source": [
+        2014,
+        1490
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "village-termignon-480.webp",
+      "village-termignon-640.webp",
+      "village-termignon-960.webp"
+    ],
+    "poids": {
+      "village-termignon-480.webp": 18944,
+      "village-termignon-640.webp": 30830,
+      "village-termignon-960.webp": 62526
+    },
+    "media": "c.media({ nom: 'village-termignon', alt: \"Une rue du village de Termignon, à Val Cenis\", cadrage: '46% 52%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  }
+}

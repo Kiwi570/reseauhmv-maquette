@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Réseau HMV",
+  "alternateName": "Le Carnet d'Adresses de la Haute Maurienne Vanoise",
+  "url": "https://reseauhmv-maquette.vercel.app/",
+  "email": "reseauhmv@gmail.com",
+  "telephone": "+33619432378",
+  "areaServed": "Haute Maurienne Vanoise, Savoie",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "ORIZON HMV",
+    "address": { "@type": "PostalAddress", "streetAddress": "Résidence Plein Soleil, 229 rue de la Scolette", "postalCode": "73500", "addressLocality": "Avrieux", "addressCountry": "FR" }
+  },
+  "description": { "fr": "Le carnet d'adresses gratuit de la Haute Maurienne Vanoise : professionnels, commerces, artisans, hébergeurs, associations et activités, de Modane à Bonneval-sur-Arc." }
+}

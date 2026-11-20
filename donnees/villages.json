@@ -1,0 +1,28 @@
+{
+  "secteurs": [
+    { "cle": "modane", "nom": "Modane", "photo": "village-modane", "texte": "La ville-porte de la vallée, avec Saint-André, Le Freney, Fourneaux, Villarodin-Bourget, Avrieux et la station de Valfréjus.", "credit": "Florian Pépellin / Wikimedia Commons, CC BY-SA 4.0" },
+    { "cle": "la-norma", "nom": "La Norma", "photo": "village-la-norma", "texte": "Le village-station, au-dessus de Villarodin-Bourget.", "credit": "Florian Pépellin / Wikimedia Commons, CC BY-SA 3.0" },
+    { "cle": "aussois", "nom": "Aussois", "photo": "village-aussois", "texte": "Le village du plateau, face aux sommets de la Vanoise.", "credit": "Florian Pépellin / Wikimedia Commons, CC BY-SA 3.0" },
+    { "cle": "val-cenis", "nom": "Val Cenis", "photo": "village-termignon", "texte": "Bramans, Sollières-Sardières, Termignon, Lanslebourg-Mont-Cenis et Lanslevillard.", "credit": "Florian Pépellin / Wikimedia Commons, domaine public" },
+    { "cle": "bessans", "nom": "Bessans", "photo": "village-bessans", "texte": "Le village de la haute vallée, entre Val Cenis et Bonneval.", "credit": "Florian Pépellin / Wikimedia Commons, CC BY-SA 4.0" },
+    { "cle": "bonneval-sur-arc", "nom": "Bonneval-sur-Arc", "photo": "village-bonneval-sur-arc", "texte": "Le bout de la vallée, au pied des cols.", "credit": "Florian Pépellin / Wikimedia Commons, CC BY-SA 4.0" }
+  ],
+  "villages": [
+    { "nom": "Saint-André", "secteur": "modane", "lon": 6.586, "lat": 45.205, "fond": true },
+    { "nom": "Le Freney", "secteur": "modane", "lon": 6.625, "lat": 45.197, "fond": true },
+    { "nom": "Fourneaux", "secteur": "modane", "lon": 6.648, "lat": 45.191, "fond": true },
+    { "nom": "Modane", "secteur": "modane", "lon": 6.668, "lat": 45.201, "fond": true, "grand": true },
+    { "nom": "Valfréjus", "secteur": "modane", "lon": 6.655, "lat": 45.160, "station": true },
+    { "nom": "Villarodin-Bourget", "secteur": "modane", "lon": 6.698, "lat": 45.213, "fond": true },
+    { "nom": "La Norma", "secteur": "la-norma", "lon": 6.706, "lat": 45.190, "station": true },
+    { "nom": "Avrieux", "secteur": "modane", "lon": 6.722, "lat": 45.219, "fond": true },
+    { "nom": "Aussois", "secteur": "aussois", "lon": 6.741, "lat": 45.229 },
+    { "nom": "Bramans", "secteur": "val-cenis", "lon": 6.777, "lat": 45.222, "fond": true, "complet": "Val Cenis – Bramans" },
+    { "nom": "Sollières-Sardières", "secteur": "val-cenis", "lon": 6.806, "lat": 45.257, "fond": true, "complet": "Val Cenis – Sollières-Sardières" },
+    { "nom": "Termignon", "secteur": "val-cenis", "lon": 6.815, "lat": 45.277, "fond": true, "complet": "Val Cenis – Termignon" },
+    { "nom": "Lanslebourg-Mont-Cenis", "secteur": "val-cenis", "lon": 6.876, "lat": 45.286, "fond": true, "complet": "Val Cenis – Lanslebourg-Mont-Cenis" },
+    { "nom": "Lanslevillard", "secteur": "val-cenis", "lon": 6.907, "lat": 45.291, "fond": true, "complet": "Val Cenis – Lanslevillard" },
+    { "nom": "Bessans", "secteur": "bessans", "lon": 6.991, "lat": 45.320, "fond": true, "grand": true },
+    { "nom": "Bonneval-sur-Arc", "secteur": "bonneval-sur-arc", "lon": 7.048, "lat": 45.371, "fond": true, "grand": true }
+  ]
+}

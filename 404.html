@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adresse introuvable · Réseau HMV</title>
+<meta name="description" content="Cette page n&#39;existe pas ou plus.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://reseauhmv-maquette.vercel.app/404">
+<style>:root{--fond:#f7f4ec;--texte:#1f3442;--voile-fond:#1f3442;--ouverture-fond:#1f3442;--menu-fond:#f7f4ec}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/bebas-neue-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/barlow-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f7f4ec">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Réseau HMV">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Adresse introuvable · Réseau HMV">
+<meta property="og:description" content="Cette page n&#39;existe pas ou plus.">
+<meta property="og:url" content="https://reseauhmv-maquette.vercel.app/404">
+<meta property="og:image" content="https://reseauhmv-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Réseau HMV, le carnet d&#39;adresses de la Haute Maurienne Vanoise">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Réseau HMV","alternateName":"Le Carnet d'Adresses de la Haute Maurienne Vanoise","url":"https://reseauhmv-maquette.vercel.app/","email":"reseauhmv@gmail.com","telephone":"+33619432378","areaServed":"Haute Maurienne Vanoise, Savoie","parentOrganization":{"@type":"Organization","name":"ORIZON HMV","address":{"@type":"PostalAddress","streetAddress":"Résidence Plein Soleil, 229 rue de la Scolette","postalCode":"73500","addressLocality":"Avrieux","addressCountry":"FR"}},"description":"Le carnet d'adresses gratuit de la Haute Maurienne Vanoise : professionnels, commerces, artisans, hébergeurs, associations et activités, de Modane à Bonneval-sur-Arc."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="glisse" aria-hidden="true"><span class="anneaux anneaux--voile" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i><i style="--i:11"></i><i style="--i:12"></i><i style="--i:13"></i></span><div class="voile-contenu"><svg class="voile-picto" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true" focusable="false">
+  <rect class="picto-couv" x="4" y="3" width="40" height="42" rx="6" fill="#315B70"/>
+  <path class="picto-page" d="M10 9h25a4 4 0 0 1 4 4v26H14a4 4 0 0 1-4-4V9Z" fill="#F2F0E8"/>
+  <path class="picto-anneaux" d="M10 13H6M10 21H6M10 29H6M10 37H6" fill="none" stroke="#B8A982" stroke-width="2.5" stroke-linecap="round"/>
+  <path class="picto-mont" d="m15 29 7-8 5 5 5-7 7 10H15Z" fill="#B8A982"/>
+  <circle cx="25" cy="14.5" r="3.5" fill="#315B70"/>
+  <path d="M18.5 24c.9-4.2 3-6.3 6.5-6.3s5.6 2.1 6.5 6.3" fill="none" stroke="#315B70" stroke-width="3" stroke-linecap="round"/>
+  <path d="M15 34h24M15 38h17" fill="none" stroke="#315B70" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+</svg><span data-voile-libelle>Page introuvable</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <span class="anneaux anneaux--couverture" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i></span>
+  <span class="ouverture-objet" data-ouverture-objet><svg class="ouverture-picto" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true" focusable="false">
+  <rect class="picto-couv" x="4" y="3" width="40" height="42" rx="6" fill="#315B70"/>
+  <path class="picto-page" d="M10 9h25a4 4 0 0 1 4 4v26H14a4 4 0 0 1-4-4V9Z" fill="#F2F0E8"/>
+  <path class="picto-anneaux" d="M10 13H6M10 21H6M10 29H6M10 37H6" fill="none" stroke="#B8A982" stroke-width="2.5" stroke-linecap="round"/>
+  <path class="picto-mont" d="m15 29 7-8 5 5 5-7 7 10H15Z" fill="#B8A982"/>
+  <circle cx="25" cy="14.5" r="3.5" fill="#315B70"/>
+  <path d="M18.5 24c.9-4.2 3-6.3 6.5-6.3s5.6 2.1 6.5 6.3" fill="none" stroke="#315B70" stroke-width="3" stroke-linecap="round"/>
+  <path d="M15 34h24M15 38h17" fill="none" stroke="#315B70" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+</svg></span>
+  <p class="ouverture-nom">Réseau HMV</p>
+  <span class="ouverture-trait"></span>
+  <p class="ouverture-ligne">Le carnet d&#39;adresses de la Haute Maurienne Vanoise</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <svg class="entete-picto" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true" focusable="false">
+  <rect class="picto-couv" x="4" y="3" width="40" height="42" rx="6" fill="#315B70"/>
+  <path class="picto-page" d="M10 9h25a4 4 0 0 1 4 4v26H14a4 4 0 0 1-4-4V9Z" fill="#F2F0E8"/>
+  <path class="picto-anneaux" d="M10 13H6M10 21H6M10 29H6M10 37H6" fill="none" stroke="#B8A982" stroke-width="2.5" stroke-linecap="round"/>
+  <path class="picto-mont" d="m15 29 7-8 5 5 5-7 7 10H15Z" fill="#B8A982"/>
+  <circle cx="25" cy="14.5" r="3.5" fill="#315B70"/>
+  <path d="M18.5 24c.9-4.2 3-6.3 6.5-6.3s5.6 2.1 6.5 6.3" fill="none" stroke="#315B70" stroke-width="3" stroke-linecap="round"/>
+  <path d="M15 34h24M15 38h17" fill="none" stroke="#315B70" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+</svg><span class="entete-nom"><b>Réseau HMV</b><small>Carnet d&#39;adresses · Haute Maurienne Vanoise</small></span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/carnet" data-libelle="Le Carnet">Le Carnet</a></li><li><a href="/carte" data-libelle="La carte">La carte</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--nuit entete-action" href="/referencer" data-libelle="Référencer mon activité"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg><span>Référencer mon activité</span><em class="pastille">Gratuit</em></a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/carnet" class="menu-lien" data-libelle="Le Carnet">Le Carnet</a></li><li style="--i:2"><a href="/carte" class="menu-lien" data-libelle="La carte">La carte</a></li><li style="--i:3"><a href="/referencer" class="menu-lien" data-libelle="Référencer mon activité">Référencer mon activité</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p class="menu-contact"><a href="tel:+33619432378"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h3l1.5 4-2 1.3a10.5 10.5 0 0 0 6.2 6.2l1.3-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2z"/></svg>06 19 43 23 78</a><a href="mailto:reseauhmv@gmail.com"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5.5" width="17" height="13" rx="1.5"/><path d="m4 6.5 8 6.5 8-6.5"/></svg>reseauhmv@gmail.com</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="introuvable" id="debut">
+  <figure class="media introuvable-media" data-grok data-anime="rideau" data-iris-centre style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/page-404-1600.webp" srcset="/assets/images/grok/page-404-800.webp 800w, /assets/images/grok/page-404-1600.webp 1600w" sizes="100vw" alt="Poteau indicateur aux bras vierges dans la neige, au croisement de deux sentiers" width="1600" height="900" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="conteneur introuvable-texte">
+    <h1 data-anime="lignes">Cette adresse n&#39;est pas dans le carnet</h1>
+    <p data-anime>La page demandée n&#39;existe pas ou plus. Cherchez une adresse, ou revenez à l&#39;accueil.</p>
+    <p class="introuvable-actions" data-anime><a href="/" class="bouton" data-libelle="Accueil" data-action-principale>Revenir à l&#39;accueil</a><a href="/carnet" class="bouton bouton--contour" data-libelle="Le Carnet">Le Carnet</a></p>
+    <div data-anime><form class="recherche " action="/carnet" method="get" role="search" data-recherche>
+  <label class="recherche-champ"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5.5 5.5"/></svg><span class="recherche-lib">Métier ou service</span><input type="search" name="q" placeholder="Pâtisserie, électricien, restaurant, Modane…" autocomplete="off" enterkeyhint="search"></label>
+  <label class="recherche-champ recherche-champ--ou"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span class="recherche-lib">Où ?</span><select name="village"><option value="">Tous les villages</option><option value="Saint-André">Saint-André</option><option value="Le Freney">Le Freney</option><option value="Fourneaux">Fourneaux</option><option value="Modane">Modane</option><option value="Valfréjus">Valfréjus</option><option value="Villarodin-Bourget">Villarodin-Bourget</option><option value="La Norma">La Norma</option><option value="Avrieux">Avrieux</option><option value="Aussois">Aussois</option><option value="Bramans">Bramans</option><option value="Sollières-Sardières">Sollières-Sardières</option><option value="Termignon">Termignon</option><option value="Lanslebourg-Mont-Cenis">Lanslebourg-Mont-Cenis</option><option value="Lanslevillard">Lanslevillard</option><option value="Bessans">Bessans</option><option value="Bonneval-sur-Arc">Bonneval-sur-Arc</option></select></label>
+  <button type="submit" class="bouton bouton--nuit">Rechercher</button>
+</form></div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="pied-logo"><svg class="pied-picto" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true" focusable="false">
+  <rect class="picto-couv" x="4" y="3" width="40" height="42" rx="6" fill="#315B70"/>
+  <path class="picto-page" d="M10 9h25a4 4 0 0 1 4 4v26H14a4 4 0 0 1-4-4V9Z" fill="#F2F0E8"/>
+  <path class="picto-anneaux" d="M10 13H6M10 21H6M10 29H6M10 37H6" fill="none" stroke="#B8A982" stroke-width="2.5" stroke-linecap="round"/>
+  <path class="picto-mont" d="m15 29 7-8 5 5 5-7 7 10H15Z" fill="#B8A982"/>
+  <circle cx="25" cy="14.5" r="3.5" fill="#315B70"/>
+  <path d="M18.5 24c.9-4.2 3-6.3 6.5-6.3s5.6 2.1 6.5 6.3" fill="none" stroke="#315B70" stroke-width="3" stroke-linecap="round"/>
+  <path d="M15 34h24M15 38h17" fill="none" stroke="#315B70" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+</svg><strong>Réseau HMV</strong></p>
+      <p>Le carnet d&#39;adresses gratuit de la Haute Maurienne Vanoise : les professionnels, commerces, artisans, hébergeurs, associations et activités de la vallée.</p>
+      <p class="pied-initiative">Une initiative ORIZON HMV</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/carnet" data-libelle="Le Carnet">Le Carnet</a></li><li><a href="/carte" data-libelle="La carte">La carte</a></li><li><a href="/referencer" data-libelle="Référencer mon activité">Référencer mon activité</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Contact</p>
+      <ul>
+        <li><a href="tel:+33619432378">06 19 43 23 78</a></li>
+        <li><a href="mailto:reseauhmv@gmail.com">reseauhmv@gmail.com</a></li>
+      </ul>
+      <p class="pied-adresse">ORIZON HMV · Résidence Plein Soleil, 229 rue de la Scolette, 73500 Avrieux</p>
+    </div>
+    <div>
+      <p class="pied-titre">Crédits photos</p>
+      <ul class="pied-credits"><li>Modane : Florian Pépellin / Wikimedia Commons, CC BY-SA 4.0</li><li>La Norma : Florian Pépellin / Wikimedia Commons, CC BY-SA 3.0</li><li>Aussois : Florian Pépellin / Wikimedia Commons, CC BY-SA 3.0</li><li>Val Cenis : Florian Pépellin / Wikimedia Commons, domaine public</li><li>Bessans : Florian Pépellin / Wikimedia Commons, CC BY-SA 4.0</li><li>Bonneval-sur-Arc : Florian Pépellin / Wikimedia Commons, CC BY-SA 4.0</li></ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Mentions légales · Politique de confidentialité — à compléter</p><p>Maquette de présentation : formulaires simulés, rien n&#39;est envoyé.</p></div>
+</footer>
+<div data-barre-fixe>
+  <a href="/carnet" class="bouton bouton--contour" data-libelle="Le Carnet"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5.5 5.5"/></svg>Chercher</a>
+  <a class="bouton" href="/referencer" data-libelle="Référencer mon activité">Référencer, gratuit</a>
+</div>
+</body>
+</html>

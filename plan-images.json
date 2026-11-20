@@ -1,0 +1,275 @@
+[
+ {
+  "source": "recu/grok/ouverture-vallee.png",
+  "source_mobile": "recu/grok/ouverture-vallee-mobile.png",
+  "nom": "grok/ouverture-vallee",
+  "role": "ouverture",
+  "page": "accueil",
+  "emplacement": "Accueil · ouverture (grand cadre photo, titre et recherche à gauche)",
+  "priorite": "Indispensable",
+  "mobile": "9:16",
+  "zone_texte": "gauche",
+  "alt": "Vallée de haute montagne au début de l'hiver, un village de pierre au pied des pentes enneigées",
+  "consigne_scene": "Wide view of a high alpine valley at the start of winter: a small village of old stone houses with grey stone-slab roofs sits low in the right half of the frame at the foot of steep slopes, golden larches, first snow on the peaks, thin smoke from two chimneys, a quiet river bend in the valley floor, clear sky, not a recognizable real village",
+  "beaute": 5,
+  "cadrage": [
+   66,
+   62
+  ]
+ },
+ {
+  "source": "recu/grok/rubrique-table.png",
+  "nom": "grok/rubrique-table",
+  "role": "carte-service",
+  "ratio": "4:5",
+  "page": "accueil",
+  "emplacement": "Accueil · répertoire, onglet Restaurants, bars et producteurs",
+  "priorite": "Indispensable",
+  "alt": "Table de bois dressée dans un chalet, pain, fromage de montagne et charcuterie, neige derrière la fenêtre",
+  "consigne_scene": "A rustic larch-wood table in a mountain chalet dining room, a round of mountain cheese, a loaf of country bread, a board of cured meats and a small carafe of red wine, two empty glasses, a window behind showing a snowy slope, no people, no menu, no label",
+  "beaute": 4,
+  "cadrage": [
+   50,
+   55
+  ]
+ },
+ {
+  "source": "recu/grok/rubrique-commerce.png",
+  "nom": "grok/rubrique-commerce",
+  "role": "carte-service",
+  "ratio": "4:5",
+  "page": "accueil",
+  "emplacement": "Accueil · répertoire, onglet Commerces",
+  "priorite": "Indispensable",
+  "alt": "Comptoir d'une petite épicerie de village, paniers et étagères en bois",
+  "consigne_scene": "The wooden counter of a small village grocery shop in the mountains: wicker baskets of apples and potatoes, jars without labels, a set of old brass scales, wooden shelves in soft focus behind, warm light from a small window, nobody, no sign, no price tag, no readable label",
+  "beaute": 4,
+  "cadrage": [
+   50,
+   60
+  ]
+ },
+ {
+  "source": "recu/grok/rubrique-artisan.png",
+  "nom": "grok/rubrique-artisan",
+  "role": "carte-service",
+  "ratio": "4:5",
+  "page": "accueil",
+  "emplacement": "Accueil · répertoire, onglet Artisans et services",
+  "priorite": "Indispensable",
+  "alt": "Établi de menuisier dans un atelier de montagne, planches de mélèze et outils",
+  "consigne_scene": "A carpenter's workbench in a small mountain workshop: freshly planed larch boards, curls of wood shavings, a hand plane, chisels hanging on the wall, a window with snowy roofs outside, dust in the light, nobody in the frame",
+  "beaute": 4,
+  "cadrage": [
+   55,
+   55
+  ]
+ },
+ {
+  "source": "recu/grok/rubrique-hebergement.png",
+  "nom": "grok/rubrique-hebergement",
+  "role": "carte-service",
+  "ratio": "4:5",
+  "page": "accueil",
+  "emplacement": "Accueil · répertoire, onglet Hébergements et immobilier",
+  "priorite": "Indispensable",
+  "alt": "Chambre de chalet, couverture de laine et fenêtre ouverte sur les sommets enneigés",
+  "consigne_scene": "A cosy bedroom in an old mountain chalet: a bed with a thick wool blanket and linen pillows, larch wood walls, a small window looking out on snowy peaks, a wool plaid on a wooden chair, soft morning light, nobody",
+  "beaute": 4,
+  "cadrage": [
+   50,
+   60
+  ]
+ },
+ {
+  "source": "recu/grok/rubrique-activite.png",
+  "nom": "grok/rubrique-activite",
+  "role": "carte-service",
+  "ratio": "4:5",
+  "page": "accueil",
+  "emplacement": "Accueil · répertoire, onglet Activités et sport",
+  "priorite": "Indispensable",
+  "alt": "Traces de raquettes sur un plateau enneigé bordé de mélèzes, deux marcheurs de dos au loin",
+  "consigne_scene": "Snowshoe tracks crossing a snowy plateau bordered by larches, two small walkers seen from behind far away in the frame, mountain ridge in the distance, crisp blue sky, long soft shadows, no faces",
+  "beaute": 4,
+  "cadrage": [
+   50,
+   55
+  ]
+ },
+ {
+  "source": "recu/grok/rubrique-bienetre.png",
+  "nom": "grok/rubrique-bienetre",
+  "role": "carte-service",
+  "ratio": "4:5",
+  "page": "accueil",
+  "emplacement": "Accueil · répertoire, onglet Bien-être, santé et associations",
+  "priorite": "Indispensable",
+  "alt": "Tapis de yoga et plaid de laine près d'une grande fenêtre ouverte sur la montagne",
+  "consigne_scene": "A calm wellness room with a rolled yoga mat, a folded wool plaid and a small wooden stool beside a large window opening on a snowy mountain view, pale wood floor, steam rising from a cup of herbal tea on the sill, soft light, nobody",
+  "beaute": 4,
+  "cadrage": [
+   50,
+   55
+  ]
+ },
+ {
+  "source": "recu/grok/appel-soir.png",
+  "source_mobile": "recu/grok/appel-soir-mobile.png",
+  "nom": "grok/appel-soir",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "mobile": "9:16",
+  "zone_texte": "haut",
+  "page": "accueil",
+  "emplacement": "Accueil · appel final, fond plein cadre",
+  "priorite": "Conseillée",
+  "alt": "Village de montagne à l'heure bleue, fenêtres éclairées dans la neige",
+  "consigne_scene": "A small mountain village at blue hour after a snowfall, old stone houses with snow-covered slab roofs in the lower part of the frame, many windows glowing warm amber, deep blue sky above the dark ridge, quiet and peaceful, no street lights in the foreground, not a recognizable real village",
+  "beaute": 5,
+  "cadrage": [
+   55,
+   66
+  ]
+ },
+ {
+  "source": "recu/grok/carnet-toits.png",
+  "nom": "grok/carnet-toits",
+  "role": "ouverture",
+  "ratio": "21:9",
+  "mobile": false,
+  "page": "carnet",
+  "emplacement": "Le Carnet · bandeau panoramique sous le grand titre",
+  "priorite": "Indispensable",
+  "alt": "Toits de lauze enneigés d'un village de montagne vus d'en haut",
+  "consigne_scene": "Panoramic view from above of the snowy stone-slab roofs of a mountain village, chimneys with thin smoke, a narrow lane between the houses, larches at the edge, soft winter sunlight, the roofs fill the whole frame, nobody, not a recognizable real village",
+  "beaute": 5,
+  "cadrage": [
+   50,
+   50
+  ]
+ },
+ {
+  "source": "recu/grok/referencer-atelier.png",
+  "nom": "grok/referencer-atelier",
+  "role": "ouverture",
+  "ratio": "4:5",
+  "mobile": false,
+  "zone_texte": false,
+  "page": "referencer",
+  "emplacement": "Référencer mon activité · ouverture, image à droite du titre",
+  "priorite": "Indispensable",
+  "alt": "Porte ouverte d'un petit atelier de bois au crépuscule, lumière chaude sur la neige",
+  "consigne_scene": "The open wooden door of a small craft workshop in a mountain village at dusk, warm light spilling onto the fresh snow, tools and planks visible inside on the wall, a lantern by the door, nobody, no sign above the door, no lettering",
+  "beaute": 5,
+  "cadrage": [
+   55,
+   58
+  ]
+ },
+ {
+  "source": "recu/grok/contact-carnet.png",
+  "nom": "grok/contact-carnet",
+  "role": "ouverture",
+  "ratio": "3:2",
+  "mobile": false,
+  "zone_texte": false,
+  "page": "contact",
+  "emplacement": "Contact · ouverture, image à droite du numéro",
+  "priorite": "Indispensable",
+  "alt": "Carnet à spirale ouvert et crayon sur une table en mélèze, montagne enneigée par la fenêtre",
+  "consigne_scene": "An open spiral-bound notebook with completely blank cream pages and a pencil on a larch wood table, a cup of coffee, a window behind with a snowy mountain view, morning light, nothing written, no readable text",
+  "beaute": 4,
+  "cadrage": [
+   45,
+   62
+  ]
+ },
+ {
+  "source": "recu/grok/page-404.png",
+  "nom": "grok/page-404",
+  "role": "404",
+  "page": "404",
+  "emplacement": "Page 404 · image en tête",
+  "priorite": "Conseillée",
+  "alt": "Poteau indicateur aux bras vierges dans la neige, au croisement de deux sentiers de montagne",
+  "consigne_scene": "A wooden signpost with completely blank arms standing in fresh snow at a crossing of two mountain trails, larches and soft mist, a gentle touch of humour, no text on the signs",
+  "beaute": 4,
+  "cadrage": [
+   60,
+   55
+  ]
+ },
+ {
+  "source": "recu/villages/bonneval-sur-arc.jpg",
+  "nom": "village-bonneval-sur-arc",
+  "role": "galerie",
+  "ratio": "4:3",
+  "beaute": 4,
+  "cadrage": [
+   50,
+   62
+  ],
+  "alt": "Bonneval-sur-Arc en été : le village aux toits de lauze au pied des montagnes"
+ },
+ {
+  "source": "recu/villages/bessans.jpg",
+  "nom": "village-bessans",
+  "role": "galerie",
+  "ratio": "4:3",
+  "beaute": 3,
+  "cadrage": [
+   55,
+   60
+  ],
+  "alt": "Bessans vu de la chapelle Saint-Antoine, en été"
+ },
+ {
+  "source": "recu/villages/modane.jpg",
+  "nom": "village-modane",
+  "role": "galerie",
+  "ratio": "4:3",
+  "beaute": 3,
+  "cadrage": [
+   50,
+   58
+  ],
+  "alt": "Modane vue des hauteurs en automne, sommets enneigés au fond"
+ },
+ {
+  "source": "recu/villages/aussois.jpg",
+  "nom": "village-aussois",
+  "role": "galerie",
+  "ratio": "4:3",
+  "beaute": 3,
+  "cadrage": [
+   50,
+   50
+  ],
+  "alt": "Aussois et son plateau vus d'en haut"
+ },
+ {
+  "source": "recu/villages/la-norma.jpg",
+  "nom": "village-la-norma",
+  "role": "galerie",
+  "ratio": "4:3",
+  "beaute": 3,
+  "cadrage": [
+   55,
+   55
+  ],
+  "alt": "Le village de la station de La Norma sous la neige"
+ },
+ {
+  "source": "recu/villages/val-cenis-termignon.jpg",
+  "nom": "village-termignon",
+  "role": "galerie",
+  "ratio": "4:3",
+  "beaute": 2,
+  "cadrage": [
+   45,
+   52
+  ],
+  "alt": "Une rue du village de Termignon, à Val Cenis"
+ }
+]

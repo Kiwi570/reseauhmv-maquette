@@ -1,0 +1,266 @@
+{
+ "explication": "Maquettes favorites de l'utilisateur : le niveau et le style visés, sur l'accueil ET les pages intérieures. Jamais à copier (ni leur idée, ni leur mise en page) : même harmonie, même fluidité, même soin.",
+ "activite": [
+  "collectivité",
+  "tourisme"
+ ],
+ "metier": "annuaire local carnet d'adresses",
+ "besoin": [
+  "catalogue",
+  "inscription",
+  "zone-d-intervention"
+ ],
+ "ton": [
+  "chaleureux"
+ ],
+ "univers": [
+  "montagne"
+ ],
+ "ambiance": [],
+ "concept": [],
+ "depot": "reseauhmv-maquette",
+ "favorites_dans_la_bibliotheque": 22,
+ "favorites": [
+  {
+   "rang": 1,
+   "maquette": "chateau-haut-piquat-maquette",
+   "client": "château viticole en Lussac Saint-Émilion : vins, boutique en ligne, visites et événements, site bilingue",
+   "metier": "château viticole, vigneron",
+   "pourquoi": "Château viticole : calcaire et argile, Fraunces, bouteilles sur blocs de pierre, coupe géologique, boutique filtrable.",
+   "proche": [
+    "même activité",
+    "besoin catalogue, inscription",
+    "ambiance chaleureux"
+   ],
+   "lumiere": "mixte",
+   "note_maquette": 86,
+   "en_ligne": "https://chateau-haut-piquat-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "chateau-haut-piquat-maquette/hero",
+     "note_section": 4,
+     "titre": "Château Haut-Piquat",
+     "capture": "medias/chateau-haut-piquat-maquette/hero-p1440.jpg",
+     "video": "medias/chateau-haut-piquat-maquette/hero-p720.mp4",
+     "fiche": "sections/chateau-haut-piquat-maquette/hero.json",
+     "en_ligne": "https://chateau-haut-piquat-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "manifeste",
+     "id": "chateau-haut-piquat-maquette/terroir",
+     "note_section": 5,
+     "titre": "Sous la vigne, le calcaireBeneath the vines, limestone",
+     "capture": "medias/chateau-haut-piquat-maquette/terroir-p1440.jpg",
+     "video": "medias/chateau-haut-piquat-maquette/terroir-p720.mp4",
+     "fiche": "sections/chateau-haut-piquat-maquette/terroir.json",
+     "en_ligne": "https://chateau-haut-piquat-maquette.vercel.app"
+    },
+    {
+     "page": "oenotourisme",
+     "role": "ouverture",
+     "id": "chateau-haut-piquat-maquette/oenotourisme-ohero",
+     "note_section": 5,
+     "titre": "Passer l’archeThrough the arch",
+     "capture": "medias/chateau-haut-piquat-maquette/oenotourisme-ohero-p1440.jpg",
+     "video": "medias/chateau-haut-piquat-maquette/oenotourisme-ohero-p720.mp4",
+     "fiche": "sections/chateau-haut-piquat-maquette/oenotourisme-ohero.json",
+     "en_ligne": "https://chateau-haut-piquat-maquette.vercel.app/oenotourisme"
+    },
+    {
+     "page": "vins",
+     "role": "produits",
+     "id": "chateau-haut-piquat-maquette/vins-cave",
+     "note_section": 5,
+     "titre": "Le tour de la caveA tour of the cellar",
+     "capture": "medias/chateau-haut-piquat-maquette/vins-cave-p1440.jpg",
+     "video": "medias/chateau-haut-piquat-maquette/vins-cave-p720.mp4",
+     "fiche": "sections/chateau-haut-piquat-maquette/vins-cave.json",
+     "en_ligne": "https://chateau-haut-piquat-maquette.vercel.app/vins"
+    }
+   ]
+  },
+  {
+   "rang": 2,
+   "maquette": "ice-attitude-maquette",
+   "client": "association de team building survie douce, stages de survie, anniversaires et EVG en forêt, à Marly-le-Roi et partout en France",
+   "metier": "stages de survie en forêt",
+   "pourquoi": "Survie en forêt : nuit de forêt et braise orange, feu WebGL qu'on attise, journée où le soleil tourne, équipe autour du feu.",
+   "proche": [
+    "même activité",
+    "besoin zone-d-intervention",
+    "ambiance chaleureux"
+   ],
+   "lumiere": "sombre",
+   "note_maquette": 87,
+   "en_ligne": "https://ice-attitude-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "ice-attitude-maquette/ouverture",
+     "note_section": 5,
+     "titre": "ICE Attitude, ICE Attitude",
+     "capture": "medias/ice-attitude-maquette/ouverture-p1440.jpg",
+     "video": "medias/ice-attitude-maquette/ouverture-p720.mp4",
+     "fiche": "sections/ice-attitude-maquette/ouverture.json",
+     "en_ligne": "https://ice-attitude-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "étapes",
+     "id": "ice-attitude-maquette/journee",
+     "note_section": 5,
+     "titre": "Une journée en forêt",
+     "capture": "medias/ice-attitude-maquette/journee-p1440.jpg",
+     "video": "medias/ice-attitude-maquette/journee-p720.mp4",
+     "fiche": "sections/ice-attitude-maquette/journee.json",
+     "en_ligne": "https://ice-attitude-maquette.vercel.app"
+    },
+    {
+     "page": "stage-survie",
+     "role": "ouverture",
+     "id": "ice-attitude-maquette/stage-survie-ouverture",
+     "note_section": 4,
+     "titre": "Les bases de la survie",
+     "capture": "medias/ice-attitude-maquette/stage-survie-ouverture-p1440.jpg",
+     "video": "medias/ice-attitude-maquette/stage-survie-ouverture-p720.mp4",
+     "fiche": "sections/ice-attitude-maquette/stage-survie-ouverture.json",
+     "en_ligne": "https://ice-attitude-maquette.vercel.app/stage-survie"
+    },
+    {
+     "page": "team-building",
+     "role": "manifeste",
+     "id": "ice-attitude-maquette/team-building-objectifs",
+     "note_section": 4,
+     "titre": "Ce que vos équipes y gagnent",
+     "capture": "medias/ice-attitude-maquette/team-building-objectifs-p1440.jpg",
+     "video": "medias/ice-attitude-maquette/team-building-objectifs-p720.mp4",
+     "fiche": "sections/ice-attitude-maquette/team-building-objectifs.json",
+     "en_ligne": "https://ice-attitude-maquette.vercel.app/team-building"
+    }
+   ]
+  },
+  {
+   "rang": 3,
+   "maquette": "nolanis-maquette",
+   "client": "Agence de communication visuelle à Strasbourg : print et web, espaces publicitaires, publipostage, photo et vidéo, objets publicitaires, sauvegarde en ligne, formation photo",
+   "metier": "agence de communication visuelle",
+   "pourquoi": "Agence de communication : beige, éventail de couleurs, cartes nettes, sommaire des métiers.",
+   "proche": [
+    "besoin catalogue"
+   ],
+   "lumiere": "clair",
+   "note_maquette": 86,
+   "en_ligne": "https://nolanis-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "nolanis-maquette/debut",
+     "note_section": 5,
+     "titre": "Votre agence de communication visuelle à Strasbourg",
+     "capture": "medias/nolanis-maquette/debut-p1440.jpg",
+     "video": "medias/nolanis-maquette/debut-p720.mp4",
+     "fiche": "sections/nolanis-maquette/debut.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "services",
+     "id": "nolanis-maquette/services",
+     "note_section": 4,
+     "titre": "La liasse des épreuves",
+     "capture": "medias/nolanis-maquette/services-p1440.jpg",
+     "video": "medias/nolanis-maquette/services-p720.mp4",
+     "fiche": "sections/nolanis-maquette/services.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app"
+    },
+    {
+     "page": "formations",
+     "role": "ouverture",
+     "id": "nolanis-maquette/formations-debut",
+     "note_section": 4,
+     "titre": "Choisir l’image juste",
+     "capture": "medias/nolanis-maquette/formations-debut-p1440.jpg",
+     "video": "medias/nolanis-maquette/formations-debut-p720.mp4",
+     "fiche": "sections/nolanis-maquette/formations-debut.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app/formations"
+    },
+    {
+     "page": "contact",
+     "role": "outil-interactif",
+     "id": "nolanis-maquette/contact-devis",
+     "note_section": 4,
+     "titre": "Votre demande, en trois étapes",
+     "capture": "medias/nolanis-maquette/contact-devis-p1440.jpg",
+     "video": "medias/nolanis-maquette/contact-devis-p720.mp4",
+     "fiche": "sections/nolanis-maquette/contact-devis.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app/contact"
+    }
+   ]
+  },
+  {
+   "rang": 4,
+   "maquette": "coolcanyoning-maquette",
+   "client": "guide de canyoning, via ferrata et escalade diplômé d'État (Yann) dans le Verdon, l'arrière-pays de Nice et le Haut-Var",
+   "metier": "guide de canyoning",
+   "pourquoi": "Canyoning : illustration plate, titres géants en capitales, altimètre discret dans la marge, outils pour choisir son canyon.",
+   "proche": [
+    "même activité",
+    "besoin catalogue"
+   ],
+   "lumiere": "mixte",
+   "note_maquette": 90,
+   "en_ligne": "https://coolcanyoning-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "coolcanyoning-maquette/heros",
+     "note_section": 4,
+     "titre": "Sauter.Glisser.Descendre.",
+     "capture": "medias/coolcanyoning-maquette/heros-p1440.jpg",
+     "video": "medias/coolcanyoning-maquette/heros-p720.mp4",
+     "fiche": "sections/coolcanyoning-maquette/heros.json",
+     "en_ligne": "https://coolcanyoning-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "manifeste",
+     "id": "coolcanyoning-maquette/le-principe",
+     "note_section": 4,
+     "titre": "La descente · −12 m",
+     "capture": "medias/coolcanyoning-maquette/le-principe-p1440.jpg",
+     "video": null,
+     "fiche": "sections/coolcanyoning-maquette/le-principe.json",
+     "en_ligne": "https://coolcanyoning-maquette.vercel.app"
+    },
+    {
+     "page": "blog-canyon-cramassouri-tempete-alex",
+     "role": "ouverture",
+     "id": "coolcanyoning-maquette/blog-canyon-cramassouri-tempete-alex-ph",
+     "note_section": 3,
+     "titre": "Ouverture d'article",
+     "capture": "medias/coolcanyoning-maquette/blog-canyon-cramassouri-tempete-alex-ph-p1440.jpg",
+     "video": null,
+     "fiche": "sections/coolcanyoning-maquette/blog-canyon-cramassouri-tempete-alex-ph.json",
+     "en_ligne": "https://coolcanyoning-maquette.vercel.app/blog-canyon-cramassouri-tempete-alex"
+    },
+    {
+     "page": "blog",
+     "role": "articles",
+     "id": "coolcanyoning-maquette/blog-les-articles",
+     "note_section": 4,
+     "titre": "Les articles",
+     "capture": "medias/coolcanyoning-maquette/blog-les-articles-p1440.jpg",
+     "video": null,
+     "fiche": "sections/coolcanyoning-maquette/blog-les-articles.json",
+     "en_ligne": "https://coolcanyoning-maquette.vercel.app/blog"
+    }
+   ]
+  }
+ ]
+}

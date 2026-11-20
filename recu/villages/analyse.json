@@ -1,0 +1,386 @@
+{
+  "dossier": "/home/claude/reseauhmv-maquette/recu/villages",
+  "date": "2026-11-20T16:38:33.629Z",
+  "detection": "mesures sharp seulement",
+  "planches": [
+    "planche.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [],
+  "images": [
+    {
+      "fichier": "aussois.jpg",
+      "nom": "aussois",
+      "drapeau": null,
+      "largeur": 2880,
+      "hauteur": 2113,
+      "ratio": "4:3",
+      "ratio_valeur": 1.363,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 3716474,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        53
+      ],
+      "cadrage_css": "50% 53%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.88
+        }
+      ],
+      "qualite": {
+        "nettete": 60.9,
+        "bruit": 1.68,
+        "compression": 0.98,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "60001e18882b1676",
+      "drapeaux": []
+    },
+    {
+      "fichier": "bessans.jpg",
+      "nom": "bessans",
+      "drapeau": null,
+      "largeur": 3264,
+      "hauteur": 2448,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 6008911,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        70
+      ],
+      "cadrage_css": "52% 70%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.3,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 72.1,
+        "bruit": 2.2,
+        "compression": 1.03,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "2b0b9525c83034a4",
+      "drapeaux": []
+    },
+    {
+      "fichier": "bonneval-sur-arc.jpg",
+      "nom": "bonneval-sur-arc",
+      "drapeau": null,
+      "largeur": 3186,
+      "hauteur": 2376,
+      "ratio": "4:3",
+      "ratio_valeur": 1.341,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 6018099,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        37
+      ],
+      "cadrage_css": "52% 37%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.88
+        },
+        {
+          "cote": "haut",
+          "score": 0.14,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0.06,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "gauche",
+          "score": 0.01,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 76.1,
+        "bruit": 2.68,
+        "compression": 1.01,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "bccdcbfcbf92c497",
+      "drapeaux": []
+    },
+    {
+      "fichier": "la-norma.jpg",
+      "nom": "la-norma",
+      "drapeau": null,
+      "largeur": 2014,
+      "hauteur": 1490,
+      "ratio": "4:3",
+      "ratio_valeur": 1.352,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 1290100,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 29.2,
+        "l": 96.9,
+        "h": 62.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        55,
+        66
+      ],
+      "cadrage_css": "55% 66%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.82,
+          "ton": "moyen",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "gauche",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0.58
+        },
+        {
+          "cote": "droite",
+          "score": 0.04,
+          "ton": "sombre",
+          "recouvre_sujet": 0.63
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.74
+        }
+      ],
+      "qualite": {
+        "nettete": 66.4,
+        "bruit": 1.3,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "03030485c690f23f",
+      "drapeaux": [
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "modane.jpg",
+      "nom": "modane",
+      "drapeau": null,
+      "largeur": 3840,
+      "hauteur": 2880,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 2011734,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 8.3,
+        "l": 100,
+        "h": 91.7,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        55
+      ],
+      "cadrage_css": "50% 55%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.39,
+          "ton": "moyen",
+          "recouvre_sujet": 0.76
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.92
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.92
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 58.1,
+        "bruit": 1.45,
+        "compression": 1.09,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "0e10808421846ea3",
+      "drapeaux": []
+    },
+    {
+      "fichier": "val-cenis-termignon.jpg",
+      "nom": "val-cenis-termignon",
+      "drapeau": null,
+      "largeur": 2014,
+      "hauteur": 1490,
+      "ratio": "4:3",
+      "ratio_valeur": 1.352,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 1263823,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 75,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        33
+      ],
+      "cadrage_css": "47% 33%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.4,
+          "ton": "moyen",
+          "recouvre_sujet": 0.29
+        },
+        {
+          "cote": "haut",
+          "score": 0.26,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0.22,
+          "ton": "moyen",
+          "recouvre_sujet": 0.75
+        },
+        {
+          "cote": "gauche",
+          "score": 0.09,
+          "ton": "moyen",
+          "recouvre_sujet": 0.75
+        }
+      ],
+      "qualite": {
+        "nettete": 39,
+        "bruit": 0.95,
+        "compression": 0.98,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "3c10c16c84f4d1cb",
+      "drapeaux": []
+    }
+  ]
+}

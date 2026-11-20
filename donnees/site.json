@@ -1,0 +1,16 @@
+{
+  "nom": "Réseau HMV",
+  "sousTitre": "Carnet d'adresses · Haute Maurienne Vanoise",
+  "adresse": "https://reseauhmv-maquette.vercel.app",
+  "siteActuel": "reseauhmv.com",
+  "version": 1,
+  "langues": ["fr"],
+  "navigation": ["accueil", "carnet", "carte", "referencer", "contact"],
+  "actionEntete": { "page": "referencer" },
+  "couleurs": { "fond": "#f7f4ec", "texte": "#1f3442", "voile": "#1f3442", "theme": "#f7f4ec", "ouverture": "#1f3442", "menu": "#f7f4ec" },
+  "formeVoile": "glisse",
+  "contact": { "telephone": "06 19 43 23 78", "telephoneLien": "+33619432378", "email": "reseauhmv@gmail.com", "adresse": "ORIZON HMV · Résidence Plein Soleil, 229 rue de la Scolette, 73500 Avrieux" },
+  "polices": ["/assets/fonts/bebas-neue-400.woff2", "/assets/fonts/barlow-400.woff2"],
+  "imagePartage": "grok/ouverture-vallee-1280.webp",
+  "curseur": false
+}

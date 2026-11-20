@@ -1,0 +1,207 @@
+{
+  "client": "Réseau HMV",
+  "activite": "tourisme",
+  "direction": "Le répertoire",
+  "date": "2026-11-20T16:40:25.052Z",
+  "images": [
+    {
+      "nom": "ouverture-vallee",
+      "fichier": "ouverture-vallee.png",
+      "page": "accueil",
+      "emplacement": "Accueil · ouverture (grand cadre photo, titre et recherche à gauche) (ordinateur)",
+      "role": "ouverture",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "ouverture",
+      "pieges": [
+        "paysage qui dérive"
+      ],
+      "consigne": "Wide view of a high alpine valley at the start of winter: a small village of old stone houses with grey stone-slab roofs sits low in the right half of the frame at the foot of steep slopes, golden larches, first snow on the peaks, thin smoke from two chimneys, a quiet river bend in the valley floor, clear sky, not a recognizable real village. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, honest and welcoming mood, palette of warm cream, deep night blue, petrol blue, sand beige and small touches of mustard yellow, soft low winter sunlight, tactile larch wood, dry stone, wool and fresh snow, set in a high alpine valley of the French Alps on a clear early-winter day, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. A high alpine valley of the French Alps landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "ouverture-vallee",
+      "fichier": "ouverture-vallee-mobile.png",
+      "page": "accueil",
+      "emplacement": "Accueil · ouverture (grand cadre photo, titre et recherche à gauche) (téléphone)",
+      "role": "ouverture",
+      "format": "9:16",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "ouverture",
+      "pieges": [
+        "paysage qui dérive"
+      ],
+      "consigne": "Wide view of a high alpine valley at the start of winter: a small village of old stone houses with grey stone-slab roofs sits low in the right half of the frame at the foot of steep slopes, golden larches, first snow on the peaks, thin smoke from two chimneys, a quiet river bend in the valley floor, clear sky, not a recognizable real village. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, honest and welcoming mood, palette of warm cream, deep night blue, petrol blue, sand beige and small touches of mustard yellow, soft low winter sunlight, tactile larch wood, dry stone, wool and fresh snow, set in a high alpine valley of the French Alps on a clear early-winter day, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. A high alpine valley of the French Alps landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "rubrique-table",
+      "fichier": "rubrique-table.png",
+      "page": "accueil",
+      "emplacement": "Accueil · répertoire, onglet Restaurants, bars et producteurs",
+      "role": "carte-service",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A rustic larch-wood table in a mountain chalet dining room, a round of mountain cheese, a loaf of country bread, a board of cured meats and a small carafe of red wine, two empty glasses, a window behind showing a snowy slope, no people, no menu, no label. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, honest and welcoming mood, palette of warm cream, deep night blue, petrol blue, sand beige and small touches of mustard yellow, soft low winter sunlight, tactile larch wood, dry stone, wool and fresh snow, set in a high alpine valley of the French Alps on a clear early-winter day, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "rubrique-commerce",
+      "fichier": "rubrique-commerce.png",
+      "page": "accueil",
+      "emplacement": "Accueil · répertoire, onglet Commerces",
+      "role": "carte-service",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "The wooden counter of a small village grocery shop in the mountains: wicker baskets of apples and potatoes, jars without labels, a set of old brass scales, wooden shelves in soft focus behind, warm light from a small window, nobody, no sign, no price tag, no readable label. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, honest and welcoming mood, palette of warm cream, deep night blue, petrol blue, sand beige and small touches of mustard yellow, soft low winter sunlight, tactile larch wood, dry stone, wool and fresh snow, set in a high alpine valley of the French Alps on a clear early-winter day, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "rubrique-artisan",
+      "fichier": "rubrique-artisan.png",
+      "page": "accueil",
+      "emplacement": "Accueil · répertoire, onglet Artisans et services",
+      "role": "carte-service",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [
+        "mains en trop"
+      ],
+      "consigne": "A carpenter's workbench in a small mountain workshop: freshly planed larch boards, curls of wood shavings, a hand plane, chisels hanging on the wall, a window with snowy roofs outside, dust in the light, nobody in the frame. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, honest and welcoming mood, palette of warm cream, deep night blue, petrol blue, sand beige and small touches of mustard yellow, soft low winter sunlight, tactile larch wood, dry stone, wool and fresh snow, set in a high alpine valley of the French Alps on a clear early-winter day, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. Only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "rubrique-hebergement",
+      "fichier": "rubrique-hebergement.png",
+      "page": "accueil",
+      "emplacement": "Accueil · répertoire, onglet Hébergements et immobilier",
+      "role": "carte-service",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A cosy bedroom in an old mountain chalet: a bed with a thick wool blanket and linen pillows, larch wood walls, a small window looking out on snowy peaks, a wool plaid on a wooden chair, soft morning light, nobody. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, honest and welcoming mood, palette of warm cream, deep night blue, petrol blue, sand beige and small touches of mustard yellow, soft low winter sunlight, tactile larch wood, dry stone, wool and fresh snow, set in a high alpine valley of the French Alps on a clear early-winter day, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "rubrique-activite",
+      "fichier": "rubrique-activite.png",
+      "page": "accueil",
+      "emplacement": "Accueil · répertoire, onglet Activités et sport",
+      "role": "carte-service",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "Snowshoe tracks crossing a snowy plateau bordered by larches, two small walkers seen from behind far away in the frame, mountain ridge in the distance, crisp blue sky, long soft shadows, no faces. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, honest and welcoming mood, palette of warm cream, deep night blue, petrol blue, sand beige and small touches of mustard yellow, soft low winter sunlight, tactile larch wood, dry stone, wool and fresh snow, set in a high alpine valley of the French Alps on a clear early-winter day, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "rubrique-bienetre",
+      "fichier": "rubrique-bienetre.png",
+      "page": "accueil",
+      "emplacement": "Accueil · répertoire, onglet Bien-être, santé et associations",
+      "role": "carte-service",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A calm wellness room with a rolled yoga mat, a folded wool plaid and a small wooden stool beside a large window opening on a snowy mountain view, pale wood floor, steam rising from a cup of herbal tea on the sill, soft light, nobody. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, honest and welcoming mood, palette of warm cream, deep night blue, petrol blue, sand beige and small touches of mustard yellow, soft low winter sunlight, tactile larch wood, dry stone, wool and fresh snow, set in a high alpine valley of the French Alps on a clear early-winter day, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "appel-soir",
+      "fichier": "appel-soir.png",
+      "page": "accueil",
+      "emplacement": "Accueil · appel final, fond plein cadre (ordinateur)",
+      "role": "section-fond",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Conseillée",
+      "gabarit": "section-fond",
+      "pieges": [
+        "visages"
+      ],
+      "consigne": "A small mountain village at blue hour after a snowfall, old stone houses with snow-covered slab roofs in the lower part of the frame, many windows glowing warm amber, deep blue sky above the dark ridge, quiet and peaceful, no street lights in the foreground, not a recognizable real village. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, honest and welcoming mood, palette of warm cream, deep night blue, petrol blue, sand beige and small touches of mustard yellow, soft low winter sunlight, tactile larch wood, dry stone, wool and fresh snow, set in a high alpine valley of the French Alps on a clear early-winter day, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. Seen strictly from behind, face never visible, head turned away, or cropped at the shoulders. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "appel-soir",
+      "fichier": "appel-soir-mobile.png",
+      "page": "accueil",
+      "emplacement": "Accueil · appel final, fond plein cadre (téléphone)",
+      "role": "section-fond",
+      "format": "9:16",
+      "grok": "784×1168",
+      "priorite": "Conseillée",
+      "gabarit": "section-fond",
+      "pieges": [
+        "visages"
+      ],
+      "consigne": "A small mountain village at blue hour after a snowfall, old stone houses with snow-covered slab roofs in the lower part of the frame, many windows glowing warm amber, deep blue sky above the dark ridge, quiet and peaceful, no street lights in the foreground, not a recognizable real village. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, honest and welcoming mood, palette of warm cream, deep night blue, petrol blue, sand beige and small touches of mustard yellow, soft low winter sunlight, tactile larch wood, dry stone, wool and fresh snow, set in a high alpine valley of the French Alps on a clear early-winter day, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. Seen strictly from behind, face never visible, head turned away, or cropped at the shoulders. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "carnet-toits",
+      "fichier": "carnet-toits.png",
+      "page": "carnet",
+      "emplacement": "Le Carnet · bandeau panoramique sous le grand titre",
+      "role": "ouverture",
+      "format": "21:9",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "ouverture",
+      "pieges": [
+        "paysage qui dérive"
+      ],
+      "consigne": "Panoramic view from above of the snowy stone-slab roofs of a mountain village, chimneys with thin smoke, a narrow lane between the houses, larches at the edge, soft winter sunlight, the roofs fill the whole frame, nobody, not a recognizable real village. Panoramic composition, aspect ratio 21:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, honest and welcoming mood, palette of warm cream, deep night blue, petrol blue, sand beige and small touches of mustard yellow, soft low winter sunlight, tactile larch wood, dry stone, wool and fresh snow, set in a high alpine valley of the French Alps on a clear early-winter day, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. A high alpine valley of the French Alps landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "referencer-atelier",
+      "fichier": "referencer-atelier.png",
+      "page": "referencer",
+      "emplacement": "Référencer mon activité · ouverture, image à droite du titre",
+      "role": "ouverture",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "ouverture",
+      "pieges": [
+        "paysage qui dérive"
+      ],
+      "consigne": "The open wooden door of a small craft workshop in a mountain village at dusk, warm light spilling onto the fresh snow, tools and planks visible inside on the wall, a lantern by the door, nobody, no sign above the door, no lettering. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, honest and welcoming mood, palette of warm cream, deep night blue, petrol blue, sand beige and small touches of mustard yellow, soft low winter sunlight, tactile larch wood, dry stone, wool and fresh snow, set in a high alpine valley of the French Alps on a clear early-winter day, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. A high alpine valley of the French Alps landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "contact-carnet",
+      "fichier": "contact-carnet.png",
+      "page": "contact",
+      "emplacement": "Contact · ouverture, image à droite du numéro",
+      "role": "ouverture",
+      "format": "3:2",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "ouverture",
+      "pieges": [
+        "texte parasite",
+        "paysage qui dérive"
+      ],
+      "consigne": "An open spiral-bound notebook with completely blank cream pages and a pencil on a larch wood table, a cup of coffee, a window behind with a snowy mountain view, morning light, nothing written, no readable text. Landscape composition, aspect ratio 3:2, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, honest and welcoming mood, palette of warm cream, deep night blue, petrol blue, sand beige and small touches of mustard yellow, soft low winter sunlight, tactile larch wood, dry stone, wool and fresh snow, set in a high alpine valley of the French Alps on a clear early-winter day, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. Pages completely blank, blank book spines, abstract unreadable marks, plain unmarked surfaces, dials with tick marks only and no numbers. A high alpine valley of the French Alps landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "page-404",
+      "fichier": "page-404.png",
+      "page": "404",
+      "emplacement": "Page 404 · image en tête",
+      "role": "404",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Conseillée",
+      "gabarit": "404",
+      "pieges": [],
+      "consigne": "A wooden signpost with completely blank arms standing in fresh snow at a crossing of two mountain trails, larches and soft mist, a gentle touch of humour, no text on the signs. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Cinematic documentary travel photograph, full-frame camera, 35mm lens, warm, honest and welcoming mood, palette of warm cream, deep night blue, petrol blue, sand beige and small touches of mustard yellow, soft low winter sunlight, tactile larch wood, dry stone, wool and fresh snow, set in a high alpine valley of the French Alps on a clear early-winter day, soft natural contrast, subtle fine film grain, calm minimal composition with generous negative space, photorealistic, high detail. No tourists' faces, no boat names, no vehicle, no road sign, no painted text on the road, no famous landmark, no postcard cliché, no place presented as the client's real site. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    }
+  ]
+}

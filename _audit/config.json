@@ -1,0 +1,5 @@
+{
+  "pagesTypes": ["/", "/carnet", "/carte", "/referencer", "/contact"],
+  "effets": ["onglets", "donne", "vallee", "fiche-qui-s-ecrit", "fiches", "etapes", "numero"],
+  "siteActuel": "reseauhmv.com"
+}

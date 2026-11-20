@@ -1,0 +1,188 @@
+{
+  "avertissements": [
+    "logo pris dans assets/images (logo.svg) : aucun logo dans donnees/images.json, vérifier que ce n'est pas celui du socle"
+  ],
+  "cartes": [
+    {
+      "page": "accueil",
+      "langue": "fr",
+      "fichier": "assets/partage/accueil-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/ouverture-vallee-1280.webp",
+      "poids": 85260,
+      "sujet": {
+        "x": 600,
+        "y": 83,
+        "l": 600,
+        "h": 513
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "carnet",
+      "langue": "fr",
+      "fichier": "assets/partage/carnet-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/carnet-toits-1280.webp",
+      "poids": 112426,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 193
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "carte",
+      "langue": "fr",
+      "fichier": "assets/partage/carte-fr.jpg",
+      "gabarit": "droite",
+      "image": "village-bonneval-sur-arc-960.webp",
+      "poids": 109140,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 604
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "contact",
+      "langue": "fr",
+      "fichier": "assets/partage/contact-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/contact-carnet-1280.webp",
+      "poids": 68421,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 605
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "referencer",
+      "langue": "fr",
+      "fichier": "assets/partage/referencer-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/referencer-atelier-1280.webp",
+      "poids": 77447,
+      "sujet": {
+        "x": 655,
+        "y": 196,
+        "l": 518,
+        "h": 434
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        },
+        {
+          "x": 600,
+          "y": 0,
+          "l": 47,
+          "h": 630
+        }
+      ],
+      "recouvrement": 0
+    }
+  ]
+}
