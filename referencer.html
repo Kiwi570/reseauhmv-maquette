@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/bebas-neue-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/barlow-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f7f4ec">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -199,7 +199,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
               <div class="fpe__recap"></div>
               <label class="fpe__case"><input type="checkbox" name="accord" value="oui" required data-hors-recap><span>J&#39;accepte que ces informations soient publiées dans le carnet d&#39;adresses Réseau HMV pour faciliter les mises en relation sur le territoire. *</span></label>
               <label class="fpe__case"><input type="checkbox" name="facebook-accord" value="oui" data-libelle="Facebook"><span>J&#39;accepte aussi une présentation de mon activité sur le groupe Facebook Réseau Haute Maurienne Vanoise (facultatif).</span></label>
-              <p class="mention-donnees">ORIZON HMV collecte ces informations pour relire et publier votre fiche ; après validation, seules les informations destinées à la fiche deviennent publiques. Aucune revente. Politique de confidentialité — à compléter.</p>
+              <p class="mention-donnees">ORIZON HMV collecte ces informations pour relire et publier votre fiche ; après validation, seules les informations destinées à la fiche deviennent publiques. Aucune revente. Pour consulter, corriger ou supprimer vos données, il suffit d&#39;écrire à Réseau HMV.</p>
             </fieldset>
             <div class="fpe__nav">
               <button type="button" class="bouton bouton--contour" data-precedent>Retour</button>
@@ -225,6 +225,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
           <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span data-apercu-village>Votre village</span></p>
           <p class="fiche-note" data-apercu-texte>Votre présentation apparaîtra ici.</p>
           <p class="fiche-tel" data-apercu-tel hidden><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h3l1.5 4-2 1.3a10.5 10.5 0 0 0 6.2 6.2l1.3-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2z"/></svg><span></span></p>
+          <p class="tampon-recu" data-tampon-recu data-grille="retour" hidden>Reçu · en relecture</p>
         </article>
       </aside>
     </div>

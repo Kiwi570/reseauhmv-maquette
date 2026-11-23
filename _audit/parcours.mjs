@@ -1,5 +1,6 @@
 /* Parcours propres à Réseau HMV : recherche et filtres du carnet, favoris (deux onglets, donnée abîmée),
-   carte (choix d'un village par l'adresse), formulaire de référencement (aperçu en direct, étapes). */
+   carte (choix d'un village par l'adresse), formulaire de référencement (aperçu en direct, étapes) ;
+   version 2 : cartes du jour rebattues, village de la vallée vers La carte, adresse au hasard, tampon « Reçu ». */
 export default async function ({ contexte, attendrePret, attendre, BASE, R, T }) {
   const { ctx, page } = await contexte({ taille: T('390×844') });
   try {
@@ -68,4 +69,45 @@ export default async function ({ contexte, attendrePret, attendre, BASE, R, T })
     const erreur = await page.evaluate(() => !!document.querySelector('#f-village[aria-invalid="true"]'));
     if (!erreur) R.echec('referencer', 'l’étape 2 passe sans village', { page: '/referencer' });
   } finally { await ctx.close(); }
+
+  /* Version 2 : cartes du jour rebattues, village de la vallée → La carte, adresse au hasard, tampon « Reçu ». */
+  const v2 = await contexte({ taille: T('1366×768') });
+  try {
+    const page = v2.page;
+    await page.goto(BASE + '/', { waitUntil: 'load' });
+    await attendrePret(page);
+    const places = () => page.evaluate(() => [...document.querySelectorAll('.carte-jour')].map((c) => c.dataset.place).join(''));
+    const avant = await places();
+    await page.locator('[data-rebattre]').scrollIntoViewIfNeeded();
+    await page.click('[data-rebattre]');
+    await attendre(1400);
+    const apres = await places();
+    const grande = await page.evaluate(() => { const c = document.querySelector('.carte-jour[data-place="0"]'); return c && c.getBoundingClientRect().width > document.querySelector('.carte-jour[data-place="1"]').getBoundingClientRect().width; });
+    if (apres === avant || !grande) R.echec('accueil', `Rebattre les cartes : ordre ${avant} → ${apres}, grande carte en premier : ${grande}`, { page: '/' });
+    const annonce = await page.evaluate(() => document.querySelector('[data-rebattre-annonce]').textContent);
+    if (!annonce) R.echec('accueil', 'Rebattre les cartes : rien n’est annoncé aux lecteurs d’écran', { page: '/' });
+    await page.locator('.vallee').scrollIntoViewIfNeeded();
+    await attendre(800);
+    await page.locator('.vallee-point[data-village="aussois"] .vp').click({ force: true });
+    await page.waitForURL(/\/carte\?village=aussois/, { timeout: 6000 }).catch(() => {});
+    if (!/village=aussois/.test(page.url())) R.echec('accueil', 'un village de la vallée ne mène pas à La carte (Aussois)', { page: '/' });
+    else {
+      await attendrePret(page);
+      const ouvert = await page.evaluate(() => !document.querySelector('[data-panneau-village="aussois"]').hidden);
+      if (!ouvert) R.echec('carte', 'Aussois n’est pas choisi en arrivant depuis la vallée', { page: '/carte' });
+    }
+    await page.goto(BASE + '/carnet?rubrique=commerces', { waitUntil: 'load' });
+    await attendrePret(page);
+    await page.click('[data-hasard]');
+    await attendre(900);
+    const tiree = await page.evaluate(() => { const f = document.querySelector('.fiche.est-tiree'); return f ? { ok: !f.hidden && f.dataset.rubrique === 'commerces', r: f.getBoundingClientRect().top, h: innerHeight } : null; });
+    if (!tiree || !tiree.ok) R.echec('carnet', 'Une adresse au hasard : aucune fiche visible n’est tirée (ou hors du filtre)', { page: '/carnet' });
+    await page.goto(BASE + '/referencer', { waitUntil: 'load' });
+    await attendrePret(page);
+    await page.evaluate(() => document.querySelector('[data-module="formulaire-par-etapes"]').dispatchEvent(new CustomEvent('formulaire:envoye', { bubbles: true, detail: {} })));
+    await attendre(900);
+    const tampon = await page.evaluate(() => { const t = document.querySelector('[data-tampon-recu]'); return t && !t.hidden; });
+    if (!tampon) R.echec('referencer', 'le tampon « Reçu » ne se pose pas sur la fiche envoyée', { page: '/referencer' });
+    R.ok('parcours v2');
+  } finally { await v2.ctx.close(); }
 }

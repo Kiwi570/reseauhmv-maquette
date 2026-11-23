@@ -1,5 +1,25 @@
 {
-  "pagesTypes": ["/", "/carnet", "/carte", "/referencer", "/contact"],
-  "effets": ["onglets", "donne", "vallee", "fiche-qui-s-ecrit", "fiches", "etapes", "numero"],
-  "siteActuel": "reseauhmv.com"
+  "pagesTypes": [
+    "/",
+    "/carnet",
+    "/carte",
+    "/referencer",
+    "/contact"
+  ],
+  "effets": [
+    "onglets",
+    "donne",
+    "vallee",
+    "fiche-qui-s-ecrit",
+    "fiches",
+    "etapes",
+    "numero"
+  ],
+  "siteActuel": "reseauhmv.com",
+  "grille": {
+    "dispenses": {
+      "intro": "L'intro finit sur la page à sa façon : le pictogramme glisse jusqu'à la recherche (objet d'ouverture), puis la couverture du carnet s'ouvre depuis sa spirale, comme une page (pas d'iris).",
+      "voile": "Glisse voulue : le voile est une page du carnet qui passe, avec ses anneaux et le pictogramme."
+    }
+  }
 }

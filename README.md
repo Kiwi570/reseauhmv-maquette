@@ -16,7 +16,7 @@ Direction « Le répertoire » : papier crème, encre bleu nuit, onglets de coul
 | Contact | `/contact` | Téléphone, e-mail, demandes sur les fiches (`?sujet=modification`, `retrait`, `revendication`, `donnees`), formulaire simulé |
 | 404 | `/404` | « Cette adresse n'est pas dans le carnet » |
 
-Pages du site actuel non reprises dans la maquette (disponibles en v2) : Mentions légales, Politique de confidentialité, Charte, Cookies, Crédits photos (les crédits sont dans le pied de page).
+Pages du site actuel non reprises dans la maquette (possibles dans une version suivante) : Mentions légales, Politique de confidentialité, Charte, Cookies, Crédits photos (les crédits sont dans le pied de page).
 
 ## Fiche récapitulative : à fournir par le client
 

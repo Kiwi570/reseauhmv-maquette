@@ -1,6 +1,6 @@
 /* Adaptateur : les modules de la bibliothèque demandent leurs bibliothèques par pret([...]) ;
    ici, GSAP vient du socle du site, Flip est chargé à la demande depuis assets/vendor. */
-import { rafraichir } from '../socle/index.js?v=1';
+import { rafraichir } from '../socle/index.js?v=2';
 
 const charges = {};
 function charger(src) {

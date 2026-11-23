@@ -3,7 +3,7 @@
   "sousTitre": "Carnet d'adresses · Haute Maurienne Vanoise",
   "adresse": "https://reseauhmv-maquette.vercel.app",
   "siteActuel": "reseauhmv.com",
-  "version": 1,
+  "version": 2,
   "langues": ["fr"],
   "navigation": ["accueil", "carnet", "carte", "referencer", "contact"],
   "actionEntete": { "page": "referencer" },

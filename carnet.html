@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/bebas-neue-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/barlow-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f7f4ec">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -172,13 +172,15 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
           <button type="button" data-valeur="tout" aria-pressed="true">Toutes les fiches</button>
           <button type="button" data-valeur="oui" aria-pressed="false"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>Mes favoris</button>
         </div>
+        <button type="button" class="filtres-hasard" data-hasard data-annonce="Adresse tirée au hasard : {nom}."><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="3.5"/><circle cx="9" cy="9" r=".9"/><circle cx="15" cy="9" r=".9"/><circle cx="12" cy="12" r=".9"/><circle cx="9" cy="15" r=".9"/><circle cx="15" cy="15" r=".9"/></svg><span>Une adresse au hasard</span></button>
         <p class="filtres-compte" aria-live="polite"><b data-compte>20</b> <span data-compte-mot>fiches</span> affichées · <button type="button" class="lien" data-reinit>Tout effacer</button></p>
       </div>
     </div>
+    <p class="visuellement-cache" aria-live="polite" data-hasard-annonce></p>
     <h2 class="visuellement-cache">Fiches du carnet</h2>
     <p class="note-maquette">Maquette : quatre adresses réelles relevées sur le carnet actuel ; les fiches marquées « Exemple » montrent la place des autres, sans nom inventé.</p>
     <div class="cff__grille grille-fiches" data-grille>
-      <article class="cff__fiche fiche" id="fiche-antalya" data-rubrique="restaurants" data-secteur="modane" data-village="Modane" data-favori="non" data-mots="l&#39;antalya restaurant restaurants modane modane" data-id="antalya">
+      <article class="cff__fiche fiche teinte-moutarde" id="fiche-antalya" data-rubrique="restaurants" data-secteur="modane" data-village="Modane" data-favori="non" data-mots="l&#39;antalya restaurant restaurants modane modane" data-id="antalya">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-moutarde"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 3v7a2 2 0 0 0 2 2v9"/><path d="M5 3v5M9 3v5"/><path d="M17 3c-2.2 1.2-3 4.2-3 7.5h3V21"/></svg></span>
@@ -188,7 +190,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">L&#39;Antalya</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Modane</span></p>
   <p class="fiche-note">Coordonnées et horaires sur la fiche complète.</p>
-</article><article class="cff__fiche fiche" id="fiche-traiteur-des-cimes" data-rubrique="restaurants" data-secteur="val-cenis" data-village="Lanslebourg-Mont-Cenis" data-favori="non" data-mots="traiteur des cimes traiteur restaurants lanslebourg-mont-cenis val cenis – lanslebourg-mont-cenis val cenis" data-id="traiteur-des-cimes">
+</article><article class="cff__fiche fiche teinte-moutarde" id="fiche-traiteur-des-cimes" data-rubrique="restaurants" data-secteur="val-cenis" data-village="Lanslebourg-Mont-Cenis" data-favori="non" data-mots="traiteur des cimes traiteur restaurants lanslebourg-mont-cenis val cenis – lanslebourg-mont-cenis val cenis" data-id="traiteur-des-cimes">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-moutarde"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 3v7a2 2 0 0 0 2 2v9"/><path d="M5 3v5M9 3v5"/><path d="M17 3c-2.2 1.2-3 4.2-3 7.5h3V21"/></svg></span>
@@ -198,7 +200,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Traiteur des Cimes</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Val Cenis – Lanslebourg-Mont-Cenis</span></p>
   <p class="fiche-note">Coordonnées et horaires sur la fiche complète.</p>
-</article><article class="cff__fiche fiche" id="fiche-samse-modane" data-rubrique="commerces" data-secteur="modane" data-village="Modane" data-favori="non" data-mots="samse modane commerce commerces modane modane" data-id="samse-modane">
+</article><article class="cff__fiche fiche teinte-nuit" id="fiche-samse-modane" data-rubrique="commerces" data-secteur="modane" data-village="Modane" data-favori="non" data-mots="samse modane commerce commerces modane modane" data-id="samse-modane">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-nuit"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12.5H6.2z"/><path d="M9 10V6.5a3 3 0 0 1 6 0V10"/></svg></span>
@@ -208,7 +210,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Samse Modane</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Modane</span></p>
   <p class="fiche-note">Coordonnées et horaires sur la fiche complète.</p>
-</article><article class="cff__fiche fiche" id="fiche-sherpa-bessans" data-rubrique="commerces" data-secteur="bessans" data-village="Bessans" data-favori="non" data-mots="sherpa supermarche bessans alimentation commerces bessans bessans" data-id="sherpa-bessans">
+</article><article class="cff__fiche fiche teinte-nuit" id="fiche-sherpa-bessans" data-rubrique="commerces" data-secteur="bessans" data-village="Bessans" data-favori="non" data-mots="sherpa supermarche bessans alimentation commerces bessans bessans" data-id="sherpa-bessans">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-nuit"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12.5H6.2z"/><path d="M9 10V6.5a3 3 0 0 1 6 0V10"/></svg></span>
@@ -218,7 +220,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Sherpa Supermarché Bessans</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Bessans</span></p>
   <p class="fiche-note">Coordonnées et horaires sur la fiche complète.</p>
-</article><article class="cff__fiche fiche fiche--exemple" id="fiche-ex-boulangerie" data-rubrique="commerces" data-secteur="val-cenis" data-village="Lanslebourg-Mont-Cenis" data-favori="non" data-mots="boulangerie-patisserie commerces lanslebourg-mont-cenis val cenis – lanslebourg-mont-cenis val cenis" data-id="ex-boulangerie">
+</article><article class="cff__fiche fiche teinte-nuit fiche--exemple" id="fiche-ex-boulangerie" data-rubrique="commerces" data-secteur="val-cenis" data-village="Lanslebourg-Mont-Cenis" data-favori="non" data-mots="boulangerie-patisserie commerces lanslebourg-mont-cenis val cenis – lanslebourg-mont-cenis val cenis" data-id="ex-boulangerie">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-nuit"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12.5H6.2z"/><path d="M9 10V6.5a3 3 0 0 1 6 0V10"/></svg></span>
@@ -228,7 +230,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Boulangerie-pâtisserie</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Val Cenis – Lanslebourg-Mont-Cenis</span></p>
   <p class="fiche-note"><span class="fiche-exemple">Exemple</span> La présentation écrite par le professionnel s&#39;affiche ici, avec ses horaires et ses coordonnées.</p>
-</article><article class="cff__fiche fiche fiche--exemple" id="fiche-ex-cafe" data-rubrique="bars-cafes" data-secteur="aussois" data-village="Aussois" data-favori="non" data-mots="bar et cafe bars &amp; cafes aussois aussois" data-id="ex-cafe">
+</article><article class="cff__fiche fiche teinte-sable fiche--exemple" id="fiche-ex-cafe" data-rubrique="bars-cafes" data-secteur="aussois" data-village="Aussois" data-favori="non" data-mots="bar et cafe bars &amp; cafes aussois aussois" data-id="ex-cafe">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-sable"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 9h12v4.5A5.5 5.5 0 0 1 10.5 19h-1A5.5 5.5 0 0 1 4 13.5z"/><path d="M16 10.5h1.6a2.4 2.4 0 0 1 0 4.8H16"/><path d="M8 3.5v2.5M12 3.5v2.5"/></svg></span>
@@ -238,7 +240,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Bar et café</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Aussois</span></p>
   <p class="fiche-note"><span class="fiche-exemple">Exemple</span> La présentation écrite par le professionnel s&#39;affiche ici, avec ses horaires et ses coordonnées.</p>
-</article><article class="cff__fiche fiche fiche--exemple" id="fiche-ex-gite" data-rubrique="hebergements" data-secteur="bessans" data-village="Bessans" data-favori="non" data-mots="gite hebergements bessans bessans" data-id="ex-gite">
+</article><article class="cff__fiche fiche teinte-moutarde fiche--exemple" id="fiche-ex-gite" data-rubrique="hebergements" data-secteur="bessans" data-village="Bessans" data-favori="non" data-mots="gite hebergements bessans bessans" data-id="ex-gite">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-moutarde"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 18.5V6.5M3 14h18v4.5M21 14v-1.5A3 3 0 0 0 18 9.5h-7V14"/><circle cx="7" cy="11.2" r="1.6"/></svg></span>
@@ -248,7 +250,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Gîte</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Bessans</span></p>
   <p class="fiche-note"><span class="fiche-exemple">Exemple</span> La présentation écrite par le professionnel s&#39;affiche ici, avec ses horaires et ses coordonnées.</p>
-</article><article class="cff__fiche fiche fiche--exemple" id="fiche-ex-chambres" data-rubrique="hebergements" data-secteur="val-cenis" data-village="Bramans" data-favori="non" data-mots="chambre d&#39;hotes hebergements bramans val cenis – bramans val cenis" data-id="ex-chambres">
+</article><article class="cff__fiche fiche teinte-moutarde fiche--exemple" id="fiche-ex-chambres" data-rubrique="hebergements" data-secteur="val-cenis" data-village="Bramans" data-favori="non" data-mots="chambre d&#39;hotes hebergements bramans val cenis – bramans val cenis" data-id="ex-chambres">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-moutarde"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 18.5V6.5M3 14h18v4.5M21 14v-1.5A3 3 0 0 0 18 9.5h-7V14"/><circle cx="7" cy="11.2" r="1.6"/></svg></span>
@@ -258,7 +260,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Chambre d&#39;hôtes</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Val Cenis – Bramans</span></p>
   <p class="fiche-note"><span class="fiche-exemple">Exemple</span> La présentation écrite par le professionnel s&#39;affiche ici, avec ses horaires et ses coordonnées.</p>
-</article><article class="cff__fiche fiche fiche--exemple" id="fiche-ex-electricien" data-rubrique="artisans" data-secteur="modane" data-village="Modane" data-favori="non" data-mots="electricite artisans modane modane" data-id="ex-electricien">
+</article><article class="cff__fiche fiche teinte-petrole fiche--exemple" id="fiche-ex-electricien" data-rubrique="artisans" data-secteur="modane" data-village="Modane" data-favori="non" data-mots="electricite artisans modane modane" data-id="ex-electricien">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-petrole"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m14.5 3.5 6 6-2.6 2.6-6-6z"/><path d="M12.6 6.4 3.5 15.5l3 3 9.1-9.1"/></svg></span>
@@ -268,7 +270,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Électricité</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Modane</span></p>
   <p class="fiche-note"><span class="fiche-exemple">Exemple</span> La présentation écrite par le professionnel s&#39;affiche ici, avec ses horaires et ses coordonnées.</p>
-</article><article class="cff__fiche fiche fiche--exemple" id="fiche-ex-menuiserie" data-rubrique="artisans" data-secteur="modane" data-village="Avrieux" data-favori="non" data-mots="menuiserie artisans avrieux modane" data-id="ex-menuiserie">
+</article><article class="cff__fiche fiche teinte-petrole fiche--exemple" id="fiche-ex-menuiserie" data-rubrique="artisans" data-secteur="modane" data-village="Avrieux" data-favori="non" data-mots="menuiserie artisans avrieux modane" data-id="ex-menuiserie">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-petrole"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m14.5 3.5 6 6-2.6 2.6-6-6z"/><path d="M12.6 6.4 3.5 15.5l3 3 9.1-9.1"/></svg></span>
@@ -278,7 +280,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Menuiserie</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Avrieux</span></p>
   <p class="fiche-note"><span class="fiche-exemple">Exemple</span> La présentation écrite par le professionnel s&#39;affiche ici, avec ses horaires et ses coordonnées.</p>
-</article><article class="cff__fiche fiche fiche--exemple" id="fiche-ex-deneigement" data-rubrique="artisans" data-secteur="val-cenis" data-village="Termignon" data-favori="non" data-mots="entretien et deneigement artisans termignon val cenis – termignon val cenis" data-id="ex-deneigement">
+</article><article class="cff__fiche fiche teinte-petrole fiche--exemple" id="fiche-ex-deneigement" data-rubrique="artisans" data-secteur="val-cenis" data-village="Termignon" data-favori="non" data-mots="entretien et deneigement artisans termignon val cenis – termignon val cenis" data-id="ex-deneigement">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-petrole"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m14.5 3.5 6 6-2.6 2.6-6-6z"/><path d="M12.6 6.4 3.5 15.5l3 3 9.1-9.1"/></svg></span>
@@ -288,7 +290,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Entretien et déneigement</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Val Cenis – Termignon</span></p>
   <p class="fiche-note"><span class="fiche-exemple">Exemple</span> La présentation écrite par le professionnel s&#39;affiche ici, avec ses horaires et ses coordonnées.</p>
-</article><article class="cff__fiche fiche fiche--exemple" id="fiche-ex-guide" data-rubrique="activites" data-secteur="bonneval-sur-arc" data-village="Bonneval-sur-Arc" data-favori="non" data-mots="guide et accompagnement activites bonneval-sur-arc bonneval-sur-arc" data-id="ex-guide">
+</article><article class="cff__fiche fiche teinte-petrole fiche--exemple" id="fiche-ex-guide" data-rubrique="activites" data-secteur="bonneval-sur-arc" data-village="Bonneval-sur-Arc" data-favori="non" data-mots="guide et accompagnement activites bonneval-sur-arc bonneval-sur-arc" data-id="ex-guide">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-petrole"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m2.5 19.5 7-11.5 4 6 2.8-3.6 5.2 9.1z"/><path d="m7.6 11.2 1.9 1.6 1.7-1.4"/></svg></span>
@@ -298,7 +300,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Guide et accompagnement</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Bonneval-sur-Arc</span></p>
   <p class="fiche-note"><span class="fiche-exemple">Exemple</span> La présentation écrite par le professionnel s&#39;affiche ici, avec ses horaires et ses coordonnées.</p>
-</article><article class="cff__fiche fiche fiche--exemple" id="fiche-ex-location" data-rubrique="commerces" data-secteur="la-norma" data-village="La Norma" data-favori="non" data-mots="location de materiel commerces la norma la norma" data-id="ex-location">
+</article><article class="cff__fiche fiche teinte-nuit fiche--exemple" id="fiche-ex-location" data-rubrique="commerces" data-secteur="la-norma" data-village="La Norma" data-favori="non" data-mots="location de materiel commerces la norma la norma" data-id="ex-location">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-nuit"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12.5H6.2z"/><path d="M9 10V6.5a3 3 0 0 1 6 0V10"/></svg></span>
@@ -308,7 +310,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Location de matériel</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>La Norma</span></p>
   <p class="fiche-note"><span class="fiche-exemple">Exemple</span> La présentation écrite par le professionnel s&#39;affiche ici, avec ses horaires et ses coordonnées.</p>
-</article><article class="cff__fiche fiche fiche--exemple" id="fiche-ex-massage" data-rubrique="bien-etre" data-secteur="modane" data-village="Villarodin-Bourget" data-favori="non" data-mots="massage bien-etre villarodin-bourget modane" data-id="ex-massage">
+</article><article class="cff__fiche fiche teinte-brume fiche--exemple" id="fiche-ex-massage" data-rubrique="bien-etre" data-secteur="modane" data-village="Villarodin-Bourget" data-favori="non" data-mots="massage bien-etre villarodin-bourget modane" data-id="ex-massage">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-brume"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 1.7 5.3L19 10l-5.3 1.7L12 17l-1.7-5.3L5 10l5.3-1.7z"/><path d="m18.5 15.5.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></svg></span>
@@ -318,7 +320,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Massage</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Villarodin-Bourget</span></p>
   <p class="fiche-note"><span class="fiche-exemple">Exemple</span> La présentation écrite par le professionnel s&#39;affiche ici, avec ses horaires et ses coordonnées.</p>
-</article><article class="cff__fiche fiche fiche--exemple" id="fiche-ex-immobilier" data-rubrique="immobilier" data-secteur="modane" data-village="Modane" data-favori="non" data-mots="agence immobiliere immobilier modane modane" data-id="ex-immobilier">
+</article><article class="cff__fiche fiche teinte-sable fiche--exemple" id="fiche-ex-immobilier" data-rubrique="immobilier" data-secteur="modane" data-village="Modane" data-favori="non" data-mots="agence immobiliere immobilier modane modane" data-id="ex-immobilier">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-sable"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="12" r="3.6"/><path d="M11.6 12H21v3M17.5 12v3"/></svg></span>
@@ -328,7 +330,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Agence immobilière</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Modane</span></p>
   <p class="fiche-note"><span class="fiche-exemple">Exemple</span> La présentation écrite par le professionnel s&#39;affiche ici, avec ses horaires et ses coordonnées.</p>
-</article><article class="cff__fiche fiche fiche--exemple" id="fiche-ex-producteur" data-rubrique="producteurs" data-secteur="val-cenis" data-village="Sollières-Sardières" data-favori="non" data-mots="producteur local producteurs locaux sollieres-sardieres val cenis – sollieres-sardieres val cenis" data-id="ex-producteur">
+</article><article class="cff__fiche fiche teinte-sable fiche--exemple" id="fiche-ex-producteur" data-rubrique="producteurs" data-secteur="val-cenis" data-village="Sollières-Sardières" data-favori="non" data-mots="producteur local producteurs locaux sollieres-sardieres val cenis – sollieres-sardieres val cenis" data-id="ex-producteur">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-sable"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21V9"/><path d="M12 9c-2.6-.2-3.8-2-3.8-5 2.6.2 3.8 2 3.8 5zM12 9c2.6-.2 3.8-2 3.8-5-2.6.2-3.8 2-3.8 5z"/><path d="M12 14c-2.6-.2-3.8-2-3.8-4.4M12 14c2.6-.2 3.8-2 3.8-4.4M12 19c-2.6-.2-3.8-2-3.8-4.4M12 19c2.6-.2 3.8-2 3.8-4.4"/></svg></span>
@@ -338,7 +340,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Producteur local</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Val Cenis – Sollières-Sardières</span></p>
   <p class="fiche-note"><span class="fiche-exemple">Exemple</span> La présentation écrite par le professionnel s&#39;affiche ici, avec ses horaires et ses coordonnées.</p>
-</article><article class="cff__fiche fiche fiche--exemple" id="fiche-ex-association" data-rubrique="associations" data-secteur="modane" data-village="Saint-André" data-favori="non" data-mots="association associations saint-andre modane" data-id="ex-association">
+</article><article class="cff__fiche fiche teinte-moutarde fiche--exemple" id="fiche-ex-association" data-rubrique="associations" data-secteur="modane" data-village="Saint-André" data-favori="non" data-mots="association associations saint-andre modane" data-id="ex-association">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-moutarde"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8.5" r="3"/><path d="M3.5 19.5a5.5 5.5 0 0 1 11 0"/><circle cx="16.8" cy="9.5" r="2.3"/><path d="M15.6 14.4a4.5 4.5 0 0 1 5 5.1"/></svg></span>
@@ -348,7 +350,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Association</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Saint-André</span></p>
   <p class="fiche-note"><span class="fiche-exemple">Exemple</span> La présentation écrite par le professionnel s&#39;affiche ici, avec ses horaires et ses coordonnées.</p>
-</article><article class="cff__fiche fiche fiche--exemple" id="fiche-ex-coach" data-rubrique="sport" data-secteur="modane" data-village="Valfréjus" data-favori="non" data-mots="coaching sportif sport valfrejus modane" data-id="ex-coach">
+</article><article class="cff__fiche fiche teinte-nuit fiche--exemple" id="fiche-ex-coach" data-rubrique="sport" data-secteur="modane" data-village="Valfréjus" data-favori="non" data-mots="coaching sportif sport valfrejus modane" data-id="ex-coach">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-nuit"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 7.5v9M17.5 7.5v9M3.5 10v4M20.5 10v4M6.5 12h11"/></svg></span>
@@ -358,7 +360,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Coaching sportif</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Valfréjus</span></p>
   <p class="fiche-note"><span class="fiche-exemple">Exemple</span> La présentation écrite par le professionnel s&#39;affiche ici, avec ses horaires et ses coordonnées.</p>
-</article><article class="cff__fiche fiche fiche--exemple" id="fiche-ex-conciergerie" data-rubrique="services" data-secteur="val-cenis" data-village="Lanslevillard" data-favori="non" data-mots="conciergerie services lanslevillard val cenis – lanslevillard val cenis" data-id="ex-conciergerie">
+</article><article class="cff__fiche fiche teinte-brume fiche--exemple" id="fiche-ex-conciergerie" data-rubrique="services" data-secteur="val-cenis" data-village="Lanslevillard" data-favori="non" data-mots="conciergerie services lanslevillard val cenis – lanslevillard val cenis" data-id="ex-conciergerie">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-brume"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="7.5" width="17" height="12" rx="1.5"/><path d="M9 7.5V5h6v2.5M3.5 12.5h17"/></svg></span>
@@ -368,7 +370,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <h3 class="fiche-nom">Conciergerie</h3>
   <p class="fiche-lieu"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>Val Cenis – Lanslevillard</span></p>
   <p class="fiche-note"><span class="fiche-exemple">Exemple</span> La présentation écrite par le professionnel s&#39;affiche ici, avec ses horaires et ses coordonnées.</p>
-</article><article class="cff__fiche fiche fiche--exemple" id="fiche-ex-navette" data-rubrique="services" data-secteur="modane" data-village="Fourneaux" data-favori="non" data-mots="taxi et navette services fourneaux modane" data-id="ex-navette">
+</article><article class="cff__fiche fiche teinte-brume fiche--exemple" id="fiche-ex-navette" data-rubrique="services" data-secteur="modane" data-village="Fourneaux" data-favori="non" data-mots="taxi et navette services fourneaux modane" data-id="ex-navette">
   <span class="anneaux anneaux--fiche" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></span>
   <div class="fiche-tete">
     <span class="fiche-icone teinte-brume"><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="7.5" width="17" height="12" rx="1.5"/><path d="M9 7.5V5h6v2.5M3.5 12.5h17"/></svg></span>

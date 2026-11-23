@@ -44,9 +44,11 @@ export default (c) => {
           <button type="button" data-valeur="tout" aria-pressed="true">${c.t('carnet.touteFiches')}</button>
           <button type="button" data-valeur="oui" aria-pressed="false">${icone('coeur')}${c.t('carnet.favoris')}</button>
         </div>
+        <button type="button" class="filtres-hasard" data-hasard data-annonce="${c.s('commun.tiree', { nom: '{nom}' })}">${icone('de')}<span>${c.t('commun.hasard')}</span></button>
         <p class="filtres-compte" aria-live="polite"><b data-compte>20</b> <span data-compte-mot>fiches</span> ${c.t('carnet.affichees')} · <button type="button" class="lien" data-reinit>${c.t('carnet.reinit')}</button></p>
       </div>
     </div>
+    <p class="visuellement-cache" aria-live="polite" data-hasard-annonce></p>
     <h2 class="visuellement-cache">${c.t('carnet.region')}</h2>
     <p class="note-maquette">${c.t('carnet.note')}</p>
     <div class="cff__grille grille-fiches" data-grille>

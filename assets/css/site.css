@@ -304,8 +304,8 @@ h3 { font-size: clamp(1.7rem, 1.3rem + 1.2vw, 2.4rem); }
 .jour-favoris { display: inline-flex; align-items: center; gap: .5em; min-height: 44px; padding: 0 16px; border-radius: 999px; background: var(--papier); box-shadow: inset 0 0 0 1px var(--ligne); text-decoration: none; font-weight: 600; }
 .jour-favoris .icone { color: var(--petrole); }
 .donne { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); grid-auto-rows: minmax(230px, auto); gap: clamp(12px, 1.6vw, 20px); }
-.carte-jour { position: relative; display: flex; flex-direction: column; gap: 8px; padding: clamp(20px, 2.4vw, 32px); border-radius: var(--grand-rayon); min-width: 0; transition: transform .35s var(--courbe), box-shadow .35s var(--courbe); }
-.carte-jour:hover { transform: translateY(-4px); box-shadow: var(--ombre); }
+.carte-jour { position: relative; display: flex; flex-direction: column; gap: 8px; padding: clamp(20px, 2.4vw, 32px); border-radius: var(--grand-rayon); min-width: 0; overflow: hidden; isolation: isolate; transition: translate .35s var(--courbe), box-shadow .35s var(--courbe); }
+.carte-jour:hover { translate: 0 -6px; box-shadow: var(--ombre); }
 .carte-jour[data-place="0"], .carte-jour[data-place="3"] { grid-column: span 4; }
 .carte-jour[data-place="1"], .carte-jour[data-place="2"] { grid-column: span 2; }
 .carte-jour--table { background: var(--moutarde); color: var(--nuit); }
@@ -385,15 +385,15 @@ html:not(.js) .registre-panneau[hidden] { display: flex !important; padding-top:
 .vallee-cretes path { stroke: var(--sable); stroke-width: 2.4; opacity: .55; }
 .vallee-riviere-fond { stroke: var(--brume); stroke-width: 14; stroke-linecap: round; }
 .vallee-riviere { stroke: var(--petrole); stroke-width: 4.5; stroke-linecap: round; stroke-dasharray: 1 1; stroke-dashoffset: 0; }
-.vallee-point circle { fill: var(--papier); stroke: var(--nuit); stroke-width: 3; }
-.vallee-point--grand circle { fill: var(--nuit); }
+.vallee-point circle:not(.vp-halo) { fill: var(--papier); stroke: var(--nuit); stroke-width: 3; }
+.vallee-point--grand circle:not(.vp-halo) { fill: var(--nuit); }
 .vallee-point path { fill: var(--moutarde); stroke: var(--nuit); stroke-width: 2.5; stroke-linejoin: round; }
 .vallee-point text { font: 600 15px var(--police-texte); fill: var(--nuit); pointer-events: none; }
 .vallee-point--grand text { fill: var(--creme); }
 .vallee-noms { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; pointer-events: none; }
 .vallee-noms li { position: absolute; transform: translate(-50%, calc(-100% - 22px)); padding: 2px 10px; border-radius: 999px; background: var(--nuit); color: var(--creme); font: 400 1.15rem/1.3 var(--police-titres); letter-spacing: .04em; white-space: nowrap; }
-.vallee-noms li:last-child { transform: translate(calc(-100% - 22px), -50%); }
-.vallee-noms li:nth-child(2) { transform: translate(-50%, 24px); }
+.vallee-noms li:nth-child(3):not(.vallee-geo) { transform: translate(calc(-100% - 22px), -50%); }
+.vallee-noms li:nth-child(2):not(.vallee-geo) { transform: translate(-50%, 24px); }
 .vallee-legende { columns: 2; column-gap: 18px; margin: 0 0 14px; padding: 0; list-style: none; }
 .vallee-legende li { display: flex; align-items: center; gap: 10px; min-height: 34px; break-inside: avoid; font-size: .98rem; }
 .vallee-n { display: inline-grid; place-items: center; flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--nuit); color: var(--creme); font-size: .8rem; font-weight: 600; font-variant-numeric: tabular-nums; }
@@ -559,8 +559,8 @@ html:not(.js) .registre-panneau[hidden] { display: flex !important; padding-top:
 .carte-scene { display: grid; grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr); gap: clamp(16px, 2.4vw, 28px); align-items: start; }
 .carte-plan { position: relative; }
 .carte-plan .vallee-point { cursor: pointer; }
-.carte-plan .vallee-point:hover circle, .carte-plan .vallee-point:hover path { stroke-width: 4.5; }
-.vallee-point.est-choisi circle, .vallee-point.est-choisi path { fill: var(--moutarde); stroke-width: 4; }
+.carte-plan .vallee-point:hover circle:not(.vp-halo), .carte-plan .vallee-point:hover path { stroke-width: 4.5; }
+.vallee-point.est-choisi circle:not(.vp-halo), .vallee-point.est-choisi path { fill: var(--moutarde); stroke-width: 4; }
 .vallee-point.est-choisi text { fill: var(--nuit); }
 .carte-panneau { padding: clamp(18px, 2vw, 26px); border-radius: var(--grand-rayon); background: var(--papier); box-shadow: inset 0 0 0 1px var(--ligne); }
 .carte-consigne { margin: 0 0 10px; font-weight: 600; }
@@ -666,7 +666,7 @@ html:not(.js) .registre-panneau[hidden] { display: flex !important; padding-top:
 .porteur-grille { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(24px, 5vw, 72px); align-items: center; }
 .porteur-adresse { display: flex; align-items: center; gap: 12px; font-weight: 600; }
 .porteur-picto { width: 44px; height: 44px; flex: none; }
-.vallee--avrieux .vallee-point[data-village="avrieux"] circle { fill: var(--moutarde); r: 19; stroke-width: 4; }
+.vallee--avrieux .vallee-point[data-village="avrieux"] circle:not(.vp-halo) { fill: var(--moutarde); r: 19; stroke-width: 4; }
 .vallee--avrieux .vallee-point[data-village="avrieux"] text { fill: var(--nuit); }
 @media (max-width: 860px) { .porteur-grille { grid-template-columns: minmax(0, 1fr); } }
 
@@ -748,8 +748,8 @@ html.js:not(.secours):not([data-arrivee="retour"]) :is(.ouv-pastille, .ouv-accro
 html.js:not(.secours):not([data-arrivee="retour"]) .numero-chiffre { opacity: 0; }
 
 /* Ouverture vivante : la photo respire très lentement (boucle CSS, arrêtée hors écran par le socle). */
-.ouv-media img { animation: respire 22s ease-in-out infinite alternate; transform-origin: 66% 62%; }
-@keyframes respire { from { scale: 1; } to { scale: 1.07; } }
+.ouv-media img { animation: respire 16s ease-in-out infinite alternate; transform-origin: 66% 62%; }
+@keyframes respire { from { scale: 1; translate: 0 0; } to { scale: 1.09; translate: -1.4% -.9%; } }
 
 /* Un appel bleu nuit en fin de page reste séparé du pied, du même bleu. */
 main:has(> .appel-pro:last-child) + .pied { border-top: 1px solid color-mix(in srgb, var(--creme) 16%, var(--nuit)); }
@@ -816,3 +816,82 @@ main:has(> .appel-pro:last-child) + .pied { border-top: 1px solid color-mix(in s
 .grille-fiches .fiche.fiche--attente { translate: 0 36px; scale: .96; }
 /* Ordinateur à écran bas (1000 × 560) : le premier écran garde le titre, la recherche et les repères. */
 @media (max-height: 640px) and (min-width: 761px) { .ouv-pastille, .ouv-accroche { display: none; } }
+
+/* ===================== Version 2 : la vallée en relief, le jeu de cartes, la page qui tourne, le hasard ===================== */
+
+/* La vallée : relief, sommets enneigés, rivière qui s'écoule une fois tracée. */
+.vallee { background: color-mix(in srgb, var(--papier) 70%, var(--brume)); }
+.vallee-massif { fill: color-mix(in srgb, var(--lin) 85%, var(--sable)); }
+.vallee-cretes path { stroke: color-mix(in srgb, var(--sable) 80%, var(--nuit)); stroke-width: 2; opacity: .5; }
+.vallee-sommets path { fill: var(--papier); stroke: color-mix(in srgb, var(--sable) 85%, var(--nuit)); stroke-width: 1.6; stroke-linejoin: round; }
+.vallee-riviere-fond { stroke: color-mix(in srgb, var(--brume) 80%, var(--petrole)); }
+.vallee-flux { stroke: var(--papier); stroke-width: 2; stroke-linecap: round; stroke-dasharray: .006 .036; opacity: 0; transition: opacity 1s ease; animation: vallee-flux 16s linear infinite; pointer-events: none; }
+.vallee.est-tracee .vallee-flux { opacity: .95; }
+@keyframes vallee-flux { to { stroke-dashoffset: .42; } }
+.vallee-point { transition: opacity .3s ease; }
+.vallee .vallee-point .vp-halo { fill: var(--moutarde); stroke: none; opacity: 0; transform: scale(.4); transform-box: fill-box; transform-origin: center; transition: opacity .3s ease, transform .45s var(--courbe); }
+.vallee .vallee-point:hover .vp-halo, .vallee .vallee-point.est-eclaire .vp-halo { opacity: .5; transform: scale(1); }
+.vallee .vallee-point.est-choisi .vp-halo { animation: vp-pouls 1.9s ease-out infinite; }
+@keyframes vp-pouls { from { opacity: .7; transform: scale(.55); } to { opacity: 0; transform: scale(1.6); } }
+.vallee.a-eclairage .vallee-point:not(.est-eclaire) { opacity: .3; }
+.vallee.est-cliquable .vallee-point, .carte-plan .vallee-point { cursor: pointer; }
+.vallee .vallee-noms li.vallee-geo { padding: 0; background: none; color: color-mix(in srgb, var(--nuit) 78%, var(--sable)); font: 600 .8125rem/1.2 var(--police-texte); letter-spacing: .08em; text-transform: uppercase; transform: none; }
+.vallee .vallee-noms li.vallee-geo--b { transform: translateX(-50%); }
+.vallee-bulle { position: absolute; left: 0; top: 0; z-index: 2; margin: 0; padding: 3px 12px; border-radius: 999px; background: var(--nuit); color: var(--creme);
+  font: 400 1.15rem/1.3 var(--police-titres); letter-spacing: .04em; white-space: nowrap; pointer-events: none; translate: -50% calc(-100% - 20px); box-shadow: 0 8px 18px -10px rgba(0, 0, 0, .5); }
+.vallee-bulle[hidden] { display: none; }
+@media (max-width: 1100px) { .vallee .vallee-noms li.vallee-geo { letter-spacing: .04em; } }
+@media (max-width: 760px) { .vallee .vallee-noms li.vallee-geo { display: none; } }
+/* Petite carte (contact, tablette) : les repères géographiques laissent la place aux villages. */
+.vallee { container-type: inline-size; }
+@container (max-width: 560px) { .vallee-noms li.vallee-geo { display: none; } }
+.vallee-legende a { display: flex; align-items: center; gap: 10px; min-height: 34px; color: inherit; text-decoration: none; border-radius: 10px; padding: 0 6px 0 0; transition: background-color .2s; }
+.vallee-legende a:hover, .vallee-legende a:focus-visible { background: var(--lin); }
+.vallee-legende a:hover .vallee-n, .vallee-legende a:focus-visible .vallee-n { background: var(--moutarde); color: var(--nuit); }
+.vallee-legende a span:last-child { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: .2em; transition: text-decoration-color .2s; }
+.vallee-legende a:hover span:last-child { text-decoration-color: currentColor; }
+@media (hover: none), (max-width: 760px) { .vallee-legende a { min-height: 44px; } }
+.secteur { transition: translate .35s var(--courbe), box-shadow .35s var(--courbe); }
+.secteur:hover { translate: 0 -4px; box-shadow: inset 0 0 0 1px var(--ligne), var(--ombre); }
+
+/* Aujourd'hui : rebattre les cartes, grande icône en filigrane sur les grandes places. */
+.jour-actions { grid-column: 2; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+.jour-rebattre { display: inline-flex; align-items: center; gap: .5em; min-height: 44px; padding: 0 16px; border: 0; border-radius: 999px; background: var(--nuit); color: var(--creme); font: inherit; font-weight: 600; cursor: pointer; transition: background-color .2s; }
+.jour-rebattre:hover { background: var(--petrole); }
+.jour-rebattre .icone { color: var(--moutarde); transition: rotate .5s var(--courbe); }
+.jour-rebattre:hover .icone { rotate: 180deg; }
+.jour-tete .jour-actions .jour-favoris { grid-column: auto; justify-self: auto; }
+@media (max-width: 640px) { .jour-actions { grid-column: 1; justify-content: flex-start; } }
+/* Sous le contenu (z-index négatif dans la carte isolée) : le lien de la carte la couvre toujours en entier. */
+.carte-jour-filigrane { position: absolute; z-index: -1; right: -4%; bottom: -14%; width: clamp(180px, 22vw, 320px); aspect-ratio: 1; opacity: 0; color: currentColor; pointer-events: none; rotate: -12deg; transition: opacity .5s ease, rotate .8s var(--courbe), scale .8s var(--courbe); }
+.carte-jour-filigrane .icone { width: 100%; height: 100%; stroke-width: 1.1; }
+.carte-jour[data-place="0"] .carte-jour-filigrane, .carte-jour[data-place="3"] .carte-jour-filigrane { opacity: .12; }
+.carte-jour--commerce .carte-jour-filigrane { color: var(--moutarde); }
+.carte-jour:hover .carte-jour-filigrane { rotate: -4deg; scale: 1.06; }
+@media (max-width: 900px) { .carte-jour[data-place="0"] .carte-jour-filigrane, .carte-jour[data-place="3"] .carte-jour-filigrane { opacity: .1; width: 46%; } }
+@media (max-width: 560px) { .carte-jour[data-place] .carte-jour-filigrane { opacity: .1; width: 42%; right: -6%; bottom: -10%; } }
+
+/* Le répertoire : une feuille tourne depuis la spirale quand on change d'onglet. */
+.registre-feuille { position: absolute; z-index: 4; left: clamp(36px, 3.6vw, 52px); top: 0; right: 0; bottom: 0; border-radius: 0 var(--grand-rayon) var(--grand-rayon) 0; visibility: hidden; pointer-events: none;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--sable) 28%, var(--papier)), var(--papier) 18%, var(--papier) 70%, color-mix(in srgb, var(--sable) 22%, var(--papier))); box-shadow: 0 10px 30px -18px rgba(31, 52, 66, .55); }
+.registre-feuille::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(90deg, transparent, rgba(31, 52, 66, .18)); opacity: var(--ombre-feuille, 0); }
+
+/* Carnet : la couleur de la rubrique en bandeau, une adresse au hasard. */
+.fiche[class*="teinte-"]::after { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 6px; border-radius: 16px 16px 0 0; background: var(--t-fond); }
+.fiche.teinte-brume::after { background: color-mix(in srgb, var(--brume) 70%, var(--petrole)); }
+.filtres-hasard { display: inline-flex; align-items: center; gap: .5em; min-height: 44px; padding: 0 16px; border: 0; border-radius: 999px; background: var(--moutarde); color: var(--nuit); font: inherit; font-weight: 600; cursor: pointer; transition: background-color .2s; }
+.filtres-hasard:hover { background: color-mix(in srgb, var(--moutarde) 80%, var(--papier)); }
+.filtres-hasard .icone { transition: rotate .5s var(--courbe); }
+.filtres-hasard:hover .icone { rotate: 90deg; }
+.filtres-hasard.roule .icone { animation: de-roule .6s var(--courbe); }
+@keyframes de-roule { 0% { rotate: 0deg; scale: 1; } 50% { scale: 1.25; } 100% { rotate: 360deg; scale: 1; } }
+.filtres-bas { gap: 10px 14px; }
+.filtres-bas .filtres-compte { margin-left: auto; }
+.fiche.est-tiree { box-shadow: inset 0 0 0 3px var(--moutarde), 0 22px 40px -22px rgba(31, 52, 66, .7); }
+.fiche.est-tiree .fiche-icone { animation: fiche-tiree .9s var(--courbe) 2; }
+@keyframes fiche-tiree { 0%, 100% { rotate: 0deg; scale: 1; } 30% { rotate: -14deg; scale: 1.18; } 60% { rotate: 10deg; } }
+
+/* Référencer : le tampon « Reçu » se pose sur la fiche envoyée. */
+.tampon-recu { position: absolute; right: 18px; bottom: 18px; z-index: 2; margin: 0; padding: 6px 14px; border: 3px solid var(--petrole); border-radius: 10px; color: var(--petrole); background: color-mix(in srgb, var(--papier) 86%, transparent);
+  font-family: var(--police-titres); font-size: 1.5rem; letter-spacing: .08em; rotate: -9deg; }
+.tampon-recu[hidden] { display: none; }

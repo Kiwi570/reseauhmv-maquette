@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/bebas-neue-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/barlow-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f7f4ec">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -139,29 +139,35 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="tete-carte-actions"><span class="tete-carte-info" data-info-cle><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg><span>16 villages et stations</span></span><a href="/carnet" class="bouton" data-libelle="Le Carnet" data-action-principale><svg class="icone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5.5 5.5"/></svg>Ouvrir le carnet</a></p>
     </div>
     <div class="carte-scene">
-      <div class="carte-plan" data-iris-centre><div class="vallee " data-effet="vallee" data-vallee-interactive>
+      <div class="carte-plan" data-iris-centre><div class="vallee " data-effet="vallee" data-vallee-interactive data-boucle-css>
   <svg class="vallee-svg" viewBox="0 0 1000 700" role="img" aria-label="Plan schématique de la vallée, positions indicatives.">
+    <path class="vallee-massif" d="M0 430 L60 400 L95 425 L150 380 L200 410 L240 360 L300 395 L340 330 L395 372 L430 300 L470 290 L520 245 L560 270 L600 215 L650 240 L700 190 L760 205 L800 140 L850 160 L880 90 L930 40 L1000 20 L1000 0 L0 0 Z"/>
+    <path class="vallee-massif" d="M0 640 L50 610 L110 650 L170 620 L230 655 L300 615 L360 640 L420 590 L470 560 L540 470 L600 430 L650 410 L720 395 L780 330 L840 300 L900 250 L950 190 L1000 170 L1000 700 L0 700 Z"/>
     <g class="vallee-cretes" fill="none" stroke-linejoin="round"><path d="M0 430 L60 400 L95 425 L150 380 L200 410 L240 360 L300 395 L340 330 L395 372 L430 300 L470 290 L520 245 L560 270 L600 215 L650 240 L700 190 L760 205 L800 140 L850 160 L880 90 L930 40 L1000 20"/><path d="M0 640 L50 610 L110 650 L170 620 L230 655 L300 615 L360 640 L420 590 L470 560 L540 470 L600 430 L650 410 L720 395 L780 330 L840 300 L900 250 L950 190 L1000 170"/><path d="M330 280 L370 230 L410 260 L455 200 L500 230 L540 170 L590 200 L630 140 L680 165 L720 110"/></g>
+    <g class="vallee-sommets"><path d="M231 367 L240 354 L249 367 Z"/><path d="M331 337 L340 324 L349 337 Z"/><path d="M421 307 L430 294 L439 307 Z"/><path d="M511 252 L520 239 L529 252 Z"/><path d="M591 222 L600 209 L609 222 Z"/><path d="M691 197 L700 184 L709 197 Z"/><path d="M791 147 L800 134 L809 147 Z"/><path d="M871 97 L880 84 L889 97 Z"/><path d="M446 207 L455 194 L464 207 Z"/><path d="M531 177 L540 164 L549 177 Z"/><path d="M621 147 L630 134 L639 147 Z"/><path d="M101 657 L110 644 L119 657 Z"/><path d="M221 662 L230 649 L239 662 Z"/><path d="M411 597 L420 584 L429 597 Z"/><path d="M771 337 L780 324 L789 337 Z"/></g>
     <path class="vallee-riviere-fond" d="M-10 522 C0.0 524.0 27.5 528.3 50 534 C72.5 539.7 105.2 549.7 125 556 C144.8 562.3 155.2 573.8 169 572 C182.8 570.2 192.0 555.0 208 545 C224.0 535.0 247.7 520.2 265 512 C282.3 503.8 286.7 500.0 312 496 C337.3 492.0 390.2 505.2 417 488 C443.8 470.8 460.8 418.0 473 393 C485.2 368.0 467.5 351.2 490 338 C512.5 324.8 578.5 320.3 608 314 C637.5 307.7 630.2 315.3 667 300 C703.8 284.7 783.8 258.2 829 222 C874.2 185.8 913.7 115.0 938 83 C962.3 51.0 968.8 38.8 975 30" fill="none"/>
     <path class="vallee-riviere" d="M-10 522 C0.0 524.0 27.5 528.3 50 534 C72.5 539.7 105.2 549.7 125 556 C144.8 562.3 155.2 573.8 169 572 C182.8 570.2 192.0 555.0 208 545 C224.0 535.0 247.7 520.2 265 512 C282.3 503.8 286.7 500.0 312 496 C337.3 492.0 390.2 505.2 417 488 C443.8 470.8 460.8 418.0 473 393 C485.2 368.0 467.5 351.2 490 338 C512.5 324.8 578.5 320.3 608 314 C637.5 307.7 630.2 315.3 667 300 C703.8 284.7 783.8 258.2 829 222 C874.2 185.8 913.7 115.0 938 83 C962.3 51.0 968.8 38.8 975 30" fill="none" pathLength="1"/>
-    <g class="vallee-points"><g class="vallee-point" data-village="saint-andre" style="--o:0.050" transform="translate(50 530)">
-      <g class="vp"><circle r="13"/><text y="5" text-anchor="middle">1</text></g></g><g class="vallee-point" data-village="le-freney" style="--o:0.125" transform="translate(125 552)">
-      <g class="vp"><circle r="13"/><text y="5" text-anchor="middle">2</text></g></g><g class="vallee-point" data-village="fourneaux" style="--o:0.169" transform="translate(169 568)">
-      <g class="vp"><circle r="13"/><text y="5" text-anchor="middle">3</text></g></g><g class="vallee-point vallee-point--grand" data-village="modane" style="--o:0.208" transform="translate(208 541)">
-      <g class="vp"><circle r="15"/><text y="5" text-anchor="middle">4</text></g></g><g class="vallee-point vallee-point--station" data-village="valfrejus" style="--o:0.183" transform="translate(183 653)">
-      <g class="vp"><path d="M0 -15 L14 10 L-14 10 Z"/><text y="6" text-anchor="middle">5</text></g></g><g class="vallee-point" data-village="villarodin-bourget" style="--o:0.265" transform="translate(265 508)">
-      <g class="vp"><circle r="13"/><text y="5" text-anchor="middle">6</text></g></g><g class="vallee-point vallee-point--station" data-village="la-norma" style="--o:0.281" transform="translate(281 571)">
-      <g class="vp"><path d="M0 -15 L14 10 L-14 10 Z"/><text y="6" text-anchor="middle">7</text></g></g><g class="vallee-point" data-village="avrieux" style="--o:0.312" transform="translate(312 492)">
-      <g class="vp"><circle r="13"/><text y="5" text-anchor="middle">8</text></g></g><g class="vallee-point" data-village="aussois" style="--o:0.348" transform="translate(348 465)">
-      <g class="vp"><circle r="13"/><text y="5" text-anchor="middle">9</text></g></g><g class="vallee-point" data-village="bramans" style="--o:0.417" transform="translate(417 484)">
-      <g class="vp"><circle r="13"/><text y="5" text-anchor="middle">10</text></g></g><g class="vallee-point" data-village="sollieres-sardieres" style="--o:0.473" transform="translate(473 389)">
-      <g class="vp"><circle r="13"/><text y="5" text-anchor="middle">11</text></g></g><g class="vallee-point" data-village="termignon" style="--o:0.490" transform="translate(490 334)">
-      <g class="vp"><circle r="13"/><text y="5" text-anchor="middle">12</text></g></g><g class="vallee-point" data-village="lanslebourg-mont-cenis" style="--o:0.608" transform="translate(608 310)">
-      <g class="vp"><circle r="13"/><text y="5" text-anchor="middle">13</text></g></g><g class="vallee-point" data-village="lanslevillard" style="--o:0.667" transform="translate(667 296)">
-      <g class="vp"><circle r="13"/><text y="5" text-anchor="middle">14</text></g></g><g class="vallee-point vallee-point--grand" data-village="bessans" style="--o:0.829" transform="translate(829 218)">
-      <g class="vp"><circle r="15"/><text y="5" text-anchor="middle">15</text></g></g><g class="vallee-point vallee-point--grand" data-village="bonneval-sur-arc" style="--o:0.938" transform="translate(938 79)">
-      <g class="vp"><circle r="15"/><text y="5" text-anchor="middle">16</text></g></g></g>
+    <path class="vallee-flux" d="M-10 522 C0.0 524.0 27.5 528.3 50 534 C72.5 539.7 105.2 549.7 125 556 C144.8 562.3 155.2 573.8 169 572 C182.8 570.2 192.0 555.0 208 545 C224.0 535.0 247.7 520.2 265 512 C282.3 503.8 286.7 500.0 312 496 C337.3 492.0 390.2 505.2 417 488 C443.8 470.8 460.8 418.0 473 393 C485.2 368.0 467.5 351.2 490 338 C512.5 324.8 578.5 320.3 608 314 C637.5 307.7 630.2 315.3 667 300 C703.8 284.7 783.8 258.2 829 222 C874.2 185.8 913.7 115.0 938 83 C962.3 51.0 968.8 38.8 975 30" fill="none" pathLength="1"/>
+    <g class="vallee-points"><g class="vallee-point" data-village="saint-andre" data-nom="Saint-André" data-secteur="modane" style="--o:0.050" transform="translate(50 530)">
+      <g class="vp"><circle class="vp-halo" r="24"/><circle r="13"/><text y="5" text-anchor="middle">1</text></g></g><g class="vallee-point" data-village="le-freney" data-nom="Le Freney" data-secteur="modane" style="--o:0.125" transform="translate(125 552)">
+      <g class="vp"><circle class="vp-halo" r="24"/><circle r="13"/><text y="5" text-anchor="middle">2</text></g></g><g class="vallee-point" data-village="fourneaux" data-nom="Fourneaux" data-secteur="modane" style="--o:0.169" transform="translate(169 568)">
+      <g class="vp"><circle class="vp-halo" r="24"/><circle r="13"/><text y="5" text-anchor="middle">3</text></g></g><g class="vallee-point vallee-point--grand" data-village="modane" data-nom="Modane" data-secteur="modane" style="--o:0.208" transform="translate(208 541)">
+      <g class="vp"><circle class="vp-halo" r="24"/><circle r="15"/><text y="5" text-anchor="middle">4</text></g></g><g class="vallee-point vallee-point--station" data-village="valfrejus" data-nom="Valfréjus" data-secteur="modane" style="--o:0.183" transform="translate(183 653)">
+      <g class="vp"><circle class="vp-halo" r="24"/><path d="M0 -15 L14 10 L-14 10 Z"/><text y="6" text-anchor="middle">5</text></g></g><g class="vallee-point" data-village="villarodin-bourget" data-nom="Villarodin-Bourget" data-secteur="modane" style="--o:0.265" transform="translate(265 508)">
+      <g class="vp"><circle class="vp-halo" r="24"/><circle r="13"/><text y="5" text-anchor="middle">6</text></g></g><g class="vallee-point vallee-point--station" data-village="la-norma" data-nom="La Norma" data-secteur="la-norma" style="--o:0.281" transform="translate(281 571)">
+      <g class="vp"><circle class="vp-halo" r="24"/><path d="M0 -15 L14 10 L-14 10 Z"/><text y="6" text-anchor="middle">7</text></g></g><g class="vallee-point" data-village="avrieux" data-nom="Avrieux" data-secteur="modane" style="--o:0.312" transform="translate(312 492)">
+      <g class="vp"><circle class="vp-halo" r="24"/><circle r="13"/><text y="5" text-anchor="middle">8</text></g></g><g class="vallee-point" data-village="aussois" data-nom="Aussois" data-secteur="aussois" style="--o:0.348" transform="translate(348 465)">
+      <g class="vp"><circle class="vp-halo" r="24"/><circle r="13"/><text y="5" text-anchor="middle">9</text></g></g><g class="vallee-point" data-village="bramans" data-nom="Bramans" data-secteur="val-cenis" style="--o:0.417" transform="translate(417 484)">
+      <g class="vp"><circle class="vp-halo" r="24"/><circle r="13"/><text y="5" text-anchor="middle">10</text></g></g><g class="vallee-point" data-village="sollieres-sardieres" data-nom="Sollières-Sardières" data-secteur="val-cenis" style="--o:0.473" transform="translate(473 389)">
+      <g class="vp"><circle class="vp-halo" r="24"/><circle r="13"/><text y="5" text-anchor="middle">11</text></g></g><g class="vallee-point" data-village="termignon" data-nom="Termignon" data-secteur="val-cenis" style="--o:0.490" transform="translate(490 334)">
+      <g class="vp"><circle class="vp-halo" r="24"/><circle r="13"/><text y="5" text-anchor="middle">12</text></g></g><g class="vallee-point" data-village="lanslebourg-mont-cenis" data-nom="Lanslebourg-Mont-Cenis" data-secteur="val-cenis" style="--o:0.608" transform="translate(608 310)">
+      <g class="vp"><circle class="vp-halo" r="24"/><circle r="13"/><text y="5" text-anchor="middle">13</text></g></g><g class="vallee-point" data-village="lanslevillard" data-nom="Lanslevillard" data-secteur="val-cenis" style="--o:0.667" transform="translate(667 296)">
+      <g class="vp"><circle class="vp-halo" r="24"/><circle r="13"/><text y="5" text-anchor="middle">14</text></g></g><g class="vallee-point vallee-point--grand" data-village="bessans" data-nom="Bessans" data-secteur="bessans" style="--o:0.829" transform="translate(829 218)">
+      <g class="vp"><circle class="vp-halo" r="24"/><circle r="15"/><text y="5" text-anchor="middle">15</text></g></g><g class="vallee-point vallee-point--grand" data-village="bonneval-sur-arc" data-nom="Bonneval-sur-Arc" data-secteur="bonneval-sur-arc" style="--o:0.938" transform="translate(938 79)">
+      <g class="vp"><circle class="vp-halo" r="24"/><circle r="15"/><text y="5" text-anchor="middle">16</text></g></g></g>
   </svg>
+  <ul class="vallee-noms" aria-hidden="true"><li class="vallee-geo vallee-geo--g" style="left:1.5%;top:56%">← Saint-Jean-de-Maurienne</li><li class="vallee-geo vallee-geo--b" style="left:62%;top:63.5%">Col du Mont-Cenis, Italie ↓</li><li class="vallee-geo vallee-geo--h" style="left:78%;top:3%">↑ Col de l&#39;Iseran</li></ul>
+  <p class="vallee-bulle" aria-hidden="true" hidden></p>
 </div>
       </div>
       <aside class="carte-panneau" aria-live="polite">
@@ -325,7 +331,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <h2 data-anime="lignes">Les six secteurs</h2>
       <p class="section-texte">Les photos des villages, comme sur le carnet actuel.</p>
     </header>
-    <ul class="secteurs" data-anime="cascade"><li class="secteur secteur--bonneval-sur-arc">
+    <ul class="secteurs" data-anime="cascade"><li class="secteur secteur--bonneval-sur-arc" data-secteur="bonneval-sur-arc">
     <figure class="media secteur-media" style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/village-bonneval-sur-arc-960.webp" srcset="/assets/images/village-bonneval-sur-arc-480.webp 480w, /assets/images/village-bonneval-sur-arc-640.webp 640w, /assets/images/village-bonneval-sur-arc-960.webp 960w" sizes="(max-width: 760px) 100vw, 50vw" alt="Bonneval-sur-Arc en été : le village aux toits de lauze au pied des montagnes" width="960" height="720" loading="lazy" decoding="async">
@@ -335,7 +341,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <h3><a href="/carnet?secteur=bonneval-sur-arc#resultats" class="secteur-lien" data-libelle="Le Carnet">Bonneval-sur-Arc</a></h3>
       <p>Le bout de la vallée, au pied des cols.</p>
     </div>
-  </li><li class="secteur secteur--modane">
+  </li><li class="secteur secteur--modane" data-secteur="modane">
     <figure class="media secteur-media" style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/village-modane-960.webp" srcset="/assets/images/village-modane-480.webp 480w, /assets/images/village-modane-640.webp 640w, /assets/images/village-modane-960.webp 960w" sizes="(max-width: 760px) 100vw, 25vw" alt="Modane vue des hauteurs en automne, sommets enneigés au fond" width="960" height="720" loading="lazy" decoding="async">
@@ -345,7 +351,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <h3><a href="/carnet?secteur=modane#resultats" class="secteur-lien" data-libelle="Le Carnet">Modane</a></h3>
       <p>La ville-porte de la vallée, avec Saint-André, Le Freney, Fourneaux, Villarodin-Bourget, Avrieux et la station de Valfréjus.</p>
     </div>
-  </li><li class="secteur secteur--aussois">
+  </li><li class="secteur secteur--aussois" data-secteur="aussois">
     <figure class="media secteur-media" style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/village-aussois-960.webp" srcset="/assets/images/village-aussois-480.webp 480w, /assets/images/village-aussois-640.webp 640w, /assets/images/village-aussois-960.webp 960w" sizes="(max-width: 760px) 100vw, 25vw" alt="Aussois et son plateau vus d&#39;en haut" width="960" height="720" loading="lazy" decoding="async">
@@ -355,7 +361,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <h3><a href="/carnet?secteur=aussois#resultats" class="secteur-lien" data-libelle="Le Carnet">Aussois</a></h3>
       <p>Le village du plateau, face aux sommets de la Vanoise.</p>
     </div>
-  </li><li class="secteur secteur--bessans">
+  </li><li class="secteur secteur--bessans" data-secteur="bessans">
     <figure class="media secteur-media" style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/village-bessans-960.webp" srcset="/assets/images/village-bessans-480.webp 480w, /assets/images/village-bessans-640.webp 640w, /assets/images/village-bessans-960.webp 960w" sizes="(max-width: 760px) 100vw, 25vw" alt="Bessans vu de la chapelle Saint-Antoine, en été" width="960" height="720" loading="lazy" decoding="async">
@@ -365,7 +371,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <h3><a href="/carnet?secteur=bessans#resultats" class="secteur-lien" data-libelle="Le Carnet">Bessans</a></h3>
       <p>Le village de la haute vallée, entre Val Cenis et Bonneval.</p>
     </div>
-  </li><li class="secteur secteur--la-norma">
+  </li><li class="secteur secteur--la-norma" data-secteur="la-norma">
     <figure class="media secteur-media" style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/village-la-norma-960.webp" srcset="/assets/images/village-la-norma-480.webp 480w, /assets/images/village-la-norma-640.webp 640w, /assets/images/village-la-norma-960.webp 960w" sizes="(max-width: 760px) 100vw, 25vw" alt="Le village de la station de La Norma sous la neige" width="960" height="720" loading="lazy" decoding="async">
@@ -375,7 +381,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <h3><a href="/carnet?secteur=la-norma#resultats" class="secteur-lien" data-libelle="Le Carnet">La Norma</a></h3>
       <p>Le village-station, au-dessus de Villarodin-Bourget.</p>
     </div>
-  </li><li class="secteur secteur--val-cenis">
+  </li><li class="secteur secteur--val-cenis" data-secteur="val-cenis">
     <figure class="media secteur-media" style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/village-termignon-960.webp" srcset="/assets/images/village-termignon-480.webp 480w, /assets/images/village-termignon-640.webp 640w, /assets/images/village-termignon-960.webp 960w" sizes="(max-width: 760px) 100vw, 25vw" alt="Une rue du village de Termignon, à Val Cenis" width="960" height="720" loading="lazy" decoding="async">

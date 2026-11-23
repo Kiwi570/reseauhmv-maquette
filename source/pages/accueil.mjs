@@ -24,7 +24,7 @@ export default (c) => {
         <span class="ouv-ligne-m"><span class="ouv-ligne">${c.t('accueil.ouv.ligne3')}</span></span>
       </h1>
       <p class="ouv-accroche masque-ecran-tres-bas" data-anime="gsap">${c.t('accueil.ouv.accroche')}</p>
-      <div class="ouv-recherche" data-anime="gsap">${recherche(c, { objet: true })}</div>
+      <div class="ouv-recherche" data-anime="gsap">${recherche(c, { objet: true, suggestions: true })}</div>
       <ul class="ouv-infos" data-info-cle data-anime="gsap">
         <li>${icone('sac')}<span><b class="chiffre" data-compteur="298">298</b> ${c.t('accueil.ouv.adresses')}</span></li>
         <li class="masque-ecran-tres-bas">${icone('montagne')}<span>${c.t('accueil.ouv.villages')}</span></li>
@@ -42,10 +42,15 @@ export default (c) => {
     <header class="jour-tete">
       <h2 data-anime="lignes">${c.t('accueil.jour.titre')}</h2>
       <p class="jour-ordre">${c.t('accueil.jour.ordre')} · <time data-aujourdhui>20 novembre</time></p>
-      ${c.lien('carnet', { params: 'favori=oui', ancre: 'resultats', classe: 'jour-favoris', texte: html`${icone('coeur')}<span>${c.t('accueil.jour.favoris')} · <b data-favoris-nombre>0</b></span>` })}
+      <div class="jour-actions">
+        <button type="button" class="jour-rebattre" data-rebattre data-annonce="${c.s('commun.rebattues')}">${icone('melanger')}<span>${c.t('commun.rebattre')}</span></button>
+        ${c.lien('carnet', { params: 'favori=oui', ancre: 'resultats', classe: 'jour-favoris', texte: html`${icone('coeur')}<span>${c.t('accueil.jour.favoris')} · <b data-favoris-nombre>0</b></span>` })}
+      </div>
+      <p class="visuellement-cache" aria-live="polite" data-rebattre-annonce></p>
     </header>
     <div class="donne">
       <article class="carte-jour carte-jour--table" data-ordre="0" data-place="0" style="order:0" data-effet="donne">
+        <span class="carte-jour-filigrane" aria-hidden="true">${icone('couverts')}</span>
         <span class="carte-jour-icone">${icone('couverts')}</span>
         <p class="carte-jour-sur">${c.t('accueil.jour.tableSur')}</p>
         <h3>${c.lien('carnet', { params: 'rubrique=restaurants', ancre: 'resultats', texte: c.t('accueil.jour.table'), classe: 'carte-jour-lien' })}</h3>
@@ -53,6 +58,7 @@ export default (c) => {
         ${icone('diagonale', 'icone carte-jour-fleche')}
       </article>
       <article class="carte-jour carte-jour--commerce" data-ordre="1" data-place="1" style="order:1" data-effet="donne">
+        <span class="carte-jour-filigrane" aria-hidden="true">${icone('sac')}</span>
         <span class="carte-jour-icone">${icone('sac')}</span>
         <p class="carte-jour-sur">${c.t('accueil.jour.commerceSur')}</p>
         <h3>${c.lien('carnet', { params: 'rubrique=commerces', ancre: 'resultats', texte: c.t('accueil.jour.commerce'), classe: 'carte-jour-lien' })}</h3>
@@ -61,6 +67,7 @@ export default (c) => {
         ${icone('diagonale', 'icone carte-jour-fleche')}
       </article>
       <article class="carte-jour carte-jour--artisan" data-ordre="2" data-place="2" style="order:2" data-effet="donne">
+        <span class="carte-jour-filigrane" aria-hidden="true">${icone('marteau')}</span>
         <span class="carte-jour-icone">${icone('marteau')}</span>
         <p class="carte-jour-sur">${c.t('accueil.jour.artisanSur')}</p>
         <h3>${c.lien('carnet', { params: 'rubrique=artisans', ancre: 'resultats', texte: c.t('accueil.jour.artisan'), classe: 'carte-jour-lien' })}</h3>
@@ -69,6 +76,7 @@ export default (c) => {
         ${icone('diagonale', 'icone carte-jour-fleche')}
       </article>
       <article class="carte-jour carte-jour--activite" data-ordre="3" data-place="3" style="order:3" data-effet="donne">
+        <span class="carte-jour-filigrane" aria-hidden="true">${icone('etincelle')}</span>
         <span class="carte-jour-icone">${icone('etincelle')}</span>
         <p class="carte-jour-sur">${c.t('accueil.jour.activiteSur')}</p>
         <h3>${c.lien('carnet', { params: 'rubrique=activites', ancre: 'resultats', texte: c.t('accueil.jour.activite'), classe: 'carte-jour-lien' })}</h3>
@@ -90,6 +98,7 @@ export default (c) => {
     <div class="registre" data-registre>
       <div class="registre-page">
         ${anneaux(10, 'anneaux anneaux--registre')}
+        <div class="registre-feuille" aria-hidden="true"></div>
         <div class="registre-images">${images.map((nom, i) => c.media({ nom: `grok/${nom}`, alt: '', classe: `registre-media${i === 0 ? ' est-visible' : ''}`, sizes: '(max-width: 760px) 90vw, 30vw', attrs: `data-image-rubrique="${nom}"${i === 0 ? ' data-anime="rideau"' : ''}` }))}</div>
         <div class="registre-panneaux">${R.map((r, i) => html`<div class="registre-panneau" id="rubrique-${r.cle}" role="tabpanel" aria-labelledby="onglet-${r.cle}" data-image="${r.image}"${i ? brut(' hidden') : ''}>
           <p class="registre-num">${String(i + 1).padStart(2, '0')} / 12</p>

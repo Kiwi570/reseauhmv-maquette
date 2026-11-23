@@ -9,6 +9,8 @@ const TRACES = {
   mallette: '<rect x="3.5" y="7.5" width="17" height="12" rx="1.5"/><path d="M9 7.5V5h6v2.5M3.5 12.5h17"/>',
   cle: '<circle cx="8" cy="12" r="3.6"/><path d="M11.6 12H21v3M17.5 12v3"/>',
   lit: '<path d="M3 18.5V6.5M3 14h18v4.5M21 14v-1.5A3 3 0 0 0 18 9.5h-7V14"/><circle cx="7" cy="11.2" r="1.6"/>',
+  de: '<rect x="4" y="4" width="16" height="16" rx="3.5"/><circle cx="9" cy="9" r=".9"/><circle cx="15" cy="9" r=".9"/><circle cx="12" cy="12" r=".9"/><circle cx="9" cy="15" r=".9"/><circle cx="15" cy="15" r=".9"/>',
+  melanger: '<path d="M3.5 7h3c4.6 0 6.2 10 10.8 10h3.2"/><path d="M3.5 17h3c1.7 0 2.9-1.3 3.9-3M13.6 10c1-1.7 2.2-3 3.7-3h3.2"/><path d="m18 4.5 2.5 2.5-2.5 2.5M18 14.5l2.5 2.5-2.5 2.5"/>',
   montagne: '<path d="m2.5 19.5 7-11.5 4 6 2.8-3.6 5.2 9.1z"/><path d="m7.6 11.2 1.9 1.6 1.7-1.4"/>',
   haltere: '<path d="M6.5 7.5v9M17.5 7.5v9M3.5 10v4M20.5 10v4M6.5 12h11"/>',
   etincelle: '<path d="m12 3 1.7 5.3L19 10l-5.3 1.7L12 17l-1.7-5.3L5 10l5.3-1.7z"/><path d="m18.5 15.5.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/>',

@@ -1,11 +1,14 @@
 /* Effets propres à Réseau HMV. Le socle gère l'ouverture, le voile, l'en-tête, les boucles et la bibliothèque d'effets.
-   Effets du plan (data-effet) : onglets, donne, vallee, fiche-qui-s-ecrit, fiches, etapes, numero. */
-import { demarrer, etat, rafraichir, quand, allerAncre } from './socle/index.js?v=1';
+   Effets du plan (data-effet) : onglets, donne, vallee, fiche-qui-s-ecrit, fiches, etapes, numero.
+   Version 2 : exemples qui s'écrivent dans la recherche, onglets de la tranche qui invitent, cartes du jour à rebattre,
+   feuille du répertoire qui tourne, vallée qui répond à la souris, adresse au hasard, tampon « Reçu ». */
+import { demarrer, etat, rafraichir, quand, allerAncre, boucle, aller } from './socle/index.js?v=2';
 
 const gsap = window.gsap;
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const page = document.body;
+const quandPret = (fn) => (etat.pret ? fn() : quand('pret', fn));
 
 /* ---------- Jour (Europe/Paris) : ordre du jour, date affichée ---------- */
 function jourParis() {
@@ -86,12 +89,24 @@ function initRegistre() {
   const onglets = $$('[role="tab"]', reg);
   const panneaux = $$('[role="tabpanel"]', reg);
   const images = $$('[data-image-rubrique]', reg);
+  const feuille = $('.registre-feuille', reg);
+  let actuel = 0;
   const choisir = (i, focus) => {
+    const tourne = i !== actuel && feuille && gsap;
+    actuel = i;
+    if (tourne) {
+      gsap.killTweensOf(feuille);
+      gsap.timeline()
+        .set(feuille, { visibility: 'visible', opacity: 1, rotationY: 0, transformPerspective: 2400, transformOrigin: '0% 50%', '--ombre-feuille': 0 })
+        .to(feuille, { rotationY: -100, '--ombre-feuille': 1, duration: .6, ease: 'power1.in' })
+        .to(feuille, { opacity: 0, duration: .12 }, .48)
+        .set(feuille, { visibility: 'hidden', rotationY: 0, opacity: 1, '--ombre-feuille': 0 });
+    }
     onglets.forEach((o, k) => { o.setAttribute('aria-selected', String(k === i)); o.tabIndex = k === i ? 0 : -1; });
     panneaux.forEach((p, k) => { p.hidden = k !== i; });
     const nom = panneaux[i].dataset.image;
     images.forEach((f) => f.classList.toggle('est-visible', f.dataset.imageRubrique === nom));
-    if (gsap) gsap.fromTo(panneaux[i].children, { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: .45, stagger: .04, ease: 'power2.out', overwrite: true });
+    if (gsap) gsap.fromTo(panneaux[i].children, { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: .45, stagger: .04, delay: tourne ? .22 : 0, ease: 'power2.out', overwrite: true });
     if (focus) onglets[i].focus();
     rafraichir();
   };
@@ -122,6 +137,30 @@ function initDonne() {
       scrollTrigger: { trigger: '.donne', start: 'top 85%', once: true } });
 }
 
+function melange(l) { const r = l.slice(); for (let i = r.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [r[i], r[j]] = [r[j], r[i]]; } return r; }
+function initRebattre() {
+  const bouton = $('[data-rebattre]');
+  const cartes = $$('.carte-jour');
+  if (!bouton || cartes.length < 2) return;
+  const annonce = $('[data-rebattre-annonce]');
+  let occupe = false;
+  bouton.addEventListener('click', async () => {
+    if (occupe) return;
+    occupe = true;
+    const avant = cartes.map((c) => c.dataset.place);
+    let places;
+    do places = melange(avant); while (places.every((p, k) => p === avant[k]) || places[cartes.findIndex((c) => c.dataset.place === '0')] === '0');
+    let Flip = null;
+    try { ({ Flip } = await (await import('./modules/pret.js?v=2')).pret(['flip'])); } catch {}
+    const etatAvant = Flip ? Flip.getState(cartes) : null;
+    cartes.forEach((c, k) => { c.dataset.place = places[k]; c.style.order = places[k]; });
+    const fin = () => { occupe = false; rafraichir(); };
+    if (Flip && gsap) Flip.from(etatAvant, { duration: .8, ease: 'power3.inOut', stagger: .05, onComplete: fin });
+    else fin();
+    if (annonce) { annonce.textContent = ''; setTimeout(() => { annonce.textContent = bouton.dataset.annonce || ''; }, 80); }
+  });
+}
+
 /* ---------- La vallée : la rivière se trace, les villages s'allument ---------- */
 function initVallee() {
   if (!gsap || !window.ScrollTrigger) return;
@@ -129,6 +168,8 @@ function initVallee() {
     const riviere = $('.vallee-riviere', v);
     const points = $$('.vallee-point', v).sort((a, b) => parseFloat(getComputedStyle(a).getPropertyValue('--o')) - parseFloat(getComputedStyle(b).getPropertyValue('--o')));
     const tl = gsap.timeline({ defaults: { ease: 'none' } });
+    /* Une fois tracée, la rivière s'écoule (boucle CSS, arrêtée hors écran par le socle). */
+    tl.eventCallback('onUpdate', () => v.classList.toggle('est-tracee', tl.progress() > .96));
     tl.fromTo(v, { y: 30, scale: .97 }, { y: 0, scale: 1, duration: 1, ease: 'power2.out' }, 0);
     if (riviere) tl.fromTo(riviere, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 1 }, 0);
     points.forEach((p) => {
@@ -138,6 +179,58 @@ function initVallee() {
     const auChargement = v.hasAttribute('data-vallee-interactive');
     if (auChargement) { tl.pause(0); quand('pret', () => tl.duration(2.2).play(0)); }
     else window.ScrollTrigger.create({ trigger: v, start: 'top 85%', end: 'center 45%', scrub: .6, animation: tl });
+  });
+}
+
+/* La vallée répond : bulle au survol d'un village, légende et secteurs qui l'éclairent ; hors de la page La carte,
+   un village mène à la carte, déjà choisi (même lien que la légende). */
+function initValleeGestes() {
+  $$('.vallee').forEach((v) => {
+    const bulle = $('.vallee-bulle', v);
+    const interactive = v.hasAttribute('data-vallee-interactive');
+    const points = $$('.vallee-point', v);
+    const point = (id) => points.find((p) => p.dataset.village === id);
+    const montrer = (p) => {
+      if (!bulle || !p) return;
+      const r = v.getBoundingClientRect(), q = $('.vp', p).getBoundingClientRect();
+      bulle.textContent = p.dataset.nom;
+      bulle.hidden = false;
+      const w = bulle.offsetWidth;
+      bulle.style.left = `${Math.min(r.width - w / 2 - 8, Math.max(w / 2 + 8, q.left + q.width / 2 - r.left))}px`;
+      bulle.style.top = `${Math.max(bulle.offsetHeight + 24, q.top + q.height / 2 - r.top)}px`;
+      if (gsap) gsap.fromTo(bulle, { y: 6, opacity: 0 }, { y: 0, opacity: 1, duration: .22, ease: 'power2.out', overwrite: true });
+    };
+    const cacher = () => { if (bulle) bulle.hidden = true; };
+    const eclairer = (liste) => {
+      points.forEach((p) => p.classList.toggle('est-eclaire', liste.includes(p)));
+      v.classList.toggle('a-eclairage', liste.length > 0);
+    };
+    points.forEach((p) => {
+      p.addEventListener('pointerenter', (e) => { if (e.pointerType !== 'mouse') return; eclairer([p]); montrer(p); });
+      p.addEventListener('pointerleave', () => { eclairer([]); cacher(); });
+    });
+    if (!interactive) {
+      const liens = $$('[data-village-lien]');
+      if (liens.length) {
+        v.classList.add('est-cliquable');
+        points.forEach((p) => p.addEventListener('click', () => liens.find((a) => a.dataset.villageLien === p.dataset.village)?.click()));
+      }
+    }
+    $$('[data-village-lien], [data-choisir-village]').forEach((a) => {
+      const p = point(a.dataset.villageLien || a.dataset.choisirVillage);
+      if (!p) return;
+      const on = (e) => { if (e.type === 'pointerenter' && e.pointerType !== 'mouse') return; eclairer([p]); montrer(p); };
+      const off = () => { eclairer([]); cacher(); };
+      a.addEventListener('pointerenter', on); a.addEventListener('focus', on);
+      a.addEventListener('pointerleave', off); a.addEventListener('blur', off);
+    });
+    $$('.secteur[data-secteur]').forEach((s) => {
+      const liste = points.filter((p) => p.dataset.secteur === s.dataset.secteur);
+      const on = () => eclairer(liste);
+      const off = () => eclairer([]);
+      s.addEventListener('pointerenter', on); s.addEventListener('pointerleave', off);
+      s.addEventListener('focusin', on); s.addEventListener('focusout', off);
+    });
   });
 }
 
@@ -159,7 +252,7 @@ function initFicheQuiSEcrit() {
 async function initCarnet() {
   const cff = $('[data-module="catalogue-filtres-flip"]');
   if (!cff) return;
-  const { init } = await import('./modules/catalogue-filtres-flip.js?v=1');
+  const { init } = await import('./modules/catalogue-filtres-flip.js?v=2');
   catalogue = await init(cff, { mots: ['fiche', 'fiches'], texte: '.tete-carnet [name="q"]', village: '.tete-carnet [name="village"]', format: (n) => String(n) });
   const filtres = $('[data-filtres]');
   /* Les fiches arrivent à l'écran par lots (propriétés translate et scale : Flip garde transform et opacity). */
@@ -183,6 +276,34 @@ async function initCarnet() {
   }
 }
 
+function initHasard() {
+  const bouton = $('[data-hasard]');
+  if (!bouton) return;
+  const annonce = $('[data-hasard-annonce]');
+  let derniere = null, minuteur = 0;
+  const tirer = () => {
+    const visibles = $$('.grille-fiches .fiche').filter((f) => !f.hidden);
+    if (!visibles.length) return;
+    const choix = visibles.length > 1 ? visibles.filter((f) => f !== derniere) : visibles;
+    const f = choix[Math.floor(Math.random() * choix.length)];
+    derniere = f;
+    $$('.fiche.est-tiree').forEach((x) => x.classList.remove('est-tiree'));
+    f.classList.add('est-tiree');
+    clearTimeout(minuteur); minuteur = setTimeout(() => f.classList.remove('est-tiree'), 4200);
+    const r = f.getBoundingClientRect();
+    aller(scrollY + r.top - Math.max(80, (innerHeight - r.height) / 2));
+    const nom = $('.fiche-nom', f);
+    if (nom) { nom.tabIndex = -1; nom.focus({ preventScroll: true }); }
+    if (annonce) { annonce.textContent = ''; setTimeout(() => { annonce.textContent = (bouton.dataset.annonce || '').replace('{nom}', nom ? nom.textContent.trim() : ''); }, 80); }
+  };
+  bouton.addEventListener('click', () => {
+    bouton.classList.remove('roule'); void bouton.offsetWidth; bouton.classList.add('roule');
+    /* Aucune fiche visible (filtres trop serrés) : on repart du carnet entier. */
+    if (!$$('.grille-fiches .fiche').some((f) => !f.hidden)) { $('[data-reinit]')?.click(); setTimeout(tirer, 650); }
+    else tirer();
+  });
+}
+
 /* ---------- La carte : choisir un village ---------- */
 function initCarte() {
   const panneau = $('.carte-panneau');
@@ -197,7 +318,7 @@ function initCarte() {
     if (ecrire) { const u = new URL(location.href); id ? u.searchParams.set('village', id) : u.searchParams.delete('village'); history.replaceState(history.state, '', u); }
     const f = fiches.find((x) => x.dataset.panneauVillage === id);
     if (f && gsap) gsap.fromTo(f, { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: .4, ease: 'power2.out' });
-    if (f) { const t = $('h2', f); t.tabIndex = -1; t.focus({ preventScroll: true }); if (matchMedia('(max-width: 900px)').matches) { const r = panneau.getBoundingClientRect(); if (r.top > innerHeight * .6 || r.top < 0) window.scrollTo({ top: scrollY + r.top - (parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--entete-h')) || 0) - 12 }); } }
+    if (f && ecrire) { const t = $('h2', f); t.tabIndex = -1; t.focus({ preventScroll: true }); if (matchMedia('(max-width: 900px)').matches) { const r = panneau.getBoundingClientRect(); if (r.top > innerHeight * .6 || r.top < 0) window.scrollTo({ top: scrollY + r.top - (parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--entete-h')) || 0) - 12 }); } }
     rafraichir();
   };
   panneau.addEventListener('click', (e) => {
@@ -213,7 +334,7 @@ function initCarte() {
 async function initReferencer() {
   const fpe = $('[data-module="formulaire-par-etapes"]');
   if (!fpe) return;
-  const { init } = await import('./modules/formulaire-par-etapes.js?v=1');
+  const { init } = await import('./modules/formulaire-par-etapes.js?v=2');
   await init(fpe, { sujet: 'Référencement Réseau HMV' });
   const form = $('[data-fiche-source]');
   const ap = $('[data-fiche-apercu]');
@@ -229,7 +350,8 @@ async function initReferencer() {
     const d = v('description');
     $('[data-apercu-texte]', ap).textContent = d ? (d.length > 180 ? d.slice(0, 177) + '…' : d) : defaut.texte;
     const ic = $('[data-apercu-icone]', ap);
-    if (r) { const src = r.closest('label').querySelector('.fpe__icone'); ic.className = 'fiche-icone ' + [...src.classList].find((x) => x.startsWith('teinte-')); ic.innerHTML = src.innerHTML; }
+    [...ap.classList].filter((x) => x.startsWith('teinte-')).forEach((x) => ap.classList.remove(x));
+    if (r) { const src = r.closest('label').querySelector('.fpe__icone'); const teinte = [...src.classList].find((x) => x.startsWith('teinte-')); ic.className = 'fiche-icone ' + teinte; ic.innerHTML = src.innerHTML; if (teinte) ap.classList.add(teinte); }
     else { ic.className = 'fiche-icone teinte-sable'; ic.innerHTML = iconeDefaut; }
     const tel = $('[data-apercu-tel]', ap); tel.hidden = !v('tel'); $('span', tel).textContent = v('tel');
   };
@@ -243,7 +365,20 @@ async function initReferencer() {
     }
     if (gsap && e.target.name === 'rubrique') gsap.fromTo(ap, { scale: .97 }, { scale: 1, duration: .4, ease: 'back.out(2)' });
   });
+  const tampon = $('[data-tampon-recu]', ap);
+  form.addEventListener('reset', () => setTimeout(() => {
+    maj();
+    if (tampon) tampon.hidden = true;
+    const boite = $('[data-apercu-image]', ap); if (boite) { boite.hidden = true; boite.replaceChildren(); }
+    rafraichir();
+  }));
   fpe.addEventListener('formulaire:envoye', () => {
+    if (tampon) {
+      tampon.hidden = false;
+      if (gsap) gsap.timeline({ delay: .3 })
+        .fromTo(tampon, { scale: 2.6, opacity: 0 }, { scale: 1, opacity: 1, duration: .38, ease: 'power4.in' })
+        .fromTo(ap, { y: 0, scale: 1 }, { keyframes: [{ y: 4, scale: .985, duration: .08 }, { y: 0, scale: 1, duration: .5, ease: 'elastic.out(1, .4)' }] });
+    }
     const fin = $('.fpe__fin', fpe);
     requestAnimationFrame(() => { const r = fin.getBoundingClientRect(); if (r.top < 0 || r.top > innerHeight * .7) window.scrollTo({ top: scrollY + r.top - (parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--entete-h')) || 0) - 24 }); });
   });
@@ -290,6 +425,49 @@ function numero(tl, a = 0) {
   }
 }
 
+/* ---------- Ouverture : des exemples s'écrivent dans la recherche (jusqu'à ce qu'on la touche) ---------- */
+function initSuggestions() {
+  const champ = $('[data-suggestions]');
+  if (!champ) return;
+  const liste = champ.dataset.suggestions.split('|').map((x) => x.trim()).filter(Boolean);
+  if (liste.length < 2) return;
+  const depart = champ.placeholder;
+  let i = 0, n = liste[0].length, sens = 0, t = 2.6, fini = false, b = null;
+  const arreter = () => { if (fini) return; fini = true; champ.placeholder = depart; b?.arreter(); };
+  ['focus', 'input', 'pointerdown'].forEach((ev) => champ.addEventListener(ev, arreter));
+  quandPret(() => {
+    if (fini) return;
+    b = boucle(champ, (dt) => {
+      t -= dt;
+      if (t > 0) return;
+      if (sens === 0) sens = -1;
+      if (sens < 0) { n--; t = .026; if (n <= 0) { n = 0; i = (i + 1) % liste.length; sens = 1; t = .45; } }
+      else { n++; t = .05 + Math.random() * .05; if (n >= liste[i].length) { sens = 0; t = 2.8; } }
+      champ.placeholder = liste[i].slice(0, n);
+    });
+  });
+}
+
+/* Les onglets de la tranche sortent un peu, en vague, toutes les 7 s, tant qu'on ne les a pas survolés. */
+function initTranche() {
+  const tranche = $('.tranche');
+  if (!tranche || !gsap) return;
+  const lis = $$('li', tranche);
+  let t = 3.5, fini = false, b = null;
+  const arreter = () => { fini = true; b?.arreter(); };
+  tranche.addEventListener('pointerenter', arreter);
+  tranche.addEventListener('focusin', arreter);
+  quandPret(() => {
+    if (fini) return;
+    b = boucle(tranche, (dt) => {
+      t -= dt;
+      if (t > 0) return;
+      t = 7;
+      gsap.to(lis, { keyframes: [{ x: -16, duration: .24, ease: 'power2.out' }, { x: 0, duration: .55, ease: 'power2.inOut' }], stagger: .045, overwrite: 'auto' });
+    });
+  });
+}
+
 /* ---------- Premier écran de l'accueil ---------- */
 const OUV = { lignes: '.ouv-ligne', reste: '.ouv-pastille, .ouv-accroche, .ouv-recherche, .ouv-infos', onglets: '.tranche li' };
 function ouvertureAccueil(tl, a) {
@@ -305,13 +483,18 @@ demarrer({
     initFavoris();
     initRegistre();
     initDonne();
+    initRebattre();
     initVallee();
+    initValleeGestes();
     initFicheQuiSEcrit();
     initCarte();
     initRecherche();
     initMemePage();
     initCarnet();
+    initHasard();
     initReferencer();
+    initSuggestions();
+    initTranche();
     /* État de départ du premier écran de l'accueil (sa partie animée par le projet). */
     if (gsap && $('.ouv') && etat && document.documentElement.dataset.arrivee !== 'retour') {
       gsap.set(OUV.lignes, { yPercent: 112, y: 0 });

@@ -101,6 +101,7 @@ export default (c) => {
           <p class="fiche-lieu">${icone('repere')}<span data-apercu-village>${t('apercuVillage')}</span></p>
           <p class="fiche-note" data-apercu-texte>${t('apercuTexte')}</p>
           <p class="fiche-tel" data-apercu-tel hidden>${icone('telephone')}<span></span></p>
+          <p class="tampon-recu" data-tampon-recu data-grille="retour" hidden>${t('tamponRecu')}</p>
         </article>
       </aside>
     </div>

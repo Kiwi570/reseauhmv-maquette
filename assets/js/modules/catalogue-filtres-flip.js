@@ -3,7 +3,7 @@
 // La sélection est reportée dans l'adresse (?categorie=…&prix=…&tri=…) et relue à l'arrivée.
 // Ajout du projet Réseau HMV : recherche libre [data-filtre-texte] (mots cherchés dans data-mots, sans accents ni pluriel)
 // et liste [data-filtre-village] (data-village de la fiche), lues et écrites dans l'adresse (?q=…&village=…).
-import { pret } from './pret.js?v=1';
+import { pret } from './pret.js?v=2';
 
 /**
  * @param {HTMLElement} root  section.cff
